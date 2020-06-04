@@ -1,0 +1,401 @@
+[{
+        "typeId": 1014,
+        "name": "humiture",
+        "mode": [{
+                "title": "定制化",
+                "name": "customization",
+                "icon": "layout"
+            },
+            {
+                "title": "表格",
+                "name": "table",
+                "icon": "table"
+            }
+        ]
+    },
+    {
+        "typeId": 2,
+        "name": "accumulator",
+        "mode": [{
+                "title": "表格",
+                "name": "table",
+                "icon": "table"
+            },
+            {
+                "title": "光字牌",
+                "name": "plate",
+                "icon": "profile"
+            }
+        ]
+    },
+    {
+        "typeId": 1011,
+        "name": "water-soaking",
+        "mode": [{
+                "title": "表格",
+                "name": "table",
+                "icon": "table"
+            },
+            {
+                "title": "平面图",
+                "name": "ichnography",
+                "icon": "picture"
+            }
+        ]
+    },
+    {
+        "typeId": 1044,
+        "name": "video",
+        "mode": [{
+                "title": "定制化",
+                "name": "customization",
+                "icon": "layout"
+            },
+            {
+                "title": "表格",
+                "name": "table",
+                "icon": "table"
+            }
+        ]
+    },
+    {
+        "typeId": 1025,
+        "name": "anti-theft",
+        "mode": [{
+                "title": "定制化",
+                "name": "customization",
+                "icon": "layout"
+            },
+            {
+                "title": "表格",
+                "name": "table",
+                "icon": "table"
+            }
+        ]
+    },
+    {
+        "typeId": 1020,
+        "name": "intelligent-lighting",
+        "mode": [{
+                "title": "定制化",
+                "name": "customization",
+                "icon": "layout"
+            },
+            {
+                "title": "表格",
+                "name": "table",
+                "icon": "table"
+            }
+        ]
+    },
+    {
+        "typeId": 1046,
+        "name": "ozone",
+        "mode": [{
+                "title": "定制化",
+                "name": "customization",
+                "icon": "layout"
+            },
+            {
+                "title": "表格",
+                "name": "table",
+                "icon": "table"
+            }
+        ]
+    },
+    {
+        "typeId": 1016,
+        "name": "vrv",
+        "mode": [{
+                "title": "定制化",
+                "name": "customization",
+                "icon": "layout"
+            },
+            {
+                "title": "表格",
+                "name": "table",
+                "icon": "table"
+            }
+        ]
+    },
+    {
+        "typeId": 1012,
+        "name": "water-level",
+        "mode": [{
+                "title": "定制化",
+                "name": "customization",
+                "icon": "layout"
+            },
+            {
+                "title": "表格",
+                "name": "table",
+                "icon": "table"
+            }
+        ]
+    },
+    {
+        "typeId": 1037,
+        "name": "fire-control",
+        "mode": [{
+                "title": "定制化",
+                "name": "customization",
+                "icon": "layout"
+            },
+            {
+                "title": "表格",
+                "name": "table",
+                "icon": "table"
+            }
+        ]
+    },
+    {
+        "typeId": 1018,
+        "name": "sf6-monitor",
+        "mode": [{
+                "title": "定制化",
+                "name": "customization",
+                "icon": "layout"
+            },
+            {
+                "title": "表格",
+                "name": "table",
+                "icon": "table"
+            }
+        ]
+    },
+    {
+        "typeId": 1024,
+        "name": "security-control",
+        "mode": [{
+                "title": "表格",
+                "name": "table",
+                "icon": "table"
+            },
+            {
+                "title": "定制化",
+                "name": "customization",
+                "icon": "layout"
+            }
+        ]
+    },
+    {
+        "typeId": 1045,
+        "name": "battery-monitor",
+        "mode": [{
+                "title": "定制化",
+                "name": "customization",
+                "icon": "layout"
+            },
+            {
+                "title": "表格",
+                "name": "table",
+                "icon": "table"
+            }
+        ]
+    },
+    {
+        "typeId": 1083,
+        "name": "main-oil",
+        "mode": [{
+                "title": "定制化",
+                "name": "customization",
+                "icon": "layout"
+            },
+            {
+                "title": "表格",
+                "name": "table",
+                "icon": "table"
+            }
+        ]
+    },
+    {
+        "typeId": 1002,
+        "name": "core-clamp",
+        "mode": [{
+                "title": "定制化",
+                "name": "customization",
+                "icon": "layout"
+            },
+            {
+                "title": "平面图",
+                "name": "htcustomization",
+                "icon": "picture"
+            },
+            {
+                "title": "表格",
+                "name": "table",
+                "icon": "table"
+            }
+        ]
+    },
+    {
+        "typeId": 1003,
+        "name": "arrester-monitor",
+        "mode": [{
+                "title": "定制化",
+                "name": "customization",
+                "icon": "layout"
+            },
+            {
+                "title": "平面图",
+                "name": "htcustomization",
+                "icon": "picture"
+            },
+            {
+                "title": "表格",
+                "name": "table",
+                "icon": "table"
+            }
+        ]
+    },
+    {
+        "typeId": 1010,
+        "name": "micro-weather",
+        "mode": [{
+                "title": "定制化",
+                "name": "customization",
+                "icon": "layout"
+            },
+            {
+                "title": "表格",
+                "name": "table",
+                "icon": "table"
+            }
+        ]
+    },
+    {
+        "typeId": 2031,
+        "name": "hgis-monitor",
+        "mode": [{
+                "title": "定制化",
+                "name": "customization",
+                "icon": "layout"
+            },
+            {
+                "title": "表格",
+                "name": "table",
+                "icon": "table"
+            }
+        ]
+    },
+    {
+        "typeId": 2032,
+        "name": "breaker-gas-monitor",
+        "mode": [{
+                "title": "定制化",
+                "name": "customization",
+                "icon": "layout"
+            },
+            {
+                "title": "表格",
+                "name": "table",
+                "icon": "table"
+            }
+        ]
+    },
+    {
+        "typeId": 2033,
+        "name": "cabinet",
+        "mode": [{
+                "title": "定制化",
+                "name": "customization",
+                "icon": "layout"
+            },
+            {
+                "title": "表格",
+                "name": "table",
+                "icon": "table"
+            }
+        ]
+    },
+    {
+        "typeId": 1022,
+        "name": "electronic-fence-control",
+        "mode": [{
+                "title": "表格",
+                "name": "table",
+                "icon": "table"
+            },
+            {
+                "title": "定制化",
+                "name": "customization",
+                "icon": "layout"
+            }
+        ]
+    },
+    {
+        "typeId": 2021,
+        "name": "terminal-box",
+        "mode": [{
+                "title": "表格",
+                "name": "table",
+                "icon": "table"
+            },
+            {
+                "title": "定制化",
+                "name": "customization",
+                "icon": "layout"
+            }
+        ]
+    },
+    {
+        "typeId": 1023,
+        "name": "infrared-correlation",
+        "mode": [{
+                "title": "表格",
+                "name": "table",
+                "icon": "table"
+            },
+            {
+                "title": "定制化",
+                "name": "customization",
+                "icon": "layout"
+            }
+        ]
+    },
+    {
+        "typeId": 1085,
+        "name": "hgis",
+        "mode": [{
+                "title": "平面图",
+                "name": "htcustomization",
+                "icon": "picture"
+            },
+            {
+                "title": "表格",
+                "name": "table",
+                "icon": "table"
+            }
+        ]
+    },
+    {
+        "typeId": 1086,
+        "name": "breaker",
+        "mode": [{
+                "title": "平面图",
+                "name": "htcustomization",
+                "icon": "picture"
+            },
+            {
+                "title": "表格",
+                "name": "table",
+                "icon": "table"
+            }
+        ]
+    },
+    {
+        "typeId": 1081,
+        "name": "burglar-alarm",
+        "mode": [{
+                "title": "表格",
+                "name": "table",
+                "icon": "table"
+            },
+            {
+                "title": "定制化",
+                "name": "customization",
+                "icon": "layout"
+            }
+        ]
+    }
+]

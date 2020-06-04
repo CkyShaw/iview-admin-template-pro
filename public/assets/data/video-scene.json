@@ -1,0 +1,162 @@
+{
+    "ret": "0",
+    "msg": "查询成功",
+    "data": [
+        {
+            "stationId": "42389edde72d41f4bcd978b574eefbae",
+            "sceneID": "1",
+            "sceneOrgID": "3",
+            "vcCode": null,
+            "vcName": "1号主变2号电抗",
+            "type": "130001",
+            "flag": 0,
+            "memo": null,
+            "stationName": "500kV东善桥变",
+            "typeName": "普通场景"
+        },
+        {
+            "stationId": "42389edde72d41f4bcd978b574eefbae",
+            "sceneID": "10",
+            "sceneOrgID": "7",
+            "vcCode": null,
+            "vcName": "场地端子箱",
+            "type": "130001",
+            "flag": 0,
+            "memo": null,
+            "stationName": "500kV东善桥变",
+            "typeName": "普通场景"
+        },
+        {
+            "stationId": "42389edde72d41f4bcd978b574eefbae",
+            "sceneID": "1000",
+            "sceneOrgID": "0",
+            "vcCode": null,
+            "vcName": "5022间隔巡检",
+            "type": "0",
+            "flag": 0,
+            "memo": null,
+            "stationName": "500kV东善桥变",
+            "typeName": null
+        },
+        {
+            "stationId": "42389edde72d41f4bcd978b574eefbae",
+            "sceneID": "1001",
+            "sceneOrgID": "0",
+            "vcCode": null,
+            "vcName": "5023间隔巡检",
+            "type": "0",
+            "flag": 0,
+            "memo": null,
+            "stationName": "500kV东善桥变",
+            "typeName": null
+        },
+        {
+            "stationId": "42389edde72d41f4bcd978b574eefbae",
+            "sceneID": "1002",
+            "sceneOrgID": "0",
+            "vcCode": null,
+            "vcName": "室内机器人巡检",
+            "type": "0",
+            "flag": 0,
+            "memo": null,
+            "stationName": "500kV东善桥变",
+            "typeName": null
+        },
+        {
+            "stationId": "42389edde72d41f4bcd978b574eefbae",
+            "sceneID": "1003",
+            "sceneOrgID": "0",
+            "vcCode": null,
+            "vcName": "室外机器人巡检",
+            "type": "0",
+            "flag": 0,
+            "memo": null,
+            "stationName": "500kV东善桥变",
+            "typeName": null
+        },
+        {
+            "stationId": "42389edde72d41f4bcd978b574eefbae",
+            "sceneID": "12",
+            "sceneOrgID": "8",
+            "vcCode": null,
+            "vcName": "5021断路器",
+            "type": "130001",
+            "flag": 0,
+            "memo": null,
+            "stationName": "500kV东善桥变",
+            "typeName": "普通场景"
+        },
+        {
+            "stationId": "42389edde72d41f4bcd978b574eefbae",
+            "sceneID": "13",
+            "sceneOrgID": "9",
+            "vcCode": null,
+            "vcName": "5021间隔",
+            "type": "130001",
+            "flag": 0,
+            "memo": null,
+            "stationName": "500kV东善桥变",
+            "typeName": "普通场景"
+        },
+        {
+            "stationId": "42389edde72d41f4bcd978b574eefbae",
+            "sceneID": "15",
+            "sceneOrgID": "3",
+            "vcCode": null,
+            "vcName": "5651线故障检查",
+            "type": "130001",
+            "flag": 0,
+            "memo": null,
+            "stationName": "500kV东善桥变",
+            "typeName": "普通场景"
+        },
+        {
+            "stationId": "42389edde72d41f4bcd978b574eefbae",
+            "sceneID": "16",
+            "sceneOrgID": "3",
+            "vcCode": null,
+            "vcName": "5688线故障跳闸",
+            "type": "130001",
+            "flag": 0,
+            "memo": null,
+            "stationName": "500kV东善桥变",
+            "typeName": "普通场景"
+        },
+        {
+            "stationId": "42389edde72d41f4bcd978b574eefbae",
+            "sceneID": "2",
+            "sceneOrgID": "3",
+            "vcCode": null,
+            "vcName": "1号主变",
+            "type": "130001",
+            "flag": 0,
+            "memo": null,
+            "stationName": "500kV东善桥变",
+            "typeName": "普通场景"
+        },
+        {
+            "stationId": "42389edde72d41f4bcd978b574eefbae",
+            "sceneID": "5",
+            "sceneOrgID": "4",
+            "vcCode": null,
+            "vcName": "2号主变",
+            "type": "130001",
+            "flag": 0,
+            "memo": null,
+            "stationName": "500kV东善桥变",
+            "typeName": "普通场景"
+        },
+        {
+            "stationId": "42389edde72d41f4bcd978b574eefbae",
+            "sceneID": "6",
+            "sceneOrgID": "5",
+            "vcCode": null,
+            "vcName": "3号主变",
+            "type": "130001",
+            "flag": 0,
+            "memo": null,
+            "stationName": "500kV东善桥变",
+            "typeName": "普通场景"
+        }
+    ]
+}

@@ -1,0 +1,1280 @@
+{
+    "ret": "0",
+    "msg": "success",
+    "data": [
+        {
+            "vc_Params1": "2|22.46.34.114:37777|admin:admin123|7",
+            "vc_Params3": "1$26.47.189.181$6800$admin$admin",
+            "vc_Params2": null,
+            "vcName": "东善桥变-25893刀闸#8云台",
+            "equipmentId": "049a9884e17b4532b30014b1bd3ee48c"
+        },
+        {
+            "vc_Params1": "2|22.46.34.114:37777|admin:admin123|12",
+            "vc_Params3": "1$26.47.189.181$6800$admin$admin",
+            "vc_Params2": null,
+            "vcName": "东善桥变-25201刀闸#13云台",
+            "equipmentId": "04d407287f484e609bd9ad1792c43b17"
+        },
+        {
+            "vc_Params1": "2|22.46.34.114:37782|admin:admin123|2",
+            "vc_Params3": "1$26.47.189.181$6800$admin$admin",
+            "vc_Params2": null,
+            "vcName": "东善桥变-220kV保护室东南角球机",
+            "equipmentId": "08ac3878c8bf415d8e5d314f0f1056a5"
+        },
+        {
+            "vc_Params1": "2|22.46.34.114:37780|admin:admin123|12",
+            "vc_Params3": "1$26.47.189.181$6800$admin$admin",
+            "vc_Params2": null,
+            "vcName": "东善桥变-50232刀闸A相#98云台",
+            "equipmentId": "0955cb0929ea4697b17060450082a514"
+        },
+        {
+            "vc_Params1": "2|22.46.34.114:37781|admin:admin123|1",
+            "vc_Params3": "1$26.47.189.181$6800$admin$admin",
+            "vc_Params2": null,
+            "vcName": "东善桥变-1号主变500kV侧压变#119",
+            "equipmentId": "09d3e47cc68846a3b8a311a00e362074"
+        },
+        {
+            "vc_Params1": "1|22.46.34.114:8001|admin:admin123|40",
+            "vc_Params3": "1$26.47.189.181$6800$admin$admin",
+            "vc_Params2": null,
+            "vcName": "1号主变4号红外热成像",
+            "equipmentId": "0e9a7e85ae7d45c6b8776e52a5cd12bc"
+        },
+        {
+            "vc_Params1": "2|22.46.34.114:37777|admin:admin123|22",
+            "vc_Params3": "1$26.47.189.181$6800$admin$admin",
+            "vc_Params2": null,
+            "vcName": "东善桥变-25016刀闸#23云台",
+            "equipmentId": "11ed2f08d9d941a997e5d693b7ad2392"
+        },
+        {
+            "vc_Params1": "2|22.46.34.114:37779|admin:admin123|5",
+            "vc_Params3": "1$26.47.189.181$6800$admin$admin",
+            "vc_Params2": null,
+            "vcName": "东善桥变-3209刀闸#70云台",
+            "equipmentId": "12a8024e26054fc9bab9bfa0fcc54caf"
+        },
+        {
+            "vc_Params1": "2|22.46.34.114:37782|admin:admin123|11",
+            "vc_Params3": "1$26.47.189.181$6800$admin$admin",
+            "vc_Params2": null,
+            "vcName": "东善桥变-班组安全工具室枪机",
+            "equipmentId": "12b183c04a814b7aa3d9e8ad51770a7d"
+        },
+        {
+            "vc_Params1": "2|22.46.34.114:37778|admin:admin123|5",
+            "vc_Params3": "1$26.47.189.181$6800$admin$admin",
+            "vc_Params2": null,
+            "vcName": "东善桥变-25843刀闸#38云台",
+            "equipmentId": "144bc20f8e194f80a212615056076903"
+        },
+        {
+            "vc_Params1": "2|22.46.34.114:37782|admin:admin123|17",
+            "vc_Params3": "1$26.47.189.181$6800$admin$admin",
+            "vc_Params2": null,
+            "vcName": "东善桥变-500kV电缆层南枪机",
+            "equipmentId": "14d435f1b38149509e868592b335348e"
+        },
+        {
+            "vc_Params1": "2|22.46.34.114:37779|admin:admin123|21",
+            "vc_Params3": "1$26.47.189.181$6800$admin$admin",
+            "vc_Params2": null,
+            "vcName": "移动机器人可见光",
+            "equipmentId": "17ce10eb43ef4407b6509423992c1421"
+        },
+        {
+            "vc_Params1": "2|22.46.34.114:37780|admin:admin123|14",
+            "vc_Params3": "1$26.47.189.181$6800$admin$admin",
+            "vc_Params2": null,
+            "vcName": "东善桥变-5031流变B相#100云台",
+            "equipmentId": "17d9447e7fa2495dbc9f3f7bd612c28f"
+        },
+        {
+            "vc_Params1": "2|22.46.34.114:37779|admin:admin123|15",
+            "vc_Params3": "1$26.47.189.181$6800$admin$admin",
+            "vc_Params2": null,
+            "vcName": "东善桥变-3109刀闸#80云台",
+            "equipmentId": "1a5204ae7b3943a9be73928ad3b90e63"
+        },
+        {
+            "vc_Params1": "2|22.46.34.114:37777|admin:admin123|10",
+            "vc_Params3": "1$26.47.189.181$6800$admin$admin",
+            "vc_Params2": null,
+            "vcName": "东善桥变-45313刀闸#11云台",
+            "equipmentId": "1d70b13b975f47ef96f2cfc401e7347b"
+        },
+        {
+            "vc_Params1": "2|22.46.34.114:37780|admin:admin123|21",
+            "vc_Params3": "1$26.47.189.181$6800$admin$admin",
+            "vc_Params2": null,
+            "vcName": "东善桥变-5051流变B相#107云台",
+            "equipmentId": "1e0bd2a29e364a5baa4fa0adcb7117c4"
+        },
+        {
+            "vc_Params1": "2|22.46.34.114:37777|admin:admin123|27",
+            "vc_Params3": "1$26.47.189.181$6800$admin$admin",
+            "vc_Params2": null,
+            "vcName": "东善桥变-2M14线路避雷器#28云台",
+            "equipmentId": "219c35a84ec14413861b39854cfba1f3"
+        },
+        {
+            "vc_Params1": "2|22.46.34.114:37777|admin:admin123|29",
+            "vc_Params3": "1$26.47.189.181$6800$admin$admin",
+            "vc_Params2": null,
+            "vcName": "东善桥变-2M141刀闸#30云台",
+            "equipmentId": "233536eeeb4b4274964ba59fa0026b50"
+        },
+        {
+            "vc_Params1": "2|22.46.34.110:37777|admin:sjdsq1|2",
+            "vc_Params3": "1$26.47.189.181$6800$admin$admin",
+            "vc_Params2": null,
+            "vcName": "东善桥变-场区西南角球机",
+            "equipmentId": "235414f1481d4a97ae058aab8b5aa0c3"
+        },
+        {
+            "vc_Params1": "1|22.46.34.114:8001|admin:admin123|38",
+            "vc_Params3": "1$26.47.189.181$6800$admin$admin",
+            "vc_Params2": null,
+            "vcName": "1号主变2号红外热成像",
+            "equipmentId": "23f27369da0a49e38b3036781a775813"
+        },
+        {
+            "vc_Params1": "2|22.46.34.114:37780|admin:admin123|8",
+            "vc_Params3": "1$26.47.189.181$6800$admin$admin",
+            "vc_Params2": null,
+            "vcName": "东善桥变-5021流变B相#94云台",
+            "equipmentId": "247f81741f26457faa60849dfd6d511b"
+        },
+        {
+            "vc_Params1": "2|22.46.34.114:37777|admin:admin123|23",
+            "vc_Params3": "1$26.47.189.181$6800$admin$admin",
+            "vc_Params2": null,
+            "vcName": "东善桥变-25016刀闸#24云台",
+            "equipmentId": "24947b6d08b6483786ccf1bbcfc78e9e"
+        },
+        {
+            "vc_Params1": "2|22.46.34.114:37778|admin:admin123|7",
+            "vc_Params3": "1$26.47.189.181$6800$admin$admin",
+            "vc_Params2": null,
+            "vcName": "东善桥变-25021刀闸#40云台",
+            "equipmentId": "2d3de2a1a3984259900aac41e84af080"
+        },
+        {
+            "vc_Params1": "2|22.46.34.114:37777|admin:admin123|28",
+            "vc_Params3": "1$26.47.189.181$6800$admin$admin",
+            "vc_Params2": null,
+            "vcName": "东善桥变-2M143刀闸#29云台",
+            "equipmentId": "2efed15573c0491894232745fc27978c"
+        },
+        {
+            "vc_Params1": "2|22.46.34.114:37780|admin:admin123|0",
+            "vc_Params3": "1$26.47.189.181$6800$admin$admin",
+            "vc_Params2": null,
+            "vcName": "东善桥变-5011流变B相#86云台",
+            "equipmentId": "32c1d532f0434d3f80030f8f25fb41d1"
+        },
+        {
+            "vc_Params1": "2|22.46.34.114:37782|admin:admin123|10",
+            "vc_Params3": "1$26.47.189.181$6800$admin$admin",
+            "vc_Params2": null,
+            "vcName": "东善桥变-主控楼西门厅枪机",
+            "equipmentId": "33cabd668a3b400284a48c85809074e1"
+        },
+        {
+            "vc_Params1": "2|22.46.34.114:37778|admin:admin123|22",
+            "vc_Params3": "1$26.47.189.181$6800$admin$admin",
+            "vc_Params2": null,
+            "vcName": "东善桥变-2M111刀闸#55云台",
+            "equipmentId": "34cba1fc88fb41f1a4dcf33017a9fa00"
+        },
+        {
+            "vc_Params1": "2|22.46.34.114:37778|admin:admin123|23",
+            "vc_Params3": "1$26.47.189.181$6800$admin$admin",
+            "vc_Params2": null,
+            "vcName": "东善桥变-4Y211刀闸#56云台",
+            "equipmentId": "36a6a9ea024d44d98e8c4c2ad594df24"
+        },
+        {
+            "vc_Params1": "2|22.46.34.110:37777|admin:sjdsq1|4",
+            "vc_Params3": "1$26.47.189.181$6800$admin$admin",
+            "vc_Params2": null,
+            "vcName": "东善桥变-场区西北角球机",
+            "equipmentId": "372c3a5a493148509301719ae81dc575"
+        },
+        {
+            "vc_Params1": "2|22.46.34.114:37777|admin:admin123|18",
+            "vc_Params3": "1$26.47.189.181$6800$admin$admin",
+            "vc_Params2": null,
+            "vcName": "东善桥变-2M13线路避雷器#19云台",
+            "equipmentId": "390af05b657c4bcaa98c1bfef061ec3f"
+        },
+        {
+            "vc_Params1": "2|22.46.34.114:37780|admin:admin123|4",
+            "vc_Params3": "1$26.47.189.181$6800$admin$admin",
+            "vc_Params2": null,
+            "vcName": "东善桥变-5652避雷器A相#90云台",
+            "equipmentId": "39bd3297f51f44d798d6c3f1b3a76cad"
+        },
+        {
+            "vc_Params1": "2|22.46.34.114:37778|admin:admin123|30",
+            "vc_Params3": "1$26.47.189.181$6800$admin$admin",
+            "vc_Params2": null,
+            "vcName": "东善桥变-备用2001流变#63云台",
+            "equipmentId": "3a4fb1306684404da59d8fef9e226d9b"
+        },
+        {
+            "vc_Params1": "2|22.46.34.114:37780|admin:admin123|18",
+            "vc_Params3": "1$26.47.189.181$6800$admin$admin",
+            "vc_Params2": null,
+            "vcName": "东善桥变-50421刀闸B相#104云台",
+            "equipmentId": "3c155f059a67407dbbe9fa79ab4f1711"
+        },
+        {
+            "vc_Params1": "2|22.46.34.114:37779|admin:admin123|7",
+            "vc_Params3": "1$26.47.189.181$6800$admin$admin",
+            "vc_Params2": null,
+            "vcName": "东善桥变-3231刀闸#72云台",
+            "equipmentId": "3e8023b7ace44577ae8e290006c215eb"
+        },
+        {
+            "vc_Params1": "2|22.46.34.114:37779|admin:admin123|22",
+            "vc_Params3": "1$26.47.189.181$6800$admin$admin",
+            "vc_Params2": null,
+            "vcName": "东善桥变-5053避雷器A相#124云台",
+            "equipmentId": "431aec7854214a31a808382e7ba5b9d4"
+        },
+        {
+            "vc_Params1": "2|22.46.34.114:37778|admin:admin123|25",
+            "vc_Params3": "1$26.47.189.181$6800$admin$admin",
+            "vc_Params2": null,
+            "vcName": "东善桥变-25036刀闸#58云台",
+            "equipmentId": "451548a567eb4748a4087e8461c7de1f"
+        },
+        {
+            "vc_Params1": "2|22.46.34.114:37779|admin:admin123|18",
+            "vc_Params3": "1$26.47.189.181$6800$admin$admin",
+            "vc_Params2": null,
+            "vcName": "东善桥变-#83云台",
+            "equipmentId": "4550aebfc6da42c18efd8186743895ea"
+        },
+        {
+            "vc_Params1": "2|22.46.34.110:37777|admin:sjdsq1|0",
+            "vc_Params3": "1$26.47.189.181$6800$admin$admin",
+            "vc_Params2": null,
+            "vcName": "东善桥变-场区东南角球机",
+            "equipmentId": "4a658e25248e4800bafb6a7012383ba0"
+        },
+        {
+            "vc_Params1": "2|22.46.34.110:37777|admin:sjdsq1|5",
+            "vc_Params3": "1$26.47.189.181$6800$admin$admin",
+            "vc_Params2": null,
+            "vcName": "东善桥变-大门右侧球机",
+            "equipmentId": "4ad2acaaa6ee473e8d56ad17f9bee0a7"
+        },
+        {
+            "vc_Params1": "2|22.46.34.114:37782|admin:admin123|19",
+            "vc_Params3": "1$26.47.189.181$6800$admin$admin",
+            "vc_Params2": null,
+            "vcName": "东善桥变-220kV电缆层西南角枪机",
+            "equipmentId": "4aef46eb537547f2891bb405c3a91473"
+        },
+        {
+            "vc_Params1": "2|22.46.34.110:37777|admin:sjdsq1|1",
+            "vc_Params3": "1$26.47.189.181$6800$admin$admin",
+            "vc_Params2": null,
+            "vcName": "东善桥变-场区东墙中球机",
+            "equipmentId": "4b62844639aa4523a2b1c52efd0da88d"
+        },
+        {
+            "vc_Params1": "2|22.46.34.114:37777|admin:admin123|1",
+            "vc_Params3": "1$26.47.189.181$6800$admin$admin",
+            "vc_Params2": null,
+            "vcName": "东善桥变-4Y201刀闸#2云台",
+            "equipmentId": "4c63465426de4ad9bbc99813e9b418e4"
+        },
+        {
+            "vc_Params1": "2|22.46.34.114:37777|admin:admin123|2",
+            "vc_Params3": "1$26.47.189.181$6800$admin$admin",
+            "vc_Params2": null,
+            "vcName": "东善桥变-22001刀闸#3云台",
+            "equipmentId": "4c78acbe9b944908a8a466d30f18881c"
+        },
+        {
+            "vc_Params1": "2|22.46.34.114:37777|admin:admin123|17",
+            "vc_Params3": "1$26.47.189.181$6800$admin$admin",
+            "vc_Params2": null,
+            "vcName": "东善桥变-45323刀闸#18云台",
+            "equipmentId": "4dee2ec66c2342f9bf48451a36fcf106"
+        },
+        {
+            "vc_Params1": "2|22.46.34.114:37779|admin:admin123|10",
+            "vc_Params3": "1$26.47.189.181$6800$admin$admin",
+            "vc_Params2": null,
+            "vcName": "东善桥变-3221刀闸#75云台",
+            "equipmentId": "4e9437b056d64d5494a263585575cefe"
+        },
+        {
+            "vc_Params1": "2|22.46.34.114:37779|admin:admin123|9",
+            "vc_Params3": "1$26.47.189.181$6800$admin$admin",
+            "vc_Params2": null,
+            "vcName": "东善桥变-#74云台",
+            "equipmentId": "4ec4e10f2c0b4933bd60daf1c9573616"
+        },
+        {
+            "vc_Params1": "2|22.46.34.114:37781|admin:admin123|0",
+            "vc_Params3": "1$26.47.189.181$6800$admin$admin",
+            "vc_Params2": null,
+            "vcName": "东善桥变-5003开关A相#118云台",
+            "equipmentId": "5082e3a9682b42c28b5e53d188027868"
+        },
+        {
+            "vc_Params1": "2|22.46.34.114:37778|admin:admin123|11",
+            "vc_Params3": "1$26.47.189.181$6800$admin$admin",
+            "vc_Params2": null,
+            "vcName": "东善桥变-25831刀闸#44云台",
+            "equipmentId": "51651d2a89d24b358165ece18882a4e3"
+        },
+        {
+            "vc_Params1": "2|22.46.34.114:37778|admin:admin123|16",
+            "vc_Params3": "1$26.47.189.181$6800$admin$admin",
+            "vc_Params2": null,
+            "vcName": "东善桥变-27001刀闸#49云台",
+            "equipmentId": "51b7b955477d47cbb0c11ec333783b8d"
+        },
+        {
+            "vc_Params1": "2|22.46.34.114:37778|admin:admin123|8",
+            "vc_Params3": "1$26.47.189.181$6800$admin$admin",
+            "vc_Params2": null,
+            "vcName": "东善桥变-25026刀闸#41云台",
+            "equipmentId": "56042e2f063348a89b3c0b7e077791e7"
+        },
+        {
+            "vc_Params1": "2|22.46.34.114:37781|admin:admin123|2",
+            "vc_Params3": "1$26.47.189.181$6800$admin$admin",
+            "vc_Params2": null,
+            "vcName": "东善桥变-2号主变500kV侧压变#120",
+            "equipmentId": "592e1701e20e4f1eb02fa6ea29a3a21b"
+        },
+        {
+            "vc_Params1": "2|22.46.34.114:37781|admin:admin123|7",
+            "vc_Params3": "1$26.47.189.181$6800$admin$admin",
+            "vc_Params2": null,
+            "vcName": "东善桥变-50132刀闸C相#125云台",
+            "equipmentId": "595e1e9a09924f27ad2b1817da8684d0"
+        },
+        {
+            "vc_Params1": "2|22.46.34.110:37777|admin:sjdsq1|3",
+            "vc_Params3": "1$26.47.189.181$6800$admin$admin",
+            "vc_Params2": null,
+            "vcName": "东善桥变-场区东北角球机",
+            "equipmentId": "59e86ae085984607b7f97d65c6106db4"
+        },
+        {
+            "vc_Params1": "2|22.46.34.114:37779|admin:admin123|12",
+            "vc_Params3": "1$26.47.189.181$6800$admin$admin",
+            "vc_Params2": null,
+            "vcName": "东善桥变-35206刀闸#77云台",
+            "equipmentId": "5a3ab385d87742a3860d0de55994de65"
+        },
+        {
+            "vc_Params1": "2|22.46.34.114:37780|admin:admin123|27",
+            "vc_Params3": "1$26.47.189.181$6800$admin$admin",
+            "vc_Params2": null,
+            "vcName": "东善桥变-5062开关B相#113云台",
+            "equipmentId": "5a5720447a174f3c87408749db7f2335"
+        },
+        {
+            "vc_Params1": "2|22.46.34.114:37777|admin:admin123|19",
+            "vc_Params3": "1$26.47.189.181$6800$admin$admin",
+            "vc_Params2": null,
+            "vcName": "东善桥变-2M133刀闸#20云台",
+            "equipmentId": "5b81e0bf96f84e4e86caf8d21f277d28"
+        },
+        {
+            "vc_Params1": "1|22.46.34.114:8001|admin:admin123|36",
+            "vc_Params3": "1$26.47.189.181$6800$admin$admin",
+            "vc_Params2": null,
+            "vcName": "1号主变4号红外可见光",
+            "equipmentId": "5bbc673d614c405aa4d3311bce589aac"
+        },
+        {
+            "vc_Params1": "2|22.46.34.114:37780|admin:admin123|28",
+            "vc_Params3": "1$26.47.189.181$6800$admin$admin",
+            "vc_Params2": null,
+            "vcName": "东善桥变-5061流变B相#114云台",
+            "equipmentId": "5bc857a2e8484d1e944f7c76c3e82131"
+        },
+        {
+            "vc_Params1": "2|22.46.34.114:37781|admin:admin123|10",
+            "vc_Params3": "1$26.47.189.181$6800$admin$admin",
+            "vc_Params2": null,
+            "vcName": "东善桥变-主控楼顶南#128云台",
+            "equipmentId": "5be510a1937a420eae08fe74229637cb"
+        },
+        {
+            "vc_Params1": "2|22.46.34.114:37781|admin:admin123|11",
+            "vc_Params3": "1$26.47.189.181$6800$admin$admin",
+            "vc_Params2": null,
+            "vcName": "东善桥变-主控楼顶东#129云台",
+            "equipmentId": "5c780a604a81433f9ebccac26449f625"
+        },
+        {
+            "vc_Params1": "2|22.46.34.114:37779|admin:admin123|14",
+            "vc_Params3": "1$26.47.189.181$6800$admin$admin",
+            "vc_Params2": null,
+            "vcName": "东善桥变-#79云台",
+            "equipmentId": "5f666be10ff34abb9028bc8904a53656"
+        },
+        {
+            "vc_Params1": "2|22.46.34.114:37782|admin:admin123|0",
+            "vc_Params3": "1$26.47.189.181$6800$admin$admin",
+            "vc_Params2": null,
+            "vcName": "东善桥变-220kV保护室西北角球机",
+            "equipmentId": "5fafc667eaf94788a45c494ab63970e2"
+        },
+        {
+            "vc_Params1": "2|22.46.34.114:37779|admin:admin123|31",
+            "vc_Params3": "1$26.47.189.181$6800$admin$admin",
+            "vc_Params2": null,
+            "vcName": "主设备监控",
+            "equipmentId": "61d68557b8144278a22c982047c6c812"
+        },
+        {
+            "vc_Params1": "2|22.46.34.114:37782|admin:admin123|12",
+            "vc_Params3": "1$26.47.189.181$6800$admin$admin",
+            "vc_Params2": null,
+            "vcName": "东善桥变-主控楼南走廊枪机",
+            "equipmentId": "666c6e1c0ab146ba95976c8406d2be3d"
+        },
+        {
+            "vc_Params1": "2|22.46.34.114:37779|admin:admin123|17",
+            "vc_Params3": "1$26.47.189.181$6800$admin$admin",
+            "vc_Params2": null,
+            "vcName": "东善桥变-1号所用变#82云台",
+            "equipmentId": "66a54782f6ed4baaa405e08220840e56"
+        },
+        {
+            "vc_Params1": "2|22.46.34.114:37777|admin:admin123|4",
+            "vc_Params3": "1$26.47.189.181$6800$admin$admin",
+            "vc_Params2": null,
+            "vcName": "东善桥变-2M121刀闸#5云台",
+            "equipmentId": "682e2eb51d8044f4860fd92fb55b1c1a"
+        },
+        {
+            "vc_Params1": "2|22.46.34.114:37780|admin:admin123|13",
+            "vc_Params3": "1$26.47.189.181$6800$admin$admin",
+            "vc_Params2": null,
+            "vcName": "东善桥变-50211刀闸A相#99云台",
+            "equipmentId": "6b8d6af0ceb849319d26c46070819494"
+        },
+        {
+            "vc_Params1": "2|22.46.34.114:37779|admin:admin123|11",
+            "vc_Params3": "1$26.47.189.181$6800$admin$admin",
+            "vc_Params2": null,
+            "vcName": "东善桥变-321流变#76云台",
+            "equipmentId": "6d7be7b456e242bbacecd9b536c30d68"
+        },
+        {
+            "vc_Params1": "2|22.46.34.114:37779|admin:admin123|3",
+            "vc_Params3": "1$26.47.189.181$6800$admin$admin",
+            "vc_Params2": null,
+            "vcName": "东善桥变-331流变#68云台",
+            "equipmentId": "6fa4f8d78ddb43d7829d002fd678de77"
+        },
+        {
+            "vc_Params1": "2|22.46.34.114:37777|admin:admin123|6",
+            "vc_Params3": "1$26.47.189.181$6800$admin$admin",
+            "vc_Params2": null,
+            "vcName": "东善桥变-2M12线路压变#7云台",
+            "equipmentId": "716eb5e32b534a7185cb544eeb4b4b9d"
+        },
+        {
+            "vc_Params1": "2|22.46.34.114:37778|admin:admin123|15",
+            "vc_Params3": "1$26.47.189.181$6800$admin$admin",
+            "vc_Params2": null,
+            "vcName": "东善桥变-25801刀闸#48云台",
+            "equipmentId": "72d88d6d2fcd4935a5f363e8a35ba8ea"
+        },
+        {
+            "vc_Params1": "2|22.46.34.114:37779|admin:admin123|22",
+            "vc_Params3": "1$26.47.189.181$6800$admin$admin",
+            "vc_Params2": null,
+            "vcName": "东善桥变-500kV保护室热成像",
+            "equipmentId": "72f1e1916a2c4d368a315f08ac18ae5a"
+        },
+        {
+            "vc_Params1": "2|22.46.34.114:37778|admin:admin123|26",
+            "vc_Params3": "1$26.47.189.181$6800$admin$admin",
+            "vc_Params2": null,
+            "vcName": "东善桥变-25031刀闸#59云台",
+            "equipmentId": "73e50ca8c4a14c58975dc85a3156ba94"
+        },
+        {
+            "vc_Params1": "2|22.46.34.114:37778|admin:admin123|12",
+            "vc_Params3": "1$26.47.189.181$6800$admin$admin",
+            "vc_Params2": null,
+            "vcName": "东善桥变-25833刀闸#45云台",
+            "equipmentId": "75587d834a50463c81e5d0a9d2dbc351"
+        },
+        {
+            "vc_Params1": "2|22.46.34.114:37782|admin:admin123|1",
+            "vc_Params3": "1$26.47.189.181$6800$admin$admin",
+            "vc_Params2": null,
+            "vcName": "东善桥变-500kV保护室西南角球机",
+            "equipmentId": "76fb64cf75fe4d4684fe42d8cad7f12b"
+        },
+        {
+            "vc_Params1": "2|22.46.34.114:37782|admin:admin123|18",
+            "vc_Params3": "1$26.47.189.181$6800$admin$admin",
+            "vc_Params2": null,
+            "vcName": "东善桥变-500kV电缆层北枪机",
+            "equipmentId": "77aa8c49bcc84fc19a1b8c0e53d9ce48"
+        },
+        {
+            "vc_Params1": "2|22.46.34.114:37779|admin:admin123|22",
+            "vc_Params3": "1$26.47.189.181$6800$admin$admin",
+            "vc_Params2": null,
+            "vcName": "移动机器人热成像",
+            "equipmentId": "782aa3c6e5a04506abea6e2338cd383c"
+        },
+        {
+            "vc_Params1": "2|22.46.34.114:37780|admin:admin123|2",
+            "vc_Params3": "1$26.47.189.181$6800$admin$admin",
+            "vc_Params2": null,
+            "vcName": "东善桥变-5012流变B相#88云台",
+            "equipmentId": "78383efec8b24a5ebc096817ca9fe419"
+        },
+        {
+            "vc_Params1": "2|22.46.34.114:37782|admin:admin123|16",
+            "vc_Params3": "1$26.47.189.181$6800$admin$admin",
+            "vc_Params2": null,
+            "vcName": "东善桥变-500kV电缆层中枪机",
+            "equipmentId": "78f6a961b4ce4d85909cb7f3d19c17ce"
+        },
+        {
+            "vc_Params1": "2|22.46.34.114:37778|admin:admin123|19",
+            "vc_Params3": "1$26.47.189.181$6800$admin$admin",
+            "vc_Params2": null,
+            "vcName": "东善桥变-45401刀闸#52云台",
+            "equipmentId": "7922cfa1eab146aab08fb375fd4c983e"
+        },
+        {
+            "vc_Params1": "2|22.46.34.114:37782|admin:admin123|14",
+            "vc_Params3": "1$26.47.189.181$6800$admin$admin",
+            "vc_Params2": null,
+            "vcName": "东善桥变-主控楼东门厅枪机",
+            "equipmentId": "7b938211df6c44bcbf695ba65e56ddc2"
+        },
+        {
+            "vc_Params1": "2|22.46.34.114:37778|admin:admin123|13",
+            "vc_Params3": "1$26.47.189.181$6800$admin$admin",
+            "vc_Params2": null,
+            "vcName": "东善桥变-2580线路压变#46云台",
+            "equipmentId": "7c440c2be30241b595edb74aacf5f201"
+        },
+        {
+            "vc_Params1": "2|22.46.34.114:37781|admin:admin123|20",
+            "vc_Params3": "1$26.47.189.181$6800$admin$admin",
+            "vc_Params2": null,
+            "vcName": "东善桥变-500kV保护室东北角球机",
+            "equipmentId": "7e189ce6ee024064b554fb7592517e36"
+        },
+        {
+            "vc_Params1": "2|22.46.34.114:37779|admin:admin123|21",
+            "vc_Params3": "1$26.47.189.181$6800$admin$admin",
+            "vc_Params2": null,
+            "vcName": "东善桥变-500kV保护室可见光",
+            "equipmentId": "7e580b775ed74d339259bab3f025b8c2"
+        },
+        {
+            "vc_Params1": "2|22.46.34.114:37777|admin:admin123|15",
+            "vc_Params3": "1$26.47.189.181$6800$admin$admin",
+            "vc_Params2": null,
+            "vcName": "东善桥变-25301刀闸#16云台",
+            "equipmentId": "7efaef0362424eb49e0e36fab21b2316"
+        },
+        {
+            "vc_Params1": "2|22.46.34.114:37777|admin:admin123|9",
+            "vc_Params3": "1$26.47.189.181$6800$admin$admin",
+            "vc_Params2": null,
+            "vcName": "东善桥变-4531线路避雷器#10云台",
+            "equipmentId": "832f61a8af2c45c188caae4b1bdbb6c4"
+        },
+        {
+            "vc_Params1": "2|22.46.34.114:37781|admin:admin123|8",
+            "vc_Params3": "1$26.47.189.181$6800$admin$admin",
+            "vc_Params2": null,
+            "vcName": "东善桥变-5688避雷器A相#126云台",
+            "equipmentId": "83bc8e429288401eae6cdeab9b8aad0c"
+        },
+        {
+            "vc_Params1": "2|22.46.34.114:37777|admin:admin123|26",
+            "vc_Params3": "1$26.47.189.181$6800$admin$admin",
+            "vc_Params2": null,
+            "vcName": "东善桥变-25853刀闸#27云台",
+            "equipmentId": "8431695328644d1c8c4835aa81a07fd7"
+        },
+        {
+            "vc_Params1": "2|22.46.34.114:37778|admin:admin123|0",
+            "vc_Params3": "1$26.47.189.181$6800$admin$admin",
+            "vc_Params2": null,
+            "vcName": "东善桥变-25406刀闸#33云台",
+            "equipmentId": "846dca782da94cc3b2c2fa657d0e029e"
+        },
+        {
+            "vc_Params1": "2|22.46.34.114:37778|admin:admin123|9",
+            "vc_Params3": "1$26.47.189.181$6800$admin$admin",
+            "vc_Params2": null,
+            "vcName": "东善桥变-220kV IV段母线压变#42",
+            "equipmentId": "84c711e2a8de4f96b8d8bba2b8da0d81"
+        },
+        {
+            "vc_Params1": "2|22.46.34.114:37780|admin:admin123|10",
+            "vc_Params3": "1$26.47.189.181$6800$admin$admin",
+            "vc_Params2": null,
+            "vcName": "东善桥变-5022流变B相#96云台",
+            "equipmentId": "86e65581adb0421ab9a4571563696727"
+        },
+        {
+            "vc_Params1": "2|22.46.34.114:37779|admin:admin123|2",
+            "vc_Params3": "1$26.47.189.181$6800$admin$admin",
+            "vc_Params2": null,
+            "vcName": "东善桥变-331开关#67云台",
+            "equipmentId": "86fb645c52194496ba1db4ec806aedbd"
+        },
+        {
+            "vc_Params1": "2|22.46.34.114:37778|admin:admin123|6",
+            "vc_Params3": "1$26.47.189.181$6800$admin$admin",
+            "vc_Params2": null,
+            "vcName": "东善桥变-25841刀闸#39云台",
+            "equipmentId": "87359c26495747d89e52d576ef50fc85"
+        },
+        {
+            "vc_Params1": "2|22.46.34.114:37782|admin:admin123|4",
+            "vc_Params3": "1$26.47.189.181$6800$admin$admin",
+            "vc_Params2": null,
+            "vcName": "东善桥变-220kV保护室西侧外门厅枪机",
+            "equipmentId": "88048dbc68da4c16aa3d9ac4bd117118"
+        },
+        {
+            "vc_Params1": "2|22.46.34.114:37778|admin:admin123|1",
+            "vc_Params3": "1$26.47.189.181$6800$admin$admin",
+            "vc_Params2": null,
+            "vcName": "东善桥变-25401刀闸#34云台",
+            "equipmentId": "88523a5f3b6544b1bea080d844a6a8df"
+        },
+        {
+            "vc_Params1": "2|22.46.34.114:37778|admin:admin123|3",
+            "vc_Params3": "1$26.47.189.181$6800$admin$admin",
+            "vc_Params2": null,
+            "vcName": "东善桥变-25863刀闸#36云台",
+            "equipmentId": "897ab9922f3d4c0b943413a9abdd1c56"
+        },
+        {
+            "vc_Params1": "2|22.46.34.114:37778|admin:admin123|17",
+            "vc_Params3": "1$26.47.189.181$6800$admin$admin",
+            "vc_Params2": null,
+            "vcName": "东善桥变-220kV IV段母线压变#50",
+            "equipmentId": "8b528a25c61a4c029e3e129d745a37cb"
+        },
+        {
+            "vc_Params1": "2|22.46.34.114:37778|admin:admin123|21",
+            "vc_Params3": "1$26.47.189.181$6800$admin$admin",
+            "vc_Params2": null,
+            "vcName": "东善桥变-2M113刀闸#54云台",
+            "equipmentId": "8cb967f39b47448d89d71e4583900d1e"
+        },
+        {
+            "vc_Params1": "1|22.46.34.117:8000|admin:LNINT-nvr2016|34",
+            "vc_Params3": "1$26.47.189.181$6800$admin$admin",
+            "vc_Params2": null,
+            "vcName": "东善桥变-室外机器人红外",
+            "equipmentId": "8cf9b625ae9443b7969d2cfc7e6c64c8"
+        },
+        {
+            "vc_Params1": "2|22.46.34.114:37779|admin:admin123|22",
+            "vc_Params3": "1$26.47.189.181$6800$admin$admin",
+            "vc_Params2": null,
+            "vcName": "东善桥变-1号主变2号红外测温热成像",
+            "equipmentId": "94821caf90be4f42b33c6aa13c1e8c63"
+        },
+        {
+            "vc_Params1": "2|22.46.34.114:37779|admin:admin123|13",
+            "vc_Params3": "1$26.47.189.181$6800$admin$admin",
+            "vc_Params2": null,
+            "vcName": "东善桥变-313流变#78云台",
+            "equipmentId": "94f5f7b0795b4e6ba12e86074931de17"
+        },
+        {
+            "vc_Params1": "1|22.46.34.114:8001|admin:admin123|34",
+            "vc_Params3": "1$26.47.189.181$6800$admin$admin",
+            "vc_Params2": null,
+            "vcName": "1号主变2号红外可见光",
+            "equipmentId": "9520e92bf8e64b099210421f93448a53"
+        },
+        {
+            "vc_Params1": "2|22.46.34.114:37782|admin:admin123|7",
+            "vc_Params3": "1$26.47.189.181$6800$admin$admin",
+            "vc_Params2": null,
+            "vcName": "东善桥变-交流室枪机",
+            "equipmentId": "9600db6021a64c179e494ba6b99d21ed"
+        },
+        {
+            "vc_Params1": "2|22.46.34.114:37782|admin:admin123|9",
+            "vc_Params3": "1$26.47.189.181$6800$admin$admin",
+            "vc_Params2": null,
+            "vcName": "东善桥变-站端主控室枪机",
+            "equipmentId": "960c685e3045430392a79dbf1fe75013"
+        },
+        {
+            "vc_Params1": "2|22.46.34.114:37777|admin:admin123|30",
+            "vc_Params3": "1$26.47.189.181$6800$admin$admin",
+            "vc_Params2": null,
+            "vcName": "25003刀闸#31云台",
+            "equipmentId": "964258ccb7e441b6b75f4aef77969163"
+        },
+        {
+            "vc_Params1": "2|22.46.34.114:37778|admin:admin123|10",
+            "vc_Params3": "1$26.47.189.181$6800$admin$admin",
+            "vc_Params2": null,
+            "vcName": "东善桥变-27001刀闸#43云台",
+            "equipmentId": "96ad52ecfff74000b97eb3a7b31f6192"
+        },
+        {
+            "vc_Params1": "2|22.46.34.114:37780|admin:admin123|29",
+            "vc_Params3": "1$26.47.189.181$6800$admin$admin",
+            "vc_Params2": null,
+            "vcName": "东善桥变-50611刀闸A相#115云台",
+            "equipmentId": "987c29b8015f4b4f8c9f315865d4314e"
+        },
+        {
+            "vc_Params1": "2|22.46.34.114:37778|admin:admin123|2",
+            "vc_Params3": "1$26.47.189.181$6800$admin$admin",
+            "vc_Params2": null,
+            "vcName": "东善桥变-25861刀闸#35云台",
+            "equipmentId": "9981778df4fa4f9e8530eedb10f7ea40"
+        },
+        {
+            "vc_Params1": "2|22.46.34.114:37780|admin:admin123|5",
+            "vc_Params3": "1$26.47.189.181$6800$admin$admin",
+            "vc_Params2": null,
+            "vcName": "东善桥变-50111刀闸A相#91云台",
+            "equipmentId": "99d5670e2c204347a84c5bf3a9c08fdd"
+        },
+        {
+            "vc_Params1": "2|22.46.34.114:37781|admin:admin123|3",
+            "vc_Params3": "1$26.47.189.181$6800$admin$admin",
+            "vc_Params2": null,
+            "vcName": "东善桥变-3号主变500kV侧压变#121",
+            "equipmentId": "9d3c8ebfd0514d6a8e75bdd1e703b1d8"
+        },
+        {
+            "vc_Params1": "2|22.46.34.114:37777|admin:admin123|3",
+            "vc_Params3": "1$26.47.189.181$6800$admin$admin",
+            "vc_Params2": null,
+            "vcName": "东善桥变-22001刀闸#4云台",
+            "equipmentId": "a2242bbeab0d4e298ef92bd6d431a83c"
+        },
+        {
+            "vc_Params1": "2|22.46.34.114:37782|admin:admin123|13",
+            "vc_Params3": "1$26.47.189.181$6800$admin$admin",
+            "vc_Params2": null,
+            "vcName": "东善桥变-3楼主控大厅枪机",
+            "equipmentId": "a255fd0b79384295bf76c4de67202cc5"
+        },
+        {
+            "vc_Params1": "2|22.46.34.109:37777|admin:sjdsq5|1",
+            "vc_Params3": "1$26.47.189.181$6800$admin$admin",
+            "vc_Params2": null,
+            "vcName": "东善桥变-主控楼后门枪机",
+            "equipmentId": "a286f2572e6141fba2c3a3bc37db8782"
+        },
+        {
+            "vc_Params1": "2|22.46.34.114:37780|admin:admin123|1",
+            "vc_Params3": "1$26.47.189.181$6800$admin$admin",
+            "vc_Params2": null,
+            "vcName": "东善桥变-5012开关B相#87云台",
+            "equipmentId": "a498fc733d3b4d8cae4e955ffcdd5149"
+        },
+        {
+            "vc_Params1": "2|22.46.34.114:37780|admin:admin123|19",
+            "vc_Params3": "1$26.47.189.181$6800$admin$admin",
+            "vc_Params2": null,
+            "vcName": "东善桥变-50432刀闸A相#105云台",
+            "equipmentId": "a4dfae27ca764ab38e0192564635d6e9"
+        },
+        {
+            "vc_Params1": "2|22.46.34.114:37777|admin:admin123|30",
+            "vc_Params3": "1$26.47.189.181$6800$admin$admin",
+            "vc_Params2": null,
+            "vcName": "东善桥变-2600开关#32云台",
+            "equipmentId": "a669f8f6f8ab4b0a98a9e361bb1e0c84"
+        },
+        {
+            "vc_Params1": "2|22.46.34.114:37777|admin:admin123|20",
+            "vc_Params3": "1$26.47.189.181$6800$admin$admin",
+            "vc_Params2": null,
+            "vcName": "东善桥变-2M131刀闸#21云台",
+            "equipmentId": "a802112150eb4b1ba51335f36adbc01c"
+        },
+        {
+            "vc_Params1": "2|22.46.34.114:37780|admin:admin123|26",
+            "vc_Params3": "1$26.47.189.181$6800$admin$admin",
+            "vc_Params2": null,
+            "vcName": "东善桥变-5063流变B相#112云台",
+            "equipmentId": "a971e611dfa749a79c52c52ead34692a"
+        },
+        {
+            "vc_Params1": "2|22.46.34.114:37782|admin:admin123|5",
+            "vc_Params3": "1$26.47.189.181$6800$admin$admin",
+            "vc_Params2": null,
+            "vcName": "东善桥变-220kV电缆层东北角枪机",
+            "equipmentId": "aae931fbb26d4833b11eeb48468bb206"
+        },
+        {
+            "vc_Params1": "2|22.46.34.114:37777|admin:admin123|14",
+            "vc_Params3": "1$26.47.189.181$6800$admin$admin",
+            "vc_Params2": null,
+            "vcName": "东善桥变-25306刀闸#15云台",
+            "equipmentId": "ab417a1a8c484809b53551c886318362"
+        },
+        {
+            "vc_Params1": "2|22.46.34.114:37780|admin:admin123|31",
+            "vc_Params3": "1$26.47.189.181$6800$admin$admin",
+            "vc_Params2": null,
+            "vcName": "东善桥变-5003开关B相#117云台",
+            "equipmentId": "ad96daa0db444305862a47d7bb5acc18"
+        },
+        {
+            "vc_Params1": "2|22.46.34.109:37777|admin:sjdsq5|0",
+            "vc_Params3": "1$26.47.189.181$6800$admin$admin",
+            "vc_Params2": null,
+            "vcName": "东善桥变-大门口枪机",
+            "equipmentId": "adf3c6d7a82646da8a5caf41d3bbdb58"
+        },
+        {
+            "vc_Params1": "2|22.46.34.114:37778|admin:admin123|4",
+            "vc_Params3": "1$26.47.189.181$6800$admin$admin",
+            "vc_Params2": null,
+            "vcName": "东善桥变-2584线路压变#37云台",
+            "equipmentId": "afe248bf36bc4c0dbc391fb4c6b04a08"
+        },
+        {
+            "vc_Params1": "2|22.46.34.114:37778|admin:admin123|28",
+            "vc_Params3": "1$26.47.189.181$6800$admin$admin",
+            "vc_Params2": null,
+            "vcName": "东善桥变-备用20013刀闸#61云台",
+            "equipmentId": "afedb055154d46c2aeb16973c5f4907a"
+        },
+        {
+            "vc_Params1": "2|22.46.34.114:37779|admin:admin123|23",
+            "vc_Params3": "1$26.47.189.181$6800$admin$admin",
+            "vc_Params2": null,
+            "vcName": "东善桥变-1号主变4号红外测温热成像",
+            "equipmentId": "b011dd8d2a9b450092e7bd4fa6c2b83d"
+        },
+        {
+            "vc_Params1": "2|22.46.34.114:37780|admin:admin123|23",
+            "vc_Params3": "1$26.47.189.181$6800$admin$admin",
+            "vc_Params2": null,
+            "vcName": "东善桥变-5052流变B相#109云台",
+            "equipmentId": "b08c598da43b4adfb683f7ba416b2fbb"
+        },
+        {
+            "vc_Params1": "2|22.46.34.114:37781|admin:admin123|16",
+            "vc_Params3": "1$26.47.189.181$6800$admin$admin",
+            "vc_Params2": null,
+            "vcName": "东善桥变-1号主变1号红外测温热成像",
+            "equipmentId": "b39d5ce6aad3410aa312a1f88d503a3b"
+        },
+        {
+            "vc_Params1": "1|22.46.34.114:8001|admin:admin123|33",
+            "vc_Params3": "1$26.47.189.181$6800$admin$admin",
+            "vc_Params2": null,
+            "vcName": "1号主变1号红外可见光",
+            "equipmentId": "b4da392842fc42a88640cc712ed54c59"
+        },
+        {
+            "vc_Params1": "2|22.46.34.114:37781|admin:admin123|21",
+            "vc_Params3": "1$26.47.189.181$6800$admin$admin",
+            "vc_Params2": null,
+            "vcName": "东善桥变-蓄电池室枪机",
+            "equipmentId": "b64840be404c471c9da9c2269d149b00"
+        },
+        {
+            "vc_Params1": "2|22.46.34.114:37782|admin:admin123|6",
+            "vc_Params3": "1$26.47.189.181$6800$admin$admin",
+            "vc_Params2": null,
+            "vcName": "东善桥变-直流室枪机",
+            "equipmentId": "ba3330bfdd014e5a9f38b702fc787140"
+        },
+        {
+            "vc_Params1": "2|22.46.34.109:37777|admin:sjdsq5|2",
+            "vc_Params3": "1$26.47.189.181$6800$admin$admin",
+            "vc_Params2": null,
+            "vcName": "东善桥变-门禁枪机",
+            "equipmentId": "bcce89204ecb4317b9e37ed3341748ea"
+        },
+        {
+            "vc_Params1": "2|22.46.34.114:37778|admin:admin123|20",
+            "vc_Params3": "1$26.47.189.181$6800$admin$admin",
+            "vc_Params2": null,
+            "vcName": "东善桥变-45403刀闸#53云台",
+            "equipmentId": "bd510583d2f84bfeb1c15062754775d3"
+        },
+        {
+            "vc_Params1": "2|22.46.34.114:37777|admin:admin123|21",
+            "vc_Params3": "1$26.47.189.181$6800$admin$admin",
+            "vc_Params2": null,
+            "vcName": "东善桥变-25011刀闸#22云台",
+            "equipmentId": "bdb7e58f374b485bb0a6f79927dd9330"
+        },
+        {
+            "vc_Params1": "1|22.46.34.114:8001|admin:admin123|35",
+            "vc_Params3": "1$26.47.189.181$6800$admin$admin",
+            "vc_Params2": null,
+            "vcName": "1号主变3号红外可见光",
+            "equipmentId": "bf6e089f5400415fa9e196653fd34b9c"
+        },
+        {
+            "vc_Params1": "2|22.46.34.114:37777|admin:admin123|31",
+            "vc_Params3": "1$26.47.189.181$6800$admin$admin",
+            "vc_Params2": null,
+            "vcName": "东善桥变-2600开关#32云台",
+            "equipmentId": "c022beba21be4bef9d887bea9c65a362"
+        },
+        {
+            "vc_Params1": "2|22.46.34.114:37779|admin:admin123|16",
+            "vc_Params3": "1$26.47.189.181$6800$admin$admin",
+            "vc_Params2": null,
+            "vcName": "东善桥变-35106刀闸#81云台",
+            "equipmentId": "c06781bae07e499798a546c5d63b0df3"
+        },
+        {
+            "vc_Params1": "2|22.46.34.114:37778|admin:admin123|24",
+            "vc_Params3": "1$26.47.189.181$6800$admin$admin",
+            "vc_Params2": null,
+            "vcName": "东善桥变-4Y216刀闸#57云台",
+            "equipmentId": "c11704526323454aaca0a8b1132fb467"
+        },
+        {
+            "vc_Params1": "2|22.46.34.114:37780|admin:admin123|9",
+            "vc_Params3": "1$26.47.189.181$6800$admin$admin",
+            "vc_Params2": null,
+            "vcName": "东善桥变-5022开关B相#95云台",
+            "equipmentId": "c2720f87e6ab46909834f8b8b2e1b547"
+        },
+        {
+            "vc_Params1": "2|22.46.34.114:37777|admin:admin123|5",
+            "vc_Params3": "1$26.47.189.181$6800$admin$admin",
+            "vc_Params2": null,
+            "vcName": "东善桥变-2M123刀闸#6云台",
+            "equipmentId": "c573798314ae448f880b6409896d1eb7"
+        },
+        {
+            "vc_Params1": "2|22.46.34.114:37781|admin:admin123|5",
+            "vc_Params3": "1$26.47.189.181$6800$admin$admin",
+            "vc_Params2": null,
+            "vcName": "东善桥变-5262压变#123云台",
+            "equipmentId": "c6cbdafba80c466ab55cf83a3170ba3e"
+        },
+        {
+            "vc_Params1": "1|22.46.34.114:8001|admin:admin123|37",
+            "vc_Params3": "1$26.47.189.181$6800$admin$admin",
+            "vc_Params2": null,
+            "vcName": "1号主变1号红外热成像",
+            "equipmentId": "c84591d3fa6e4a9da80921d1bbaaf0e7"
+        },
+        {
+            "vc_Params1": "1|22.46.34.117:8000|admin:LNINT-nvr2016|33",
+            "vc_Params3": "1$26.47.189.181$6800$admin$admin",
+            "vc_Params2": null,
+            "vcName": "东善桥变-室外机器人可见光",
+            "equipmentId": "cca78a8cc8cf48ab861c6f31947fa179"
+        },
+        {
+            "vc_Params1": "2|22.46.34.114:37779|admin:admin123|19",
+            "vc_Params3": "1$26.47.189.181$6800$admin$admin",
+            "vc_Params2": null,
+            "vcName": "东善桥变-314流变#84云台",
+            "equipmentId": "cf52b43f1f5446f3923701496d2c28df"
+        },
+        {
+            "vc_Params1": "2|22.46.34.114:37781|admin:admin123|14",
+            "vc_Params3": "1$26.47.189.181$6800$admin$admin",
+            "vc_Params2": null,
+            "vcName": "东善桥变-1号主变3号红外测温可见光",
+            "equipmentId": "d01fa467868d43b2b43d0b241391b539"
+        },
+        {
+            "vc_Params1": "2|22.46.34.114:37781|admin:admin123|4",
+            "vc_Params3": "1$26.47.189.181$6800$admin$admin",
+            "vc_Params2": null,
+            "vcName": "东善桥变-5261压变#122云台",
+            "equipmentId": "d121871c679342baaa31ae4e7258a387"
+        },
+        {
+            "vc_Params1": "2|22.46.34.114:37779|admin:admin123|20",
+            "vc_Params3": "1$26.47.189.181$6800$admin$admin",
+            "vc_Params2": null,
+            "vcName": "东善桥变-3510流变#85云台",
+            "equipmentId": "d1e5bd2adaef4651bf3dcf83bd7549fa"
+        },
+        {
+            "vc_Params1": "2|22.46.34.114:37777|admin:admin123|25",
+            "vc_Params3": "1$26.47.189.181$6800$admin$admin",
+            "vc_Params2": null,
+            "vcName": "东善桥变-25851刀闸#26云台",
+            "equipmentId": "d25580cb7ffb4301885016113c7c8ce8"
+        },
+        {
+            "vc_Params1": "2|22.46.34.114:37782|admin:admin123|15",
+            "vc_Params3": "1$26.47.189.181$6800$admin$admin",
+            "vc_Params2": null,
+            "vcName": "东善桥变-站端安全工具室枪机",
+            "equipmentId": "d2a9e54090df46d087fb84fc8d20d619"
+        },
+        {
+            "vc_Params1": "2|22.46.34.114:37777|admin:admin123|8",
+            "vc_Params3": "1$26.47.189.181$6800$admin$admin",
+            "vc_Params2": null,
+            "vcName": "东善桥变-25891刀闸#9云台",
+            "equipmentId": "d3839bbc18004775bb2adc64efbc93ed"
+        },
+        {
+            "vc_Params1": "2|22.46.34.114:37777|admin:admin123|0",
+            "vc_Params3": "1$26.47.189.181$6800$admin$admin",
+            "vc_Params2": null,
+            "vcName": "东善桥变-4Y203刀闸#1云台",
+            "equipmentId": "d45c2ac985504c88a3c351a808a468af"
+        },
+        {
+            "vc_Params1": "2|22.46.34.114:37777|admin:admin123|11",
+            "vc_Params3": "1$26.47.189.181$6800$admin$admin",
+            "vc_Params2": null,
+            "vcName": "东善桥变-45311刀闸#12云台",
+            "equipmentId": "d8a7d274838444a09a41e34bb58800aa"
+        },
+        {
+            "vc_Params1": "2|22.46.34.114:37780|admin:admin123|17",
+            "vc_Params3": "1$26.47.189.181$6800$admin$admin",
+            "vc_Params2": null,
+            "vcName": "东善桥变-5041流变B相#103云台",
+            "equipmentId": "dc57b033be064187aa931f9f347c40ea"
+        },
+        {
+            "vc_Params1": "2|22.46.34.114:37779|admin:admin123|1",
+            "vc_Params3": "1$26.47.189.181$6800$admin$admin",
+            "vc_Params2": null,
+            "vcName": "东善桥变-332开关#66云台",
+            "equipmentId": "de084bc291604270afd6997cdc050fb6"
+        },
+        {
+            "vc_Params1": "2|22.46.34.114:37779|admin:admin123|0",
+            "vc_Params3": "1$26.47.189.181$6800$admin$admin",
+            "vc_Params2": null,
+            "vcName": "东善桥变-332流变#65云台",
+            "equipmentId": "e0510cbe11ce4a9c94916ca6f9fc798b"
+        },
+        {
+            "vc_Params1": "2|22.46.34.114:37779|admin:admin123|21",
+            "vc_Params3": "1$26.47.189.181$6800$admin$admin",
+            "vc_Params2": null,
+            "vcName": "东善桥变-50616刀闸C相#111云台",
+            "equipmentId": "e0d2ba4225444ca7a03b4b221a26f02a"
+        },
+        {
+            "vc_Params1": "2|22.46.34.114:37781|admin:admin123|15",
+            "vc_Params3": "1$26.47.189.181$6800$admin$admin",
+            "vc_Params2": null,
+            "vcName": "东善桥变-1号主变4号红外测温可见光",
+            "equipmentId": "e20ad31793c542f08f8bc83097959f95"
+        },
+        {
+            "vc_Params1": "2|22.46.34.114:37780|admin:admin123|6",
+            "vc_Params3": "1$26.47.189.181$6800$admin$admin",
+            "vc_Params2": null,
+            "vcName": "东善桥变-50232刀闸C相#92云台",
+            "equipmentId": "e2c97e49268c4cba81c2f4b51357c3d6"
+        },
+        {
+            "vc_Params1": "2|22.46.34.114:37780|admin:admin123|3",
+            "vc_Params3": "1$26.47.189.181$6800$admin$admin",
+            "vc_Params2": null,
+            "vcName": "东善桥变-5013流变B相#89云台",
+            "equipmentId": "e4491939fb33436b94f50d21a08544fe"
+        },
+        {
+            "vc_Params1": "2|22.46.34.114:37781|admin:admin123|9",
+            "vc_Params3": "1$26.47.189.181$6800$admin$admin",
+            "vc_Params2": null,
+            "vcName": "东善桥变-5687避雷器A相#127云台",
+            "equipmentId": "e5509a08d86a47dcb5ae2f89e7e94646"
+        },
+        {
+            "vc_Params1": "2|22.46.34.114:37777|admin:admin123|13",
+            "vc_Params3": "1$26.47.189.181$6800$admin$admin",
+            "vc_Params2": null,
+            "vcName": "东善桥变-25206刀闸#14云台",
+            "equipmentId": "e6efa55667f54dfa89736b54ec60274c"
+        },
+        {
+            "vc_Params1": "2|22.46.34.114:37780|admin:admin123|7",
+            "vc_Params3": "1$26.47.189.181$6800$admin$admin",
+            "vc_Params2": null,
+            "vcName": "东善桥变-50216刀闸B相#93云台",
+            "equipmentId": "e7d8db8108684b43982525c76eb128cc"
+        },
+        {
+            "vc_Params1": "2|22.46.34.114:37778|admin:admin123|14",
+            "vc_Params3": "1$26.47.189.181$6800$admin$admin",
+            "vc_Params2": null,
+            "vcName": "东善桥变-25803刀闸#47云台",
+            "equipmentId": "e86ac5ef7dde40f2844620d63362bb71"
+        },
+        {
+            "vc_Params1": "2|22.46.34.114:37780|admin:admin123|15",
+            "vc_Params3": "1$26.47.189.181$6800$admin$admin",
+            "vc_Params2": null,
+            "vcName": "东善桥变-50321刀闸B相#101云台",
+            "equipmentId": "e91c8942fea04abeacdc1329e96f6a0b"
+        },
+        {
+            "vc_Params1": "2|22.46.34.114:37778|admin:admin123|18",
+            "vc_Params3": "1$26.47.189.181$6800$admin$admin",
+            "vc_Params2": null,
+            "vcName": "东善桥变-25501刀闸#51云台",
+            "equipmentId": "ea3b99f6a2d142f294e4e52d4b847eaa"
+        },
+        {
+            "vc_Params1": "2|22.46.34.114:37779|admin:admin123|6",
+            "vc_Params3": "1$26.47.189.181$6800$admin$admin",
+            "vc_Params2": null,
+            "vcName": "东善桥变-#71云台",
+            "equipmentId": "ea7424e9ff794385b18a47d17e7e2f2f"
+        },
+        {
+            "vc_Params1": "2|22.46.34.114:37780|admin:admin123|20",
+            "vc_Params3": "1$26.47.189.181$6800$admin$admin",
+            "vc_Params2": null,
+            "vcName": "东善桥变-5041断路器A相#106云台",
+            "equipmentId": "eb0b3573264943a38bf9aa35e645dc85"
+        },
+        {
+            "vc_Params1": "2|22.46.34.114:37777|admin:admin123|16",
+            "vc_Params3": "1$26.47.189.181$6800$admin$admin",
+            "vc_Params2": null,
+            "vcName": "东善桥变-45321刀闸#17云台",
+            "equipmentId": "eb8cd5b4f86d4d65816510e11ff791a2"
+        },
+        {
+            "vc_Params1": "1|22.46.34.114:8001|admin:admin123|39",
+            "vc_Params3": "1$26.47.189.181$6800$admin$admin",
+            "vc_Params2": null,
+            "vcName": "1号主变3号红外热成像",
+            "equipmentId": "ebb65a82d8b541ada252079ad6529021"
+        },
+        {
+            "vc_Params1": "2|22.46.34.114:37777|admin:admin123|24",
+            "vc_Params3": "1$26.47.189.181$6800$admin$admin",
+            "vc_Params2": null,
+            "vcName": "东善桥变-25001刀闸#25云台",
+            "equipmentId": "ec963e6c4dce45e5bae8ecfc7aefa876"
+        },
+        {
+            "vc_Params1": "2|22.46.34.114:37781|admin:admin123|12",
+            "vc_Params3": "1$26.47.189.181$6800$admin$admin",
+            "vc_Params2": null,
+            "vcName": "东善桥变-1号主变1号红外测温可见光",
+            "equipmentId": "ede03ca3671c49b384b2b07a93c43ef8"
+        },
+        {
+            "vc_Params1": "2|22.46.34.114:37781|admin:admin123|18",
+            "vc_Params3": "1$26.47.189.181$6800$admin$admin",
+            "vc_Params2": null,
+            "vcName": "东善桥变-1号主变3号红外测温热成像",
+            "equipmentId": "ef5000c9bfc74a69908a2fafa3401a61"
+        },
+        {
+            "vc_Params1": "2|22.46.34.114:37781|admin:admin123|13",
+            "vc_Params3": "1$26.47.189.181$6800$admin$admin",
+            "vc_Params2": null,
+            "vcName": "东善桥变-1号主变2号红外测温可见光",
+            "equipmentId": "f176026d50fc4d5c990658c6821365b0"
+        },
+        {
+            "vc_Params1": "2|22.46.34.114:37780|admin:admin123|24",
+            "vc_Params3": "1$26.47.189.181$6800$admin$admin",
+            "vc_Params2": null,
+            "vcName": "东善桥变-5053流变B相#110云台",
+            "equipmentId": "f1ba75334db4469aac5bb807a65c96e0"
+        },
+        {
+            "vc_Params1": "2|22.46.34.114:37779|admin:admin123|4",
+            "vc_Params3": "1$26.47.189.181$6800$admin$admin",
+            "vc_Params2": null,
+            "vcName": "东善桥变-324开关#69云台",
+            "equipmentId": "f39f2caeb96043378ef9a0a6b01b7f3e"
+        },
+        {
+            "vc_Params1": "2|22.46.34.114:37778|admin:admin123|31",
+            "vc_Params3": "1$26.47.189.181$6800$admin$admin",
+            "vc_Params2": null,
+            "vcName": "东善桥变-25036刀闸#64云台",
+            "equipmentId": "f3bd7746c15249078e7a173348f08ffe"
+        },
+        {
+            "vc_Params1": "2|22.46.34.114:37780|admin:admin123|11",
+            "vc_Params3": "1$26.47.189.181$6800$admin$admin",
+            "vc_Params2": null,
+            "vcName": "东善桥变-5023流变B相#97云台",
+            "equipmentId": "f75b4c7691414086932e3acc15fbd55e"
+        },
+        {
+            "vc_Params1": "2|22.46.34.114:37780|admin:admin123|16",
+            "vc_Params3": "1$26.47.189.181$6800$admin$admin",
+            "vc_Params2": null,
+            "vcName": "东善桥变-50332刀闸A相#102云台",
+            "equipmentId": "f9bf5ad7558648ca8c10a37e87ab5f8b"
+        },
+        {
+            "vc_Params1": "2|22.46.34.114:37778|admin:admin123|29",
+            "vc_Params3": "1$26.47.189.181$6800$admin$admin",
+            "vc_Params2": null,
+            "vcName": "东善桥变-备用2001线路压变#62云",
+            "equipmentId": "fbe1285f195a4e3399a36460b9ae15c9"
+        },
+        {
+            "vc_Params1": "2|22.46.34.114:37778|admin:admin123|27",
+            "vc_Params3": "1$26.47.189.181$6800$admin$admin",
+            "vc_Params2": null,
+            "vcName": "东善桥变-备用20011刀闸#60云台",
+            "equipmentId": "fc79bf1531034922b2df76567a0211e9"
+        },
+        {
+            "vc_Params1": "2|22.46.34.114:37779|admin:admin123|8",
+            "vc_Params3": "1$26.47.189.181$6800$admin$admin",
+            "vc_Params2": null,
+            "vcName": "东善桥变-0号所用变#73云台",
+            "equipmentId": "fe344b06336f4112865960cf2545ba39"
+        },
+        {
+            "vc_Params1": "2|22.46.34.114:37780|admin:admin123|22",
+            "vc_Params3": "1$26.47.189.181$6800$admin$admin",
+            "vc_Params2": null,
+            "vcName": "东善桥变-50521刀闸B相#108云台",
+            "equipmentId": "fe907e8608e645c386d8fdd6dff33437"
+        },
+        {
+            "vc_Params1": "2|22.46.34.114:37780|admin:admin123|30",
+            "vc_Params3": "1$26.47.189.181$6800$admin$admin",
+            "vc_Params2": null,
+            "vcName": "东善桥变-5003开关C相#116云台",
+            "equipmentId": "ff1c7442ab15491483cda050a3a91002"
+        }
+    ]
+}

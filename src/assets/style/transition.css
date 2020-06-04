@@ -1,0 +1,33 @@
+/* 默认上下 */
+.down-enter-active,
+.down-leave-active {
+	transition: opacity 0.5s;
+	transition: all 0.5s ease;
+}
+.down-enter,
+.down-leave-to {
+	opacity: 0;
+	transform: translateY(70px);
+}
+/* 左右切换 */
+.right-enter,
+.right-leave-to {
+	opacity: 0;
+	transform: translate(60px);
+}
+.right-enter-active,
+.right-leave-active {
+	/* transition: opacity .5s; */
+	transition: all 0.5s ease;
+}
+/* 淡入淡出 */
+.gradual-enter,
+.gradual-leave-to {
+	opacity: 0;
+	/* transform: translate(100px); */
+}
+.gradual-enter-active,
+.gradual-leave-active {
+	transition: opacity 0.5s;
+	transition: all 0.5s ease;
+}

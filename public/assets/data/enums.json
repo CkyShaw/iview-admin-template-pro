@@ -1,0 +1,138 @@
+{
+	"moduleType": [
+		{
+			"id": "0",
+			"value": "平台"
+		},
+		{
+			"id": "1",
+			"value": "外部URL"
+		},
+		{
+			"id": "2",
+			"value": "APP"
+		}
+	],
+	"moduleAreaType": [
+		{
+			"id": "0",
+			"value": "默认"
+		}
+	],
+	"orgType": [
+		{
+			"id": "0",
+			"value": "市公司"
+		},
+		{
+			"id": "1",
+			"value": "运维班组"
+		}
+	],
+	"subsystemType": [
+		{
+			"id": "0",
+			"value": "默认"
+		}
+	],
+	"devTypeList": [
+		{
+			"id": "0",
+			"value": "监测"
+		},
+		{
+			"id": "1",
+			"value": "台账"
+		}
+	],
+	"nodeTypeList": [
+		{
+			"id": "1",
+			"value": "遥测"
+		},
+		{
+			"id": "2",
+			"value": "遥信"
+		},
+		{
+			"id": "3",
+			"value": "遥控"
+		},
+		{
+			"id": "4",
+			"value": "遥调"
+		}
+	],
+	"businessTreeNodeList": [
+		{
+			"id": "1",
+			"value": "区域"
+		},
+		{
+			"id": "2",
+			"value": "设备"
+		},
+		{
+			"id": "3",
+			"value": "相位"
+		}
+	],
+	"operatorList": [
+		{
+			"value": "0",
+			"label": "无"
+		},
+		{
+			"value": "1",
+			"label": "+"
+		},
+		{
+			"value": "2",
+			"label": "-"
+		},
+		{
+			"value": "3",
+			"label": "*"
+		},
+		{
+			"value": "4",
+			"label": "/"
+		}
+	],
+	"phasePositionList": [
+		{
+			"value": "A相",
+			"label": "A相"
+		},
+		{
+			"value": "B相",
+			"label": "B相"
+		},
+		{
+			"value": "C相",
+			"label": "C相"
+		},
+		{
+			"value": "ABC三相",
+			"label": "ABC三相"
+		}
+	],
+	"alarmLevel": [
+		{
+			"value": "0",
+			"label": "正常"
+		},
+		{
+			"value": "1",
+			"label": "危急"
+		},
+		{
+			"value": "2",
+			"label": "严重"
+		},
+		{
+			"value": "3",
+			"label": "一般"
+		}
+	]
+}
