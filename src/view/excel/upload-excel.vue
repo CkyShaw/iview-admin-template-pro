@@ -64,10 +64,7 @@ export default {
 			this.$Message.info('上传的文件已删除！')
 		},
 		handleBeforeUpload(file) {
-			const fileExt = file.name
-				.split('.')
-				.pop()
-				.toLocaleLowerCase()
+			const fileExt = file.name.split('.').pop().toLocaleLowerCase()
 			if (fileExt === 'xlsx' || fileExt === 'xls') {
 				this.readFile(file)
 				this.file = file

@@ -1,5 +1,5 @@
 <template>
-	<Card shadow style="height: 100%;width: 100%;overflow:hidden">
+	<Card shadow style="height: 100%; width: 100%; overflow: hidden;">
 		<div class="department-outer">
 			<div class="tip-box">
 				<b style="margin-right: 20px;">powered by <a target="blank" href="https://github.com/lison16">Lison</a></b>

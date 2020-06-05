@@ -5,7 +5,7 @@
 				<Card>
 					<div class="i18n-card-box">
 						<DatePicker type="date" placeholder="Select date"></DatePicker>
-						<TimePicker type="timerange" placement="bottom-end" placeholder="Select time" style="display: block;margin-top: 10px;"></TimePicker>
+						<TimePicker type="timerange" placement="bottom-end" placeholder="Select time" style="display: block; margin-top: 10px;"></TimePicker>
 						<Button type="primary" @click="modalVisible = true" style="margin-top: 10px;">{{ $t('buttonText') }}</Button>
 						<Modal v-model="modalVisible" :title="$t('modalTitle')">
 							<p>{{ content }}</p>

@@ -33,7 +33,7 @@
 				<Card>
 					<Row>
 						<i-col span="8">
-							<Input style="width: 60%" v-model="inputValue">
+							<Input style="width: 60%;" v-model="inputValue">
 								<Button slot="append" v-clipboard="clipOptions">copy</Button>
 							</Input>
 						</i-col>

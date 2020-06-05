@@ -25,7 +25,7 @@ module.exports = {
 		// host: 'localhost', // 主机名，也可以127.0.0.0 || 做真机测试时候 0.0.0.0
 		port: 9700, // 端口号，默认8080
 		https: false, // 协议
-		hotOnly: false, // 没啥效果，热模块，webpack已经做好了
+		hotOnly: false // 没啥效果，热模块，webpack已经做好了
 		// 代理相关
 		/*proxy: {
 	    	'/api': 'http://localhost:3000'
@@ -39,20 +39,15 @@ module.exports = {
 	lintOnSave: false,
 
 	// 处理依赖包的兼容性
-	transpileDependencies: [
-		'webpack-dev-server/client',
-		'echarts',
-		'tree-table-vue',
-		'debug'
-	],
+	transpileDependencies: ['webpack-dev-server/client', 'echarts', 'tree-table-vue', 'debug'],
 
 	// css相关
 	css: {
 		loaderOptions: {
 			less: {
-				lessOptions:{
-              		javascriptEnabled: true,
-            	}
+				lessOptions: {
+					javascriptEnabled: true
+				}
 			},
 			stylus: {
 				// 导入全局 styl
@@ -77,7 +72,7 @@ module.exports = {
 			.set('_c', resolve('src/components'))
 			.set('@c', resolve('src/components'))
 			.set('@v', resolve('src/views'))
-	},
+	}
 
 	// GZ压缩
 	/*configureWebpack: config => {

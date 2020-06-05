@@ -4,8 +4,8 @@
 
 // 管道组合
 export function pipeline(...fns) {
-	return function(x) {
-		return fns.reduce(function(arg, fn) {
+	return function (x) {
+		return fns.reduce(function (arg, fn) {
 			return fn(arg)
 		}, x)
 	}

@@ -22,7 +22,7 @@ setRem()
 let tid = null
 window.addEventListener(
 	'resize',
-	function() {
+	function () {
 		clearTimeout(tid) //防止执行两次
 		tid = setTimeout(setRem, 300)
 	},

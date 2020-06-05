@@ -1,7 +1,7 @@
 <template>
 	<Card>
 		<h3 style="padding: 10px 0;">drag-drawer组件是对iview的drawer组件的封装，在支持drawer所有api的基础上，支持可拖动和footer底部插槽</h3>
-		<div style="padding: 10px 0">
+		<div style="padding: 10px 0;">
 			<b>
 				方向
 				<i-switch v-model="placement">
@@ -13,10 +13,10 @@
 				是否可拖动
 				<i-switch v-model="draggable"></i-switch>
 			</b>
-			<Button @click="showContainerBDrawer = !showContainerBDrawer" type="primary" style="margin-left: 10px"
+			<Button @click="showContainerBDrawer = !showContainerBDrawer" type="primary" style="margin-left: 10px;"
 				>{{ showContainerBDrawer ? '关闭' : '打开' }}容器内抽屉</Button
 			>
-			<Button @click="showWindowBDrawer = true" type="primary" style="margin-left: 10px">打开全屏抽屉</Button>
+			<Button @click="showWindowBDrawer = true" type="primary" style="margin-left: 10px;">打开全屏抽屉</Button>
 		</div>
 		<div class="drag-drawer-inner-box">
 			<drag-drawer

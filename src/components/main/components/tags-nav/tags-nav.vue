@@ -1,7 +1,7 @@
 <template>
 	<div class="tags-nav">
 		<div class="close-con">
-			<Dropdown transfer @on-click="handleTagsOption" style="margin-top:7px;">
+			<Dropdown transfer @on-click="handleTagsOption" style="margin-top: 7px;">
 				<Button size="small" type="text">
 					<Icon :size="18" type="ios-close-circle-outline" />
 				</Button>
@@ -98,7 +98,7 @@ export default {
 			} else {
 				if (outerWidth < bodyWidth) {
 					if (this.tagBodyLeft < -(bodyWidth - outerWidth)) {
-						this.tagBodyLeft = this.tagBodyLeft
+						// this.tagBodyLeft = this.tagBodyLeft
 					} else {
 						this.tagBodyLeft = Math.max(this.tagBodyLeft + offset, outerWidth - bodyWidth)
 					}

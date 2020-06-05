@@ -13,16 +13,20 @@ module.exports = {
 		parser: 'babel-eslint'
 	},
 	rules: {
+		'no-unused-vars': ['off', { vars: 'all', args: 'after-used', ignoreRestSiblings: false }],
+		'no-useless-escape': 'off',
 		// allow async-await
-		'generator-star-spacing': 'off',
 		// allow debugger during development
 		'no-console': process.env.NODE_ENV === 'production' ? 'error' : 'off',
 		'no-debugger': process.env.NODE_ENV === 'production' ? 'error' : 'off',
-		// 'vue/no-parsing-error': [2, {
-		// 	'x-invalid-end-tag': false
-		// }],
+		'vue/no-parsing-error': [
+			2,
+			{
+				'x-invalid-end-tag': false
+			}
+		],
 		'no-undef': 'off',
-		'camelcase': 'off',
+		camelcase: 'off',
 		// 'prettier/prettier': 'error',
 		eqeqeq: 0,
 		indent: [0, 4], // 缩进风格
@@ -201,10 +205,7 @@ module.exports = {
 	},
 	overrides: [
 		{
-			files: [
-				'**/__tests__/*.{j,t}s?(x)',
-				'**/tests/unit/**/*.spec.{j,t}s?(x)'
-			],
+			files: ['**/__tests__/*.{j,t}s?(x)', '**/tests/unit/**/*.spec.{j,t}s?(x)'],
 			env: {
 				mocha: true
 			}

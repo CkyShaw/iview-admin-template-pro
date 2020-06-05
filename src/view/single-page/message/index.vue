@@ -4,14 +4,14 @@
 			<div class="message-page-con message-category-con">
 				<Menu width="auto" active-name="unread" @on-select="handleSelect">
 					<MenuItem name="unread">
-						<span class="category-title">未读消息</span><Badge style="margin-left: 10px" :count="messageUnreadCount"></Badge>
+						<span class="category-title">未读消息</span><Badge style="margin-left: 10px;" :count="messageUnreadCount"></Badge>
 					</MenuItem>
 					<MenuItem name="readed">
 						<span class="category-title">已读消息</span
-						><Badge style="margin-left: 10px" class-name="gray-dadge" :count="messageReadedCount"></Badge>
+						><Badge style="margin-left: 10px;" class-name="gray-dadge" :count="messageReadedCount"></Badge>
 					</MenuItem>
 					<MenuItem name="trash">
-						<span class="category-title">回收站</span><Badge style="margin-left: 10px" class-name="gray-dadge" :count="messageTrashCount"></Badge>
+						<span class="category-title">回收站</span><Badge style="margin-left: 10px;" class-name="gray-dadge" :count="messageTrashCount"></Badge>
 					</MenuItem>
 				</Menu>
 			</div>
@@ -23,7 +23,7 @@
 							<p class="msg-title">{{ item.title }}</p>
 							<Badge status="default" :text="item.create_time" />
 							<Button
-								style="float: right;margin-right: 20px;"
+								style="float: right; margin-right: 20px;"
 								:style="{ display: item.loading ? 'inline-block !important' : '' }"
 								:loading="item.loading"
 								size="small"

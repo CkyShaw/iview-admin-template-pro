@@ -1,8 +1,8 @@
 export default codemirror => {
-	;(function(mod) {
+	;(function (mod) {
 		mod(codemirror)
-	})(function(CodeMirror) {
-		CodeMirror.defineOption('placeholder', '', function(cm, val, old) {
+	})(function (CodeMirror) {
+		CodeMirror.defineOption('placeholder', '', function (cm, val, old) {
 			var prev = old && old !== CodeMirror.Init
 			if (val && !prev) {
 				cm.on('blur', onBlur)

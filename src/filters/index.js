@@ -5,7 +5,7 @@ import getDescLabel from './get-desc-label.js'
 import formatPrice from './format-price.js'
 import formatDate from './format-date.js'
 
-const install = function(Vue) {
+const install = function (Vue) {
 	Vue.filter('getDescLabel', getDescLabel)
 	Vue.filter('formatPrice', formatPrice)
 	Vue.filter('formatDate', formatDate)
