@@ -18,9 +18,9 @@ module.exports = {
 		// allow debugger during development
 		'no-console': process.env.NODE_ENV === 'production' ? 'error' : 'off',
 		'no-debugger': process.env.NODE_ENV === 'production' ? 'error' : 'off',
-		'vue/no-parsing-error': [2, {
-			'x-invalid-end-tag': false
-		}],
+		// 'vue/no-parsing-error': [2, {
+		// 	'x-invalid-end-tag': false
+		// }],
 		'no-undef': 'off',
 		'camelcase': 'off',
 		// 'prettier/prettier': 'error',
@@ -30,8 +30,8 @@ module.exports = {
 		'no-unreachable': 0,
 		'generator-star-spacing': 'off', // allow async-await
 		'linebreak-style': [0, 'windows'], // 换行风格
-		'space-before-function-paren': [0, 'always'], // 函数定义时括号前面要不要有空格
-		'vue/no-parsing-error': [, { 'x-invalid-end-tag': false }],
+		'space-before-function-paren': ['off', 'never'], // 函数定义时括号前面要不要有空格
+		// 'vue/no-parsing-error': [, { 'x-invalid-end-tag': false }],
 		'brace-style': [0, 'stroustrup', { allowSingleLine: true }] // 大括号风格
 
 		// "no-alert": 0,//禁止使用alert confirm prompt
