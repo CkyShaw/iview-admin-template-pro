@@ -1,34 +1,36 @@
-/* 滚动条样式 */
+/* 滚动条样式
 ::-webkit-scrollbar,
 ::-webkit-scrollbar:hover,
 ::-webkit-scrollbar-track {
-	background-color: rgb(9, 16, 46);
-	width: 10px;
-	height: 0px;
+    width: 8PX;
+    height: 8PX;
+    background-color: #052156;
+    border-radius: 5px;
 }
 
 ::-webkit-scrollbar-corner,
 ::-webkit-scrollbar-thumb {
-	background: rgba(36, 64, 88, 0.48);
+    background: #1d61b3;
+    border-radius: 5px;
 }
+
 ::-webkit-scrollbar-thumb:hover {
-	background: rgba(36, 64, 88, 0.9);
+    background: rgba(0, 146, 255, 0.8);
+    cursor: pointer;
 }
 
 ::-webkit-scrollbar-button:horizontal:single-button:start {
-	background: #033856;
+    background: rgba(32, 92, 146, 0.77);
 }
 
 ::-webkit-scrollbar-button:horizontal:single-button:end {
-	background: #033856;
+    background: rgba(32, 92, 146, 0.77);
 }
 
 ::-webkit-scrollbar-button:vertical:single-button:start {
-	background: #033856;
-	height: 0px;
+    background: rgba(32, 92, 146, 0.77);
 }
 
 ::-webkit-scrollbar-button:vertical:single-button:end {
-	background: #033856;
-	height: 0px;
-}
+    background: rgba(32, 92, 146, 0.77);
+} */

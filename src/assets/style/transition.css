@@ -1,8 +1,8 @@
 /* 默认上下 */
 .down-enter-active,
 .down-leave-active {
-	transition: opacity 0.5s;
-	transition: all 0.5s ease;
+	transition: opacity 0.6s;
+	transition: all 0.6s cubic-bezier(0.42, 0, 0.11, 1.51);
 }
 .down-enter,
 .down-leave-to {
@@ -13,13 +13,51 @@
 .right-enter,
 .right-leave-to {
 	opacity: 0;
-	transform: translate(60px);
+	transform: translate(70px);
 }
 .right-enter-active,
 .right-leave-active {
 	/* transition: opacity .5s; */
-	transition: all 0.5s ease;
+	/*transition: all 0.5s ease;*/
+	transition: all 0.7s cubic-bezier(0.42, 0, 0.11, 1.51);
 }
+
+.right-panel-enter,
+.right-panel-leave-to {
+	opacity: 0;
+	transform: translate(80px);
+}
+.right-panel-enter-active,
+.right-panel-leave-active {
+	/* transition: opacity .5s; */
+	/*transition: all 0.5s ease;*/
+	transition: all 0.6s cubic-bezier(0.42, 0, 0.11, 1.51);
+}
+
+.sub-panel-enter,
+.sub-panel-leave-to {
+	opacity: 0;
+	transform: translate(40px);
+}
+.sub-panel-enter-active,
+.sub-panel-leave-active {
+	/* transition: opacity .5s; */
+	/*transition: all 0.5s ease;*/
+	transition: all 0.4s cubic-bezier(0.42, 0, 0.11, 1.51);
+}
+
+/* 左右切换 */
+.left-enter,
+.left-leave-to {
+	opacity: 0;
+	transform: translate(-60px);
+}
+.left-enter-active,
+.left-leave-active {
+	/* transition: opacity .5s; */
+	transition: all 0.3s ease;
+}
+
 /* 淡入淡出 */
 .gradual-enter,
 .gradual-leave-to {
@@ -30,4 +68,18 @@
 .gradual-leave-active {
 	transition: opacity 0.5s;
 	transition: all 0.5s ease;
+}
+
+/* 排序过渡 */
+.list-move {
+	transition: transform 0.8s ease !important;
+}
+.list-enter,
+.list-leave-to {
+	opacity: 0;
+	transform: translate(-40px);
+	transition: all 0.6s ease !important;
+}
+.list-leave-active {
+	position: absolute;
 }
