@@ -70,6 +70,7 @@ module.exports = {
 	pluginOptions: {
 		webpackBundleAnalyzer: {
 			openAnalyzer: false,
+			analyzerHost: '0.0.0.0',
 			analyzerPort: 9701
 		}
 	},
