@@ -3,7 +3,7 @@
 </template>
 
 <script>
-import echarts from 'echarts'
+const echarts = require('echarts')
 import tdTheme from './theme.json'
 import { on, off } from '@/libs/tools'
 echarts.registerTheme('tdTheme', tdTheme)

@@ -25,7 +25,7 @@ class HttpRequest {
 		const config = {
 			baseURL: this.baseUrl,
 			headers: {
-				//
+				'Content-Type': 'application/json'
 			}
 		}
 		return config
@@ -33,7 +33,7 @@ class HttpRequest {
 	destroy(url) {
 		delete this.queue[url]
 		if (!Object.keys(this.queue).length) {
-			// Spin.hide()
+			Spin.hide()
 		}
 	}
 	interceptors(instance, url) {
@@ -54,12 +54,12 @@ class HttpRequest {
 		// 响应拦截
 		instance.interceptors.response.use(
 			res => {
-				this.destroy(url)
+				// this.destroy(url)
 				const { data, status } = res
 				return { data, status }
 			},
 			error => {
-				this.destroy(url)
+				// this.destroy(url)
 				let errorInfo = error.response
 				if (!errorInfo) {
 					const {
