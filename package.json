@@ -1,15 +1,12 @@
 {
 	"name": "iview-admin-template-pro",
-	"version": "0.2.0",
-	"private": false,
-	"license": "MIT",
+	"version": "1.0.0",
 	"scripts": {
 		"dev": "vue-cli-service serve",
 		"build": "vue-cli-service build",
 		"lint": "vue-cli-service lint",
 		"test:unit": "vue-cli-service test:unit",
 		"test:e2e": "vue-cli-service test:e2e",
-		"format": "prettier --write \"src/**/*.js\" \"src/**/*.vue\" \"src/**/*.json\"",
 		"prettier": "prettier --write \"src/**/*.{js,jsx,ts,json,vue,css,less,scss,md,html}\""
 	},
 	"dependencies": {
