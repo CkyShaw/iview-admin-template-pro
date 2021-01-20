@@ -33,9 +33,9 @@ import 'v-org-tree/dist/v-org-tree.css'
 Vue.use(VOrgTree)
 
 // iView 按需
-import { Layout, Sider, MenuItem, Submenu, Tooltip, Dropdown, DropdownMenu, DropdownItem, Breadcrumb, BreadcrumbItem, Badge, Tag, Avatar, Row, Col, Card, Icon, Button, Menu, Tree, Drawer, Switch, Upload, Modal, Spin, Select, Option, OptionGroup, Message, Input, Table, Poptip } from 'view-design';
+import { Layout, Sider, MenuItem, Submenu, Tooltip, Dropdown, DropdownMenu, DropdownItem, Breadcrumb, BreadcrumbItem, Badge, Tag, Avatar, Row, Col, Card, Icon, Button, Menu, Tree, Drawer, Switch, Upload, Modal, Spin, Select, Option, OptionGroup, Message, Input, Table, Poptip, Header } from 'view-design';
 import '@/assets/style/iview/index.less'
-const iView = [Layout, Sider, MenuItem, Submenu, Tooltip, Dropdown, DropdownMenu, DropdownItem, Breadcrumb, BreadcrumbItem, Badge, Tag, Avatar, Row, Col, Card, Icon, Button, Menu, Tree, Drawer, Switch, Upload, Modal, Spin, Select, Option, OptionGroup, Message, Input, Table, Poptip]
+const iView = [Layout, Sider, MenuItem, Submenu, Tooltip, Dropdown, DropdownMenu, DropdownItem, Breadcrumb, BreadcrumbItem, Badge, Tag, Avatar, Row, Col, Card, Icon, Button, Menu, Tree, Drawer, Switch, Upload, Modal, Spin, Select, Option, OptionGroup, Message, Input, Table, Poptip, Header]
 const iMap = {
     iButton: 'Button',
     iCircle: 'Circle',
