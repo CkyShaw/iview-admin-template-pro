@@ -19,7 +19,7 @@ module.exports = {
 	assetsDir: 'pack',
 
 	// 如果你不需要使用eslint，把lintOnSave设为false即可
-	lintOnSave: 'default',
+	lintOnSave: false,
 
 	// 开发服务配置
 	devServer: {
