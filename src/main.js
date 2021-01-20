@@ -19,11 +19,11 @@ import '@/assets/icons/iconfont.css'
 /* eslint-disable */
 if (process.env.NODE_ENV !== 'production') require('@/mock')
 
-import iView from 'view-design'
+/*import iView from 'view-design'
 import '@/assets/style/iview/index.less'
 Vue.use(iView, {
 	i18n: (key, value) => i18n.t(key, value)
-})
+})*/
 
 import TreeTable from 'tree-table-vue'
 Vue.use(TreeTable)
@@ -31,6 +31,52 @@ Vue.use(TreeTable)
 import VOrgTree from 'v-org-tree'
 import 'v-org-tree/dist/v-org-tree.css'
 Vue.use(VOrgTree)
+
+// iView 按需
+import { Layout, Sider, MenuItem, Submenu, Tooltip, Dropdown, DropdownMenu, DropdownItem, Breadcrumb, BreadcrumbItem, Badge, Tag, Avatar, Row, Col, Card, Icon, Button, Menu, Tree, Drawer, Switch, Upload, Modal, Spin, Select, Option, OptionGroup, Message, Input, Table, Poptip } from 'view-design';
+import '@/assets/style/iview/index.less'
+const iView = [Layout, Sider, MenuItem, Submenu, Tooltip, Dropdown, DropdownMenu, DropdownItem, Breadcrumb, BreadcrumbItem, Badge, Tag, Avatar, Row, Col, Card, Icon, Button, Menu, Tree, Drawer, Switch, Upload, Modal, Spin, Select, Option, OptionGroup, Message, Input, Table, Poptip]
+const iMap = {
+    iButton: 'Button',
+    iCircle: 'Circle',
+    iCol: 'Col',
+    iContent: 'Content',
+    iForm: 'Form',
+    iFooter: 'Footer',
+    iHeader: 'Header',
+    iInput: 'Input',
+    iMenu: 'Menu',
+    iOption: 'Option',
+    iProgress: 'Progress',
+    iSelect: 'Select',
+    iSwitch: 'Switch',
+    iTable: 'Table',
+    iTime: 'Time'
+};
+Vue.prototype.$Message = Message
+const skipTrans = ['iCol', 'iSwitch']
+iView.forEach(component => {
+	if (iMap[component.name] && !skipTrans.includes(component.name)) {
+		Vue.component(iMap[component.name], component)
+	} else {
+		Vue.component(component.name, component)
+	}
+})
+
+/*// ElementUI 按需
+import { Tree as elTree, Table, TableColumn, Loading, Scrollbar } from 'element-ui'
+const ElementUI = [Tree, Table, TableColumn, Loading, Scrollbar]
+
+// Antd 按需
+import { Input, Popconfirm } from 'ant-design-vue'
+const Antd = [Input, Popconfirm]
+
+// 捆绑注册
+function* register(name) {
+	Vue.use(name)
+}
+;[...ElementUI, ...Antd].forEach(component => register(component).next())*/
+
 /**
  * @description 注册admin内置插件
  */

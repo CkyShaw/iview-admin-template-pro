@@ -8,22 +8,22 @@ module.exports = {
 		]
 	],
 	plugins: [
-		/*[
+		[
 			'import',
 			{
 				libraryName: 'ant-design-vue',
 				libraryDirectory: 'es',
 				style: true
 			}
-		],*/
-		/*[
+		],
+		[
 			'component',
 			{
 				libraryName: 'element-ui',
 				styleLibraryName: 'theme-chalk'
 			}
-		],*/
-		/*[
+		],
+		[
 			'import',
 			{
 				libraryName: 'view-design',
@@ -31,6 +31,6 @@ module.exports = {
 				style: false
 			},
 			'view-design'
-		]*/
+		]
 	]
 }
