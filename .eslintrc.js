@@ -3,31 +3,23 @@ module.exports = {
 	env: {
 		node: true
 	},
-	extends: [
-		'plugin:vue/essential',
-		'eslint:recommended',
-		'@vue/prettier'
-		// '@vue/standard'
-	],
+	extends: ['plugin:vue/essential', 'eslint:recommended', '@vue/prettier'],
 	parserOptions: {
 		parser: 'babel-eslint'
 	},
 	rules: {
-		'no-unused-vars': ['off', { vars: 'all', args: 'after-used', ignoreRestSiblings: false }],
-		'no-useless-escape': 'off',
-		// allow async-await
-		// allow debugger during development
-		'no-console': process.env.NODE_ENV === 'production' ? 'error' : 'off',
 		'no-debugger': process.env.NODE_ENV === 'production' ? 'error' : 'off',
+		'no-unused-vars': ['off', { vars: 'all', args: 'after-used', ignoreRestSiblings: false }],
+		'vue/no-unused-vars': 'off',
+		'no-useless-escape': 'off',
+		'no-undef': 'off',
 		'vue/no-parsing-error': [
 			2,
 			{
 				'x-invalid-end-tag': false
 			}
 		],
-		'no-undef': 'off',
 		camelcase: 'off',
-		// 'prettier/prettier': 'error',
 		eqeqeq: 0,
 		indent: [0, 4], // 缩进风格
 		'no-tabs': 'off',
@@ -35,7 +27,6 @@ module.exports = {
 		'generator-star-spacing': 'off', // allow async-await
 		'linebreak-style': [0, 'windows'], // 换行风格
 		'space-before-function-paren': ['off', 'never'], // 函数定义时括号前面要不要有空格
-		// 'vue/no-parsing-error': [, { 'x-invalid-end-tag': false }],
 		'brace-style': [0, 'stroustrup', { allowSingleLine: true }] // 大括号风格
 
 		// "no-alert": 0,//禁止使用alert confirm prompt
@@ -125,7 +116,6 @@ module.exports = {
 		// "no-unexpected-multiline": 2,//避免多行表达式
 		// "no-underscore-dangle": 1,//标识符不能以_开头或结尾
 		// "no-unneeded-ternary": 2,//禁止不必要的嵌套 var isYes = answer === 1 ? true : false;
-		// "no-unreachable": 2,//不能有无法执行的代码
 		// "no-unused-expressions": 2,//禁止无用的表达式
 		// "no-use-before-define": 2,//未定义前不能使用
 		// "no-useless-call": 2,//禁止不必要的call和apply
@@ -138,7 +128,6 @@ module.exports = {
 		// "arrow-spacing": 0,//=>的前/后括号
 		// "accessor-pairs": 0,//在对象中使用getter/setter
 		// "block-scoped-var": 0,//块语句中使用var
-		// "brace-style": [1, "1tbs"],//大括号风格
 		// "callback-return": 1,//避免多次调用回调什么的
 		// "comma-dangle": [2, "never"],//对象字面量项尾不能有逗号
 		// "comma-spacing": 0,//逗号前后的空格
@@ -153,7 +142,6 @@ module.exports = {
 		// "dot-location": 0,//对象访问符的位置，换行的时候在行首还是行尾
 		// "dot-notation": [0, { "allowKeywords": true }],//避免不必要的方括号
 		// "eol-last": 0,//文件以单一的换行符结束
-		// "eqeqeq": 2,//必须使用全等
 		// "func-names": 0,//函数表达式必须有名字
 		// "func-style": [0, "declaration"],//函数风格，规定只能使用函数声明/函数表达式
 		// "guard-for-in": 0,//for in循环要用if语句过滤
@@ -202,13 +190,5 @@ module.exports = {
 		// "wrap-iife": [2, "inside"],//立即执行函数表达式的小括号风格
 		// "wrap-regex": 0,//正则表达式字面量用小括号包起来
 		// "yoda": [2, "never"]//禁止尤达条件
-	},
-	overrides: [
-		{
-			files: ['**/__tests__/*.{j,t}s?(x)', '**/tests/unit/**/*.spec.{j,t}s?(x)'],
-			env: {
-				mocha: true
-			}
-		}
-	]
+	}
 }
