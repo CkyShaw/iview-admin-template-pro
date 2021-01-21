@@ -83,7 +83,7 @@ export default {
 }
 </script>
 
-<style lang="less">
+<style lang="stylus">
 .count-style {
 	font-size: 50px;
 }
