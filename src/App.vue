@@ -5,7 +5,6 @@
 		</a-config-provider>
 	</div>
 </template>
-
 <script>
 import { mapState } from 'vuex'
 import zh_CN from 'ant-design-vue/lib/locale-provider/zh_CN'
@@ -46,20 +45,19 @@ export default {
 	}
 }
 </script>
-
-<style lang="less">
-.size {
+<style lang="stylus">
+.full {
 	width: 100%;
 	height: 100%;
 }
 html,
 body {
-	.size;
+	@extend .full;
 	overflow: hidden;
 	margin: 0;
 	padding: 0;
 }
 #app {
-	.size;
+	@extend .full;
 }
 </style>
