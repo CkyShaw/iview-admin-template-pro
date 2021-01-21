@@ -1,7 +1,7 @@
 <template>
 	<div class="tags-nav">
 		<div class="close-con">
-			<Dropdown transfer @on-click="handleTagsOption" style="margin-top: 7px;">
+			<Dropdown transfer @on-click="handleTagsOption" style="margin-top: 7px">
 				<Button size="small" type="text">
 					<Icon :size="18" type="ios-close-circle-outline" />
 				</Button>
@@ -114,7 +114,9 @@ export default {
 				this.$emit('on-close', res, 'all')
 			} else if (type.includes('others')) {
 				// 关闭除当前页和home页的其他页
-				let res = this.list.filter(item => routeEqual(this.currentRouteObj, item) || item.name === this.$_config.homeName)
+				let res = this.list.filter(
+					item => routeEqual(this.currentRouteObj, item) || item.name === this.$_config.homeName
+				)
 				this.$emit('on-close', res, 'others', this.currentRouteObj)
 				setTimeout(() => {
 					this.getTagElementByRoute(this.currentRouteObj)
@@ -153,7 +155,10 @@ export default {
 			} else if (tag.offsetLeft < -this.tagBodyLeft) {
 				// 标签在可视区域左侧
 				this.tagBodyLeft = -tag.offsetLeft + this.outerPadding
-			} else if (tag.offsetLeft > -this.tagBodyLeft && tag.offsetLeft + tag.offsetWidth < -this.tagBodyLeft + outerWidth) {
+			} else if (
+				tag.offsetLeft > -this.tagBodyLeft &&
+				tag.offsetLeft + tag.offsetWidth < -this.tagBodyLeft + outerWidth
+			) {
 				// 标签在可视区域
 				this.tagBodyLeft = Math.min(0, outerWidth - tag.offsetWidth - tag.offsetLeft - this.outerPadding)
 			} else {

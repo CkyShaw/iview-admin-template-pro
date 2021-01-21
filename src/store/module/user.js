@@ -1,4 +1,14 @@
-import { login, logout, getUserInfo, getMessage, getContentByMsgId, hasRead, removeReaded, restoreTrash, getUnreadCount } from '@/api/user'
+import {
+	login,
+	logout,
+	getUserInfo,
+	getMessage,
+	getContentByMsgId,
+	hasRead,
+	removeReaded,
+	restoreTrash,
+	getUnreadCount
+} from '@/api/user'
 import { setToken, getToken } from '@/libs/util'
 
 export default {

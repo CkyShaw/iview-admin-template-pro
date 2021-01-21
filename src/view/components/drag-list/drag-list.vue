@@ -3,7 +3,12 @@
 		<Card>
 			<div class="drag-box-card">
 				<!-- 切记设置list1和list2属性时，一定要添加.sync修饰符 -->
-				<drag-list :list1.sync="list1" :list2.sync="list2" :dropConClass="dropConClass" @on-change="handleChange">
+				<drag-list
+					:list1.sync="list1"
+					:list2.sync="list2"
+					:dropConClass="dropConClass"
+					@on-change="handleChange"
+				>
 					<h3 slot="left-title">待办事项</h3>
 					<Card class="drag-item" slot="left" slot-scope="left">{{ left.itemLeft.name }}</Card>
 					<h3 slot="right-title">完成事项</h3>

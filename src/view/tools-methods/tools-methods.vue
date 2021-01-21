@@ -10,7 +10,7 @@
 				</i-col>
 			</Row>
 		</Card>
-		<Card shadow style="margin-top: 10px;">
+		<Card shadow style="margin-top: 10px">
 			<Row>
 				<i-col span="4">
 					<Button @click="createTagQuery">添加一个标签</Button>
@@ -20,7 +20,7 @@
 				</i-col>
 			</Row>
 		</Card>
-		<Card shadow style="margin-top: 10px;">
+		<Card shadow style="margin-top: 10px">
 			<Row>
 				<i-col span="4">
 					<Button @click="handleCloseTag">关闭工具方法页</Button>

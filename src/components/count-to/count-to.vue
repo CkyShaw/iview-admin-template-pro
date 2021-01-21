@@ -139,7 +139,8 @@ export default {
 			if (val < Math.pow(10, this.unit[0][0])) res.endVal = val
 			else {
 				for (let i = 1; i < len; i++) {
-					if (val >= Math.pow(10, this.unit[i - 1][0]) && val < Math.pow(10, this.unit[i][0])) res = this.getHandleVal(val, i)
+					if (val >= Math.pow(10, this.unit[i - 1][0]) && val < Math.pow(10, this.unit[i][0]))
+						res = this.getHandleVal(val, i)
 				}
 			}
 			if (val > Math.pow(10, this.unit[len - 1][0])) res = this.getHandleVal(val, len)

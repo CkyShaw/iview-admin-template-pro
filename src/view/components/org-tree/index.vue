@@ -1,15 +1,24 @@
 <template>
-	<Card shadow style="height: 100%; width: 100%; overflow: hidden;">
+	<Card shadow style="height: 100%; width: 100%; overflow: hidden">
 		<div class="department-outer">
 			<div class="tip-box">
-				<b style="margin-right: 20px;">powered by <a target="blank" href="https://github.com/lison16">Lison</a></b>
-				<a target="blank" href="https://github.com/lison16/v-org-tree" style="margin-right: 10px;">v-org-tree文档</a>
+				<b style="margin-right: 20px"
+					>powered by <a target="blank" href="https://github.com/lison16">Lison</a></b
+				>
+				<a target="blank" href="https://github.com/lison16/v-org-tree" style="margin-right: 10px"
+					>v-org-tree文档</a
+				>
 			</div>
 			<div class="zoom-box">
 				<zoom-controller v-model="zoom" :min="20" :max="200"></zoom-controller>
 			</div>
 			<div class="view-box">
-				<org-view v-if="data" :data="data" :zoom-handled="zoomHandled" @on-menu-click="handleMenuClick"></org-view>
+				<org-view
+					v-if="data"
+					:data="data"
+					:zoom-handled="zoomHandled"
+					@on-menu-click="handleMenuClick"
+				></org-view>
 			</div>
 		</div>
 	</Card>

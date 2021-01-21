@@ -6,7 +6,9 @@
 				<Icon :size="18" type="md-arrow-dropdown" />
 			</a>
 			<DropdownMenu slot="list">
-				<DropdownItem v-for="(value, key) in localList" :name="key" :key="`lang-${key}`">{{ value }}</DropdownItem>
+				<DropdownItem v-for="(value, key) in localList" :name="key" :key="`lang-${key}`">{{
+					value
+				}}</DropdownItem>
 			</DropdownMenu>
 		</Dropdown>
 	</div>

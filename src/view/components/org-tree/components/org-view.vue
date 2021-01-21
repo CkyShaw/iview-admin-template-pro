@@ -1,7 +1,19 @@
 <template>
-	<div ref="dragWrapper" class="org-tree-drag-wrapper" @mousedown="mousedownView" @contextmenu="handleDocumentContextmenu">
+	<div
+		ref="dragWrapper"
+		class="org-tree-drag-wrapper"
+		@mousedown="mousedownView"
+		@contextmenu="handleDocumentContextmenu"
+	>
 		<div class="org-tree-wrapper" :style="orgTreeStyle">
-			<v-org-tree v-if="data" :data="data" :node-render="nodeRender" :expand-all="true" @on-node-click="handleNodeClick" collapsable></v-org-tree>
+			<v-org-tree
+				v-if="data"
+				:data="data"
+				:node-render="nodeRender"
+				:expand-all="true"
+				@on-node-click="handleNodeClick"
+				collapsable
+			></v-org-tree>
 		</div>
 	</div>
 </template>

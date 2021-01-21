@@ -1,7 +1,9 @@
 <template>
 	<div ref="outerWrapper" :class="wrapperClasses">
 		<div v-if="isHorizontal" :class="`${prefix}-horizontal`">
-			<div :style="{ right: `${anotherOffset}%` }" :class="[`${prefix}-pane`, 'left-pane']"><slot name="left" /></div>
+			<div :style="{ right: `${anotherOffset}%` }" :class="[`${prefix}-pane`, 'left-pane']">
+				<slot name="left" />
+			</div>
 			<div :class="`${prefix}-trigger-con`" :style="{ left: `${offset}%` }" @mousedown="handleMousedown">
 				<slot name="trigger">
 					<trigger mode="vertical" />
@@ -10,7 +12,9 @@
 			<div :style="{ left: `${offset}%` }" :class="[`${prefix}-pane`, 'right-pane']"><slot name="right" /></div>
 		</div>
 		<div v-else :class="`${prefix}-vertical`">
-			<div :style="{ bottom: `${anotherOffset}%` }" :class="[`${prefix}-pane`, 'top-pane']"><slot name="top" /></div>
+			<div :style="{ bottom: `${anotherOffset}%` }" :class="[`${prefix}-pane`, 'top-pane']">
+				<slot name="top" />
+			</div>
 			<div :class="`${prefix}-trigger-con`" :style="{ top: `${offset}%` }" @mousedown="handleMousedown">
 				<slot name="trigger">
 					<trigger mode="horizontal" />
@@ -113,10 +117,13 @@ export default {
 			let pageOffset = this.isHorizontal ? e.pageX : e.pageY
 			let offset = pageOffset - this.initOffset
 			let outerWidth = this.$refs.outerWrapper[this.offsetSize]
-			let value = this.valueIsPx ? `${parseFloat(this.oldOffset) + offset}px` : this.px2percent(outerWidth * this.oldOffset + offset, outerWidth)
+			let value = this.valueIsPx
+				? `${parseFloat(this.oldOffset) + offset}px`
+				: this.px2percent(outerWidth * this.oldOffset + offset, outerWidth)
 			let anotherValue = this.getAnotherOffset(value)
 			if (parseFloat(value) <= parseFloat(this.computedMin)) value = this.getMax(value, this.computedMin)
-			if (parseFloat(anotherValue) <= parseFloat(this.computedMax)) value = this.getAnotherOffset(this.getMax(anotherValue, this.computedMax))
+			if (parseFloat(anotherValue) <= parseFloat(this.computedMax))
+				value = this.getAnotherOffset(this.getMax(anotherValue, this.computedMax))
 			e.atMin = this.value === this.computedMin
 			e.atMax = this.valueIsPx
 				? this.getAnotherOffset(this.value) === this.computedMax
@@ -141,12 +148,18 @@ export default {
 	},
 	watch: {
 		value() {
-			this.offset = ((this.valueIsPx ? this.px2percent(this.value, this.$refs.outerWrapper[this.offsetSize]) : this.value) * 10000) / 100
+			this.offset =
+				((this.valueIsPx ? this.px2percent(this.value, this.$refs.outerWrapper[this.offsetSize]) : this.value) *
+					10000) /
+				100
 		}
 	},
 	mounted() {
 		this.$nextTick(() => {
-			this.offset = ((this.valueIsPx ? this.px2percent(this.value, this.$refs.outerWrapper[this.offsetSize]) : this.value) * 10000) / 100
+			this.offset =
+				((this.valueIsPx ? this.px2percent(this.value, this.$refs.outerWrapper[this.offsetSize]) : this.value) *
+					10000) /
+				100
 		})
 	}
 }

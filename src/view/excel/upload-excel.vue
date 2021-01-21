@@ -6,14 +6,21 @@
 		<Card title="导入EXCEL">
 			<Row>
 				<Upload action="" :before-upload="handleBeforeUpload" accept=".xls, .xlsx">
-					<Button icon="ios-cloud-upload-outline" :loading="uploadLoading" @click="handleUploadFile">上传文件</Button>
+					<Button icon="ios-cloud-upload-outline" :loading="uploadLoading" @click="handleUploadFile"
+						>上传文件</Button
+					>
 				</Upload>
 			</Row>
 			<Row>
 				<div class="ivu-upload-list-file" v-if="file !== null">
 					<Icon type="ios-stats"></Icon>
 					{{ file.name }}
-					<Icon v-show="showRemoveFile" type="ios-close" class="ivu-upload-list-remove" @click.native="handleRemove()"></Icon>
+					<Icon
+						v-show="showRemoveFile"
+						type="ios-close"
+						class="ivu-upload-list-remove"
+						@click.native="handleRemove()"
+					></Icon>
 				</div>
 			</Row>
 			<Row>

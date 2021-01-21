@@ -13,13 +13,23 @@
 		>
 			<template v-for="item in menuList">
 				<template v-if="item.children && item.children.length === 1">
-					<side-menu-item v-if="showChildren(item)" :key="`menu-${item.name}`" :parent-item="item"></side-menu-item>
+					<side-menu-item
+						v-if="showChildren(item)"
+						:key="`menu-${item.name}`"
+						:parent-item="item"
+					></side-menu-item>
 					<menu-item v-else :name="getNameOrHref(item, true)" :key="`menu-${item.children[0].name}`"
-						><common-icon :type="item.children[0].icon || ''" /><span>{{ showTitle(item.children[0]) }}</span></menu-item
+						><common-icon :type="item.children[0].icon || ''" /><span>{{
+							showTitle(item.children[0])
+						}}</span></menu-item
 					>
 				</template>
 				<template v-else>
-					<side-menu-item v-if="showChildren(item)" :key="`menu-${item.name}`" :parent-item="item"></side-menu-item>
+					<side-menu-item
+						v-if="showChildren(item)"
+						:key="`menu-${item.name}`"
+						:parent-item="item"
+					></side-menu-item>
 					<menu-item v-else :name="getNameOrHref(item)" :key="`menu-${item.name}`"
 						><common-icon :type="item.icon || ''" /><span>{{ showTitle(item) }}</span></menu-item
 					>
@@ -45,8 +55,14 @@
 					placement="right"
 					:key="`drop-menu-${item.name}`"
 				>
-					<a @click="handleSelect(getNameOrHref(item, true))" class="drop-menu-a" :style="{ textAlign: 'center' }"
-						><common-icon :size="rootIconSize" :color="textColor" :type="item.icon || (item.children && item.children[0].icon)"
+					<a
+						@click="handleSelect(getNameOrHref(item, true))"
+						class="drop-menu-a"
+						:style="{ textAlign: 'center' }"
+						><common-icon
+							:size="rootIconSize"
+							:color="textColor"
+							:type="item.icon || (item.children && item.children[0].icon)"
 					/></a>
 				</Tooltip>
 			</template>

@@ -2,7 +2,7 @@
 	<div>
 		<tree-select
 			v-model="treeSelected"
-			style="width: 300px;"
+			style="width: 300px"
 			check-strictly
 			:expand-all="true"
 			:load-data="loadData"

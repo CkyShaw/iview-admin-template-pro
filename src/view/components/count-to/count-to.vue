@@ -63,7 +63,7 @@
 				</Card>
 			</i-col>
 		</Row>
-		<Row :gutter="14" style="margin-top: 14px;">
+		<Row :gutter="14" style="margin-top: 14px">
 			<i-col span="8">
 				<Card>
 					<p slot="title">
@@ -88,13 +88,31 @@
 					</p>
 					<Row type="flex" justify="center" align="middle" class="countto-page-row">
 						<div class="count-to-con">
-							<count-to :simplify="true" :unit="unit" :end="253" count-class="count-text" unit-class="unit-class">
+							<count-to
+								:simplify="true"
+								:unit="unit"
+								:end="253"
+								count-class="count-text"
+								unit-class="unit-class"
+							>
 								<span class="slot-text" slot="left">原始数据：253&nbsp;=>&nbsp;</span>
 							</count-to>
-							<count-to :simplify="true" :unit="unit" :end="2534" count-class="count-text" unit-class="unit-class">
+							<count-to
+								:simplify="true"
+								:unit="unit"
+								:end="2534"
+								count-class="count-text"
+								unit-class="unit-class"
+							>
 								<span class="slot-text" slot="left">原始数据：2534&nbsp;=>&nbsp;</span>
 							</count-to>
-							<count-to :simplify="true" :unit="unit" :end="257678" count-class="count-text" unit-class="unit-class">
+							<count-to
+								:simplify="true"
+								:unit="unit"
+								:end="257678"
+								count-class="count-text"
+								unit-class="unit-class"
+							>
 								<span class="slot-text" slot="left">原始数据：257678&nbsp;=>&nbsp;</span>
 							</count-to>
 						</div>
@@ -118,7 +136,7 @@
 				</Card>
 			</i-col>
 		</Row>
-		<Row :gutter="14" style="margin-top: 14px;">
+		<Row :gutter="14" style="margin-top: 14px">
 			<i-col>
 				<Card>
 					<p slot="title">
@@ -127,8 +145,17 @@
 					</p>
 					<Row type="flex" justify="center" align="middle" class="countto-page-row">
 						<div class="count-to-con">
-							<count-to :delay="500" :simplify="true" :unit="unit2" :end="integratedEndVal" count-class="count-text" unit-class="unit-class">
-								<span class="slot-text" slot="left">原始数据:&nbsp;{{ integratedEndVal }}&nbsp;=>&nbsp;</span>
+							<count-to
+								:delay="500"
+								:simplify="true"
+								:unit="unit2"
+								:end="integratedEndVal"
+								count-class="count-text"
+								unit-class="unit-class"
+							>
+								<span class="slot-text" slot="left"
+									>原始数据:&nbsp;{{ integratedEndVal }}&nbsp;=>&nbsp;</span
+								>
 								<span class="slot-text" slot="right">&nbsp;times</span>
 							</count-to>
 						</div>

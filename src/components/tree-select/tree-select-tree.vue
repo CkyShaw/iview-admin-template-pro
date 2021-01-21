@@ -1,5 +1,12 @@
 <template>
-	<Tree :data="data" @on-check-change="handleCheckSelect" v-on="parent.$listeners" v-bind="parent.$attrs" :load-data="loadDataCallback" show-checkbox></Tree>
+	<Tree
+		:data="data"
+		@on-check-change="handleCheckSelect"
+		v-on="parent.$listeners"
+		v-bind="parent.$attrs"
+		:load-data="loadDataCallback"
+		show-checkbox
+	></Tree>
 </template>
 
 <script>

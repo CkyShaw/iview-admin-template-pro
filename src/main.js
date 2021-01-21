@@ -33,26 +33,97 @@ import 'v-org-tree/dist/v-org-tree.css'
 Vue.use(VOrgTree)
 
 // iView 基础组件
-import { Layout, Sider, MenuItem, Submenu, Tooltip, Dropdown, DropdownMenu, DropdownItem, Breadcrumb, BreadcrumbItem, Badge, Tag, Avatar, Row, Col, Card, Icon, Button, Menu, Tree as iTree, Drawer, Switch, Upload, Modal, Spin, Select, Option, OptionGroup, Message, Input, Table as iTable, Poptip, Header, DatePicker, TimePicker } from 'view-design';
+import {
+	Layout,
+	Sider,
+	MenuItem,
+	Submenu,
+	Tooltip,
+	Dropdown,
+	DropdownMenu,
+	DropdownItem,
+	Breadcrumb,
+	BreadcrumbItem,
+	Badge,
+	Tag,
+	Avatar,
+	Row,
+	Col,
+	Card,
+	Icon,
+	Button,
+	Menu,
+	Tree as iTree,
+	Drawer,
+	Switch,
+	Upload,
+	Modal,
+	Spin,
+	Select,
+	Option,
+	OptionGroup,
+	Message,
+	Input,
+	Table as iTable,
+	Poptip,
+	Header,
+	DatePicker,
+	TimePicker
+} from 'view-design'
 import '@/assets/style/iview/index.less'
-const iView = { Layout, Sider, MenuItem, Submenu, Tooltip, Dropdown, DropdownMenu, DropdownItem, Breadcrumb, BreadcrumbItem, Badge, Tag, Avatar, Row, Col, Card, Icon, Button, Menu, Tree: iTree, Drawer, Upload, Modal, Spin, Select, Option, OptionGroup, Message, Input, Table: iTable, Poptip, Header, DatePicker, TimePicker }
+const iView = {
+	Layout,
+	Sider,
+	MenuItem,
+	Submenu,
+	Tooltip,
+	Dropdown,
+	DropdownMenu,
+	DropdownItem,
+	Breadcrumb,
+	BreadcrumbItem,
+	Badge,
+	Tag,
+	Avatar,
+	Row,
+	Col,
+	Card,
+	Icon,
+	Button,
+	Menu,
+	Tree: iTree,
+	Drawer,
+	Upload,
+	Modal,
+	Spin,
+	Select,
+	Option,
+	OptionGroup,
+	Message,
+	Input,
+	Table: iTable,
+	Poptip,
+	Header,
+	DatePicker,
+	TimePicker
+}
 const iViewMap = {
-    ...iView,
-    iButton: Button,
-    iCol: Col,
-    iHeader: Header,
-    iInput: Input,
-    iMenu: Menu,
-    iOption: Option,
-    iSelect: Select,
-    iSwitch: Switch,
-    iTable: iTable
-};
+	...iView,
+	iButton: Button,
+	iCol: Col,
+	iHeader: Header,
+	iInput: Input,
+	iMenu: Menu,
+	iOption: Option,
+	iSelect: Select,
+	iSwitch: Switch,
+	iTable: iTable
+}
 Vue.prototype.$Message = Message
 
 Object.keys(iViewMap).forEach(name => {
-    Vue.component(name, iViewMap[name])
-});
+	Vue.component(name, iViewMap[name])
+})
 
 // ElementUI 部分组件
 import { Tree, Table, TableColumn, Loading, Scrollbar } from 'element-ui'

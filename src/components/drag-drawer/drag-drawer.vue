@@ -1,19 +1,44 @@
 <template>
-	<Drawer ref="drawerWrapper" :value="value" @input="handleInput" :width="width" :class-name="outerClasses" v-bind="$attrs" v-on="$listeners">
+	<Drawer
+		ref="drawerWrapper"
+		:value="value"
+		@input="handleInput"
+		:width="width"
+		:class-name="outerClasses"
+		v-bind="$attrs"
+		v-on="$listeners"
+	>
 		<!-- 所有插槽内容显示在这里 ↓ -->
 
 		<template v-for="(slots, slotsName) in $slots">
 			<template v-if="slotsName !== 'default'">
-				<render-dom v-for="(render, index) in slots" :key="`b_drawer_${slotsName}_${index}`" :render="() => render" :slot="slotsName"> </render-dom>
+				<render-dom
+					v-for="(render, index) in slots"
+					:key="`b_drawer_${slotsName}_${index}`"
+					:render="() => render"
+					:slot="slotsName"
+				>
+				</render-dom>
 			</template>
 			<template v-else>
 				<div :class="`${prefix}-body-wrapper`" :key="`b_drawer_${slotsName}`">
-					<render-dom v-for="(render, index) in slots" :key="`b_drawer_${slotsName}_${index}`" :render="() => render" :slot="slotsName"> </render-dom>
+					<render-dom
+						v-for="(render, index) in slots"
+						:key="`b_drawer_${slotsName}_${index}`"
+						:render="() => render"
+						:slot="slotsName"
+					>
+					</render-dom>
 				</div>
 			</template>
 		</template>
 		<!-- 所有插槽内容显示在这里 ↑ -->
-		<div v-if="draggable" :style="triggerStyle" :class="`${prefix}-trigger-wrapper`" @mousedown="handleTriggerMousedown">
+		<div
+			v-if="draggable"
+			:style="triggerStyle"
+			:class="`${prefix}-trigger-wrapper`"
+			@mousedown="handleTriggerMousedown"
+		>
 			<slot name="trigger">
 				<drag-drawer-trigger></drag-drawer-trigger>
 			</slot>

@@ -1,10 +1,15 @@
 <template>
 	<div>
 		<Card shadow>
-			树状表格组件tree-table-vue，基于<a href="https://github.com/MisterTaki/vue-table-with-tree-grid">vue-table-with-tree-grid</a
+			树状表格组件tree-table-vue，基于<a href="https://github.com/MisterTaki/vue-table-with-tree-grid"
+				>vue-table-with-tree-grid</a
 			>进行开发，修复了一些bug，添加了一些新属性
 			<p><b>支持使用slot-scope进行自定义列渲染内容</b></p>
-			<p>文档请看<a href="https://github.com/lison16/tree-table-vue">https://github.com/lison16/tree-table-vue</a></p>
+			<p>
+				文档请看<a href="https://github.com/lison16/tree-table-vue"
+					>https://github.com/lison16/tree-table-vue</a
+				>
+			</p>
 			<tree-table expand-key="sex" :expand-type="false" :selectable="false" :columns="columns" :data="data">
 				<template slot="likes" slot-scope="scope">
 					<Button @click="handle(scope)">123</Button>
