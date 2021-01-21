@@ -109,15 +109,19 @@ Object.keys(iViewMap).forEach(name => {
 import { Tree, Table, TableColumn, Loading, Scrollbar } from 'element-ui'
 const ElementUI = [Tree, Table, TableColumn, Loading, Scrollbar]
 
-// Antd 按需
-import { Input as aInput, Popconfirm, Table as aTable, Icon as aIcon, ConfigProvider } from 'ant-design-vue'
-const Antd = [aInput, Popconfirm, aTable, aIcon, ConfigProvider]
+// Antd 按需导入，需要修改 babel.config.js 文件，释放ant-design-vue相关注释
+/*import { Input as aInput, Popconfirm, Table as aTable, Icon as aIcon, ConfigProvider } from 'ant-design-vue'
+const Antd = [aInput, Popconfirm, aTable, aIcon, ConfigProvider]*/
+
+import Antd from 'ant-design-vue'
+import 'ant-design-vue/dist/antd.css'
+Vue.use(Antd)
 
 // 捆绑注册
 function* register(name) {
 	Vue.use(name)
 }
-;[...ElementUI, ...Antd].forEach(component => register(component).next())
+;[...ElementUI].forEach(component => register(component).next())
 
 /**
  * @description 注册admin内置插件
