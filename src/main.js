@@ -1,5 +1,3 @@
-// The Vue build version to load with the `import` command
-// (runtime-only or standalone) has been set in webpack.base.conf with an alias.
 import 'core-js/stable'
 import 'regenerator-runtime/runtime'
 import Vue from 'vue'
@@ -12,7 +10,9 @@ import i18n from '@/locale'
 /* eslint-disable */
 if (process.env.NODE_ENV !== 'production') require('@/mock')
 
-// iView 基础组件
+/**
+ * @description 当前框架所需的iview基础组件
+ */
 import {
 	Layout,
 	Sider,
@@ -104,12 +104,13 @@ const iViewMap = {
 	iTable: iTable
 }
 Vue.prototype.$Message = Message
-
 Object.keys(iViewMap).forEach(name => {
 	Vue.component(name, iViewMap[name])
 })
 
-// ElementUI 部分组件
+/**
+ * @description ElementUI 部分组件
+ */
 import { Tree, Table, TableColumn, Loading, Scrollbar } from 'element-ui'
 const ElementUI = [Tree, Table, TableColumn, Loading, Scrollbar]
 
@@ -117,6 +118,9 @@ const ElementUI = [Tree, Table, TableColumn, Loading, Scrollbar]
 /*import { Input as aInput, Popconfirm, Table as aTable, Icon as aIcon, ConfigProvider } from 'ant-design-vue'
 const Antd = [aInput, Popconfirm, aTable, aIcon, ConfigProvider]*/
 
+/**
+ * @description Antd主库
+ */
 import Antd from 'ant-design-vue'
 import 'ant-design-vue/dist/antd.css'
 Vue.use(Antd)
@@ -128,26 +132,22 @@ function* register(name) {
 ;[...ElementUI].forEach(component => register(component).next())
 
 /**
- * @description 注册admin内置插件
+ * 注册全局指令
  */
-import installPlugin from '@/plugin'
-installPlugin(Vue)
-/**
- * @description 生产环境关掉提示
- */
-Vue.config.productionTip = false
+import importDirective from '@/directive'
+importDirective(Vue)
+
 /**
  * @description 全局注册应用配置
  */
 import config from '@/config'
 Vue.prototype.$_config = config
+
 /**
- * 注册指令
+ * @description 注册拓展插件，目前只有未启用的 errorHandler
  */
-import importDirective from '@/directive'
-import { directive as clickOutside } from 'v-click-outside-x'
-importDirective(Vue)
-Vue.directive('clickOutside', clickOutside)
+import installPlugin from '@/plugin'
+installPlugin(Vue)
 
 /**
  * @description 动态设置rem
@@ -159,6 +159,9 @@ import '@/libs/rem'
  */
 import '@/assets/icons/iconfont.css'
 
+/**
+ * @description 生产环境关掉提示
+ */
 Vue.config.productionTip = false
 
 /* eslint-disable no-new */
