@@ -20,6 +20,8 @@
 
 <script>
 import { on, off } from '@/libs/tools'
+import VOrgTree from 'v-org-tree'
+import 'v-org-tree/dist/v-org-tree.css'
 const menuList = [
 	{
 		key: 'edit',
@@ -40,6 +42,7 @@ const menuList = [
 ]
 export default {
 	name: 'OrgView',
+	components: { VOrgTree },
 	props: {
 		zoomHandled: {
 			type: Number,

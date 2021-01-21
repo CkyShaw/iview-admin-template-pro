@@ -20,8 +20,10 @@
 </template>
 
 <script>
+import TreeTable from 'tree-table-vue'
 export default {
 	name: 'tree_table_page',
+	components: { TreeTable },
 	data() {
 		return {
 			columns: [

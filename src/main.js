@@ -6,31 +6,11 @@ import Vue from 'vue'
 import App from './App'
 import router from './router'
 import store from './store'
-
 import i18n from '@/locale'
-import config from '@/config'
-import importDirective from '@/directive'
-import { directive as clickOutside } from 'v-click-outside-x'
-import installPlugin from '@/plugin'
-
-import '@/assets/icons/iconfont.css'
 
 // 实际打包时应该不引入mock
 /* eslint-disable */
 if (process.env.NODE_ENV !== 'production') require('@/mock')
-
-/*import iView from 'view-design'
-import '@/assets/style/iview/index.less'
-Vue.use(iView, {
-	i18n: (key, value) => i18n.t(key, value)
-})*/
-
-import TreeTable from 'tree-table-vue'
-Vue.use(TreeTable)
-
-import VOrgTree from 'v-org-tree'
-import 'v-org-tree/dist/v-org-tree.css'
-Vue.use(VOrgTree)
 
 // iView 基础组件
 import {
@@ -142,6 +122,7 @@ function* register(name) {
 /**
  * @description 注册admin内置插件
  */
+import installPlugin from '@/plugin'
 installPlugin(Vue)
 /**
  * @description 生产环境关掉提示
@@ -150,10 +131,13 @@ Vue.config.productionTip = false
 /**
  * @description 全局注册应用配置
  */
+import config from '@/config'
 Vue.prototype.$_config = config
 /**
  * 注册指令
  */
+import importDirective from '@/directive'
+import { directive as clickOutside } from 'v-click-outside-x'
 importDirective(Vue)
 Vue.directive('clickOutside', clickOutside)
 
@@ -161,6 +145,11 @@ Vue.directive('clickOutside', clickOutside)
  * @description 动态设置rem
  */
 import '@/libs/rem'
+
+/**
+ * @description 字体图标
+ */
+import '@/assets/icons/iconfont.css'
 
 Vue.config.productionTip = false
 
