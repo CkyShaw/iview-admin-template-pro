@@ -161,11 +161,6 @@ installPlugin(Vue)
 import '@/libs/rem'
 
 /**
- * @description 自定义字体图标
- */
-import '@/assets/icons/iconfont.css'
-
-/**
  * @description 生产环境关掉提示
  */
 Vue.config.productionTip = false
