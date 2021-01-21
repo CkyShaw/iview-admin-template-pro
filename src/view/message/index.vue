@@ -127,10 +127,10 @@ export default {
 }
 </script>
 
-<style lang="less">
+<style lang="stylus">
 .message-page {
 	&-con {
-		height: ~'calc(100vh - 176px)';
+		height: calc(100vh - 176px);
 		display: inline-block;
 		vertical-align: top;
 		position: relative;
