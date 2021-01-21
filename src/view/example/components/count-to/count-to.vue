@@ -209,8 +209,11 @@ export default {
 }
 </script>
 
-<style lang="less">
-@baseColor: ~'#dc9387';
+<style lang="stylus">
+baseColor = #dc9387
+p {
+	margin-bottom: initial;
+}
 .countto-page-row {
 	height: 200px;
 }
@@ -221,13 +224,13 @@ export default {
 }
 .count-text {
 	font-size: 50px;
-	color: @baseColor;
+	color: baseColor;
 }
 .slot-text {
 	font-size: 22px;
 }
 .unit-class {
 	font-size: 30px;
-	color: @baseColor;
+	color: baseColor;
 }
 </style>

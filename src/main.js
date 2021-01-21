@@ -109,7 +109,10 @@ const iViewMap = {
 	iSwitch: Switch,
 	iTable: iTable
 }
+import locale from 'view-design/src/locale/index'
+locale.i18n((key, value) => i18n.t(key, value));
 Vue.prototype.$Message = Message
+Vue.prototype.$Modal = Modal
 Object.keys(iViewMap).forEach(name => {
 	Vue.component(name, iViewMap[name])
 })
