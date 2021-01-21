@@ -80,7 +80,7 @@ module.exports = {
 			.set('@', resolve('src'))
 			.set('@@', resolve('public'))
 			.set('@c', resolve('src/components'))
-			.set('@v', resolve('src/views'))
+			.set('@v', resolve('src/view'))
 	}
 
 	// GZ压缩
