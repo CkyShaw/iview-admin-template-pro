@@ -1,5 +1,5 @@
-<style lang="less">
-@import './common.less';
+<style lang="stylus">
+@import './common.styl';
 </style>
 <template>
 	<div>

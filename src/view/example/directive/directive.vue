@@ -13,11 +13,11 @@
 							<div class="intro-con">
 								&lt;Modal v-draggable="options" v-model="visible"&gt;标题&lt;/Modal&gt;
 								<pre class="code-con">
-    options = {
-      trigger: '.ivu-modal-body',
-      body: '.ivu-modal'
-    }
-                </pre
+options = {
+	trigger: '.ivu-modal-body',
+	body: '.ivu-modal'
+}
+								</pre
 								>
 							</div>
 						</i-col>
@@ -44,16 +44,16 @@
 								<br />
 								&lt;/Input&gt;
 								<pre class="code-con">
-    clipOptions: {
-      value: this.inputValue,
-      success: (e) => {
-        this.$Message.success('复制成功')
-      },
-      error: () => {
-        this.$Message.error('复制失败')
-      }
-    }
-                </pre
+clipOptions: {
+	value: this.inputValue,
+	success: (e) => {
+		this.$Message.success('复制成功')
+	},
+	error: () => {
+		this.$Message.error('复制失败')
+	}
+}
+								</pre
 								>
 							</div>
 						</i-col>
