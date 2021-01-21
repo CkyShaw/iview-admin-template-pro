@@ -37,7 +37,7 @@ export default {
 }
 </script>
 
-<style lang="less">
+<style lang="stylus">
 .cropper-example {
 	height: 400px;
 }

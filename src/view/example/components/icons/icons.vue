@@ -58,7 +58,7 @@ export default {
 }
 </script>
 
-<style lang="less">
+<style lang="stylus">
 .icon-code {
 	margin: 20px 0 10px;
 }

@@ -38,7 +38,7 @@ export default {
 }
 </script>
 
-<style lang="less">
+<style lang="stylus">
 .center-middle {
 	position: absolute;
 	left: 50%;
@@ -69,10 +69,10 @@ export default {
 		border-radius: 50%;
 		background: #000000;
 		position: absolute;
-		.center-middle;
+		@extend .center-middle;
 		box-shadow: 0 0 6px 0 rgba(28, 36, 56, 0.4);
 		i.trigger-icon {
-			.center-middle;
+			@extend .center-middle;
 		}
 	}
 }

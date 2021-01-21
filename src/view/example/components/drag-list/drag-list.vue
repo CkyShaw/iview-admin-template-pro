@@ -62,7 +62,7 @@ export default {
 	}
 }
 </script>
-<style lang="less">
+<style lang="stylus">
 .drag-box-card {
 	display: inline-block;
 	width: 600px;
@@ -96,7 +96,7 @@ export default {
 		padding: 10px 14px;
 	}
 	.handle-inner-box {
-		height: ~'calc(100% - 44px)';
+		height: calc(100% - 44px);
 		overflow: auto;
 		p {
 			padding: 14px 0;

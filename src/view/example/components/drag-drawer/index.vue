@@ -94,7 +94,7 @@ export default {
 }
 </script>
 
-<style lang="less">
+<style lang="stylus">
 .drag-drawer-inner-box {
 	position: relative;
 	width: 500px;

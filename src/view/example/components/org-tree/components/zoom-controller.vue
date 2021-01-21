@@ -43,10 +43,11 @@ export default {
 }
 </script>
 
-<style lang="less">
-.trans(@duration) {
-	transition: ~'all @{duration} ease-in';
+<style lang="stylus">
+trans(duration) {
+	transition: all duration ease-in;
 }
+
 .zoom-wrapper {
 	.zoom-button {
 		width: 20px;
@@ -61,10 +62,10 @@ export default {
 		&:active {
 			box-shadow: 0px 0px 2px 2px rgba(218, 220, 223, 0.2) inset;
 		}
-		.trans(0.1s);
+		trans(0.2s);
 		&:hover {
 			background: #1890ff;
-			.trans(0.1s);
+			trans(0.2s);
 		}
 	}
 	.zoom-number {

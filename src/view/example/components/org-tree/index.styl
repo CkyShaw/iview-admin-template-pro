@@ -1,10 +1,10 @@
-@wrapper: ~'department';
+wrapper = 'department';
 .percent-100 {
 	width: 100%;
 	height: 100%;
 }
-.@{wrapper}-outer {
-	.percent-100;
+.{wrapper}-outer {
+	@extend .percent-100;
 	overflow: hidden;
 	.tip-box {
 		position: absolute;
