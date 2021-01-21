@@ -155,9 +155,8 @@ Vue.config.productionTip = false
 
 /* eslint-disable no-new */
 new Vue({
-	el: '#app',
 	router,
-	i18n,
 	store,
+    i18n,
 	render: h => h(App)
-})
+}).$mount('#app')
