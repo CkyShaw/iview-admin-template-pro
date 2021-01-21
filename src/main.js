@@ -33,35 +33,26 @@ import 'v-org-tree/dist/v-org-tree.css'
 Vue.use(VOrgTree)
 
 // iView 按需
-import { Layout, Sider, MenuItem, Submenu, Tooltip, Dropdown, DropdownMenu, DropdownItem, Breadcrumb, BreadcrumbItem, Badge, Tag, Avatar, Row, Col, Card, Icon, Button, Menu, Tree, Drawer, Switch, Upload, Modal, Spin, Select, Option, OptionGroup, Message, Input, Table, Poptip, Header } from 'view-design';
+import { Layout, Sider, MenuItem, Submenu, Tooltip, Dropdown, DropdownMenu, DropdownItem, Breadcrumb, BreadcrumbItem, Badge, Tag, Avatar, Row, Col, Card, Icon, Button, Menu, Tree, Drawer, Switch, Upload, Modal, Spin, Select, Option, OptionGroup, Message, Input, Table, Poptip, Header, DatePicker, TimePicker } from 'view-design';
 import '@/assets/style/iview/index.less'
-const iView = [Layout, Sider, MenuItem, Submenu, Tooltip, Dropdown, DropdownMenu, DropdownItem, Breadcrumb, BreadcrumbItem, Badge, Tag, Avatar, Row, Col, Card, Icon, Button, Menu, Tree, Drawer, Switch, Upload, Modal, Spin, Select, Option, OptionGroup, Message, Input, Table, Poptip, Header]
-const iMap = {
-    iButton: 'Button',
-    iCircle: 'Circle',
-    iCol: 'Col',
-    iContent: 'Content',
-    iForm: 'Form',
-    iFooter: 'Footer',
-    iHeader: 'Header',
-    iInput: 'Input',
-    iMenu: 'Menu',
-    iOption: 'Option',
-    iProgress: 'Progress',
-    iSelect: 'Select',
-    iSwitch: 'Switch',
-    iTable: 'Table',
-    iTime: 'Time'
+const iView = { Layout, Sider, MenuItem, Submenu, Tooltip, Dropdown, DropdownMenu, DropdownItem, Breadcrumb, BreadcrumbItem, Badge, Tag, Avatar, Row, Col, Card, Icon, Button, Menu, Tree, Drawer, Upload, Modal, Spin, Select, Option, OptionGroup, Message, Input, Table, Poptip, Header, DatePicker, TimePicker }
+const iViewMap = {
+    ...iView,
+    iButton: Button,
+    iCol: Col,
+    iHeader: Header,
+    iInput: Input,
+    iMenu: Menu,
+    iOption: Option,
+    iSelect: Select,
+    iSwitch: Switch,
+    iTable: Table
 };
 Vue.prototype.$Message = Message
-const skipTrans = ['iCol', 'iSwitch']
-iView.forEach(component => {
-	if (iMap[component.name] && !skipTrans.includes(component.name)) {
-		Vue.component(iMap[component.name], component)
-	} else {
-		Vue.component(component.name, component)
-	}
-})
+
+Object.keys(iViewMap).forEach(name => {
+    Vue.component(name, iViewMap[name])
+});
 
 /*// ElementUI 按需
 import { Tree as elTree, Table, TableColumn, Loading, Scrollbar } from 'element-ui'
