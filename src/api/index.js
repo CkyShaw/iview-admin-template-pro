@@ -3,10 +3,9 @@
  */
 
 import common from './common' // 公共模块
-
-import example from './example' // 案例模块
+import main from './main' // 默认主模块
 
 export default {
 	common,
-	example
+	main
 }

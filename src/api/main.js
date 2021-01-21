@@ -8,7 +8,7 @@ export default {
 	getDataByPostService(params) {
 		return axios.request({
 			url: 'service/post',
-			data: JSON.stringify(params),
+			data: params,
 			method: 'post'
 		})
 	},

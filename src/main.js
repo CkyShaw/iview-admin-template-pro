@@ -11,6 +11,12 @@ import i18n from '@/locale'
 if (process.env.NODE_ENV !== 'production') require('@/mock')
 
 /**
+ * @description 挂载全局api
+ */
+import api from './api'
+Vue.prototype.$_api = api
+
+/**
  * @description 当前框架所需的iview基础组件
  */
 import {
