@@ -68,7 +68,7 @@ export default {
 }
 </script>
 
-<style lang="less">
+<style lang="stylus">
 .editor-wrapper {
 	margin-top: 30px;
 }

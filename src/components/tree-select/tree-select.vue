@@ -60,7 +60,7 @@ export default {
 }
 </script>
 
-<style lang="less">
+<style lang="stylus">
 .tree-select {
 	.ivu-select-dropdown {
 		padding: 0 6px;

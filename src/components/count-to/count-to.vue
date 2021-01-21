@@ -11,7 +11,7 @@
 
 <script>
 import CountUp from 'countup'
-import './index.less'
+import './index.styl'
 export default {
 	name: 'CountTo',
 	props: {

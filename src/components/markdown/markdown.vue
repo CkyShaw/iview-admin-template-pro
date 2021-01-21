@@ -63,7 +63,7 @@ export default {
 }
 </script>
 
-<style lang="less">
+<style lang="stylus">
 .markdown-wrapper {
 	.editor-toolbar.fullscreen {
 		z-index: 9999;

@@ -45,7 +45,7 @@ export default {
 }
 </script>
 
-<style lang="less">
+<style lang="stylus">
 .tables-edit-outer {
 	height: 100%;
 	.tables-edit-con {
@@ -68,7 +68,7 @@ export default {
 	}
 	.tables-editting-con {
 		.tables-edit-input {
-			width: ~'calc(100% - 60px)';
+			width: calc(100% - 60px);
 		}
 	}
 }

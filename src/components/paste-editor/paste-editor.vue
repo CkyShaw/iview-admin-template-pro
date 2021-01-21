@@ -114,6 +114,6 @@ export default {
 	}
 }
 </script>
-<style lang="less">
-@import './paste-editor.less';
+<style lang="stylus">
+@import './paste-editor.styl';
 </style>

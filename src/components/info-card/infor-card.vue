@@ -53,7 +53,7 @@ export default {
 }
 </script>
 
-<style lang="less">
+<style lang="stylus">
 .common {
 	float: left;
 	height: 100%;
@@ -69,24 +69,24 @@ export default {
 	vertical-align: middle;
 }
 .info-card-wrapper {
-	.size;
+	@extend .size;
 	overflow: hidden;
 	.ivu-card-body {
-		.size;
+		@extend .size;
 	}
 	.content-con {
-		.size;
+		@extend .size;
 		position: relative;
 		.left-area {
-			.common;
+			@extend .common;
 			& > .icon {
-				.middle-center;
+				@extend .middle-center;
 			}
 		}
 		.right-area {
-			.common;
+			@extend .common;
 			& > div {
-				.middle-center;
+				@extend .middle-center;
 			}
 		}
 	}

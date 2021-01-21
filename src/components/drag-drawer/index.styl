@@ -1,14 +1,14 @@
-@prefix: ~'drag-drawer';
-@drag-drawer-trigger-height: 100px;
-@drag-drawer-trigger-width: 8px;
+prefix = 'drag-drawer';
+drag-drawer-trigger-height = 100px;
+drag-drawer-trigger-width = 8px;
 
-.@{prefix}-wrapper {
+.{prefix}-wrapper {
 	&.no-select {
 		user-select: none;
 	}
 	&.pointer-events-none {
 		pointer-events: none;
-		& .@{prefix}-trigger-wrapper {
+		& .{prefix}-trigger-wrapper {
 			pointer-events: all;
 		}
 	}
@@ -25,26 +25,26 @@
 			flex-direction: column;
 		}
 	}
-	.@{prefix}-body-wrapper {
+	.{prefix}-body-wrapper {
 		width: 100%;
 		height: 100%;
 		padding: 16px;
 		overflow: auto;
 	}
-	.@{prefix}-trigger-wrapper {
+	.{prefix}-trigger-wrapper {
 		top: 0;
 		height: 100%;
 		width: 0;
-		.@{prefix}-move-trigger {
+		.{prefix}-move-trigger {
 			position: absolute;
 			top: 50%;
-			height: @drag-drawer-trigger-height;
-			width: @drag-drawer-trigger-width;
+			height: drag-drawer-trigger-height;
+			width: drag-drawer-trigger-width;
 			background: rgb(243, 243, 243);
 			transform: translate(-50%, -50%);
-			border-radius: ~'4px / 6px';
+			border-radius: 4px / 6px;
 			box-shadow: 0 0 1px 1px rgba(0, 0, 0, 0.2);
-			line-height: @drag-drawer-trigger-height;
+			line-height: drag-drawer-trigger-height;
 			cursor: col-resize;
 			&-point {
 				display: inline-block;
@@ -58,7 +58,7 @@
 			}
 		}
 	}
-	.@{prefix}-footer {
+	.{prefix}-footer {
 		flex-grow: 1;
 		width: 100%;
 		bottom: 0;
