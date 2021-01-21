@@ -32,10 +32,10 @@ import VOrgTree from 'v-org-tree'
 import 'v-org-tree/dist/v-org-tree.css'
 Vue.use(VOrgTree)
 
-// iView 按需
-import { Layout, Sider, MenuItem, Submenu, Tooltip, Dropdown, DropdownMenu, DropdownItem, Breadcrumb, BreadcrumbItem, Badge, Tag, Avatar, Row, Col, Card, Icon, Button, Menu, Tree, Drawer, Switch, Upload, Modal, Spin, Select, Option, OptionGroup, Message, Input, Table, Poptip, Header, DatePicker, TimePicker } from 'view-design';
+// iView 基础组件
+import { Layout, Sider, MenuItem, Submenu, Tooltip, Dropdown, DropdownMenu, DropdownItem, Breadcrumb, BreadcrumbItem, Badge, Tag, Avatar, Row, Col, Card, Icon, Button, Menu, Tree as iTree, Drawer, Switch, Upload, Modal, Spin, Select, Option, OptionGroup, Message, Input, Table as iTable, Poptip, Header, DatePicker, TimePicker } from 'view-design';
 import '@/assets/style/iview/index.less'
-const iView = { Layout, Sider, MenuItem, Submenu, Tooltip, Dropdown, DropdownMenu, DropdownItem, Breadcrumb, BreadcrumbItem, Badge, Tag, Avatar, Row, Col, Card, Icon, Button, Menu, Tree, Drawer, Upload, Modal, Spin, Select, Option, OptionGroup, Message, Input, Table, Poptip, Header, DatePicker, TimePicker }
+const iView = { Layout, Sider, MenuItem, Submenu, Tooltip, Dropdown, DropdownMenu, DropdownItem, Breadcrumb, BreadcrumbItem, Badge, Tag, Avatar, Row, Col, Card, Icon, Button, Menu, Tree: iTree, Drawer, Upload, Modal, Spin, Select, Option, OptionGroup, Message, Input, Table: iTable, Poptip, Header, DatePicker, TimePicker }
 const iViewMap = {
     ...iView,
     iButton: Button,
@@ -46,7 +46,7 @@ const iViewMap = {
     iOption: Option,
     iSelect: Select,
     iSwitch: Switch,
-    iTable: Table
+    iTable: iTable
 };
 Vue.prototype.$Message = Message
 
@@ -54,19 +54,19 @@ Object.keys(iViewMap).forEach(name => {
     Vue.component(name, iViewMap[name])
 });
 
-/*// ElementUI 按需
-import { Tree as elTree, Table, TableColumn, Loading, Scrollbar } from 'element-ui'
+// ElementUI 部分组件
+import { Tree, Table, TableColumn, Loading, Scrollbar } from 'element-ui'
 const ElementUI = [Tree, Table, TableColumn, Loading, Scrollbar]
 
 // Antd 按需
-import { Input, Popconfirm } from 'ant-design-vue'
-const Antd = [Input, Popconfirm]
+import { Input as aInput, Popconfirm, Table as aTable, Icon as aIcon, ConfigProvider } from 'ant-design-vue'
+const Antd = [aInput, Popconfirm, aTable, aIcon, ConfigProvider]
 
 // 捆绑注册
 function* register(name) {
 	Vue.use(name)
 }
-;[...ElementUI, ...Antd].forEach(component => register(component).next())*/
+;[...ElementUI, ...Antd].forEach(component => register(component).next())
 
 /**
  * @description 注册admin内置插件
