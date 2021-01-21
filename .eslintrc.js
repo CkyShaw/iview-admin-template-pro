@@ -20,6 +20,7 @@ module.exports = {
 			}
 		],
 		camelcase: 'off',
+		'vue/no-mutating-props': 'off',
 		eqeqeq: 0,
 		indent: [0, 4], // 缩进风格
 		'no-tabs': 'off',
