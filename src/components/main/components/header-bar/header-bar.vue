@@ -10,7 +10,7 @@
 <script>
 import siderTrigger from './sider-trigger'
 import customBreadCrumb from './custom-bread-crumb'
-import './header-bar.less'
+import './header-bar.styl'
 export default {
 	name: 'HeaderBar',
 	components: {

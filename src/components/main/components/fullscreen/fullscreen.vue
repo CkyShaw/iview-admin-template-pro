@@ -79,7 +79,7 @@ export default {
 }
 </script>
 
-<style lang="less">
+<style lang="stylus">
 .full-screen-btn-con .ivu-tooltip-rel {
 	height: 64px;
 	line-height: 56px;

@@ -36,7 +36,7 @@ export default {
 }
 </script>
 
-<style lang="less">
+<style lang="stylus">
 .error-store {
 	margin-right: 12px;
 	.ivu-badge-dot {

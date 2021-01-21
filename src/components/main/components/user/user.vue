@@ -16,7 +16,7 @@
 </template>
 
 <script>
-import './user.less'
+import './user.styl'
 import { mapActions } from 'vuex'
 export default {
 	name: 'User',

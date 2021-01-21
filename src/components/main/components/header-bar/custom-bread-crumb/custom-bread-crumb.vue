@@ -11,7 +11,7 @@
 <script>
 import { showTitle } from '@/libs/util'
 import CommonIcon from '_c/common-icon'
-import './custom-bread-crumb.less'
+import './custom-bread-crumb.styl'
 export default {
 	name: 'customBreadCrumb',
 	components: {

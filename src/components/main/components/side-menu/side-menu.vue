@@ -155,6 +155,6 @@ export default {
 	}
 }
 </script>
-<style lang="less">
-@import './side-menu.less';
+<style lang="stylus">
+@import './side-menu.styl';
 </style>

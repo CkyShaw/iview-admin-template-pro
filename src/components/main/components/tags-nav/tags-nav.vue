@@ -210,6 +210,6 @@ export default {
 }
 </script>
 
-<style lang="less">
-@import './tags-nav.less';
+<style lang="stylus">
+@import './tags-nav.styl';
 </style>

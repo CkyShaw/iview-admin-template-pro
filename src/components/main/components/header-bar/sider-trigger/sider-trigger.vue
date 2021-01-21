@@ -24,6 +24,6 @@ export default {
 	}
 }
 </script>
-<style lang="less">
-@import './sider-trigger.less';
+<style lang="stylus">
+@import './sider-trigger.styl';
 </style>
