@@ -48,7 +48,9 @@ import {
 	Poptip,
 	Header,
 	DatePicker,
-	TimePicker
+	TimePicker,
+    Form,
+    FormItem
 } from 'view-design'
 import '@/assets/style/iview/index.less'
 const iView = {
@@ -85,7 +87,9 @@ const iView = {
 	Poptip,
 	Header,
 	DatePicker,
-	TimePicker
+	TimePicker,
+    Form,
+    FormItem
 }
 const iViewMap = {
 	...iView,
