@@ -23,6 +23,9 @@
 					</div>
 				</Card>
 			</i-col>
+			<i-col span="10">
+				<div class="click-outside" v-click-outside="onClickOutside">click outside</div>
+			</i-col>
 		</Row>
 		<Row>
 			<Table :columns="columns1" :data="[]"></Table>
@@ -85,6 +88,11 @@ export default {
 		content() {
 			return this.$t('content')
 		}
+	},
+	methods: {
+		onClickOutside(event) {
+			console.log('Clicked outside. Event: ', event)
+		}
 	}
 }
 </script>
@@ -97,5 +105,17 @@ export default {
 		display: block;
 		margin-top: 20px;
 	}
+}
+.click-outside {
+	width: 100%;
+	height: 200px;
+	background: #0af;
+	cursor: pointer;
+	color: #333;
+	font-size: 50px;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	user-select: none;
 }
 </style>
