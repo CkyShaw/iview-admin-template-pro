@@ -79,7 +79,6 @@ module.exports = {
 		config.resolve.alias
 			.set('@', resolve('src'))
 			.set('@@', resolve('public'))
-			.set('_c', resolve('src/components'))
 			.set('@c', resolve('src/components'))
 			.set('@v', resolve('src/views'))
 	}

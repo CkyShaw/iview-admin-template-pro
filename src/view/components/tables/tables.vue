@@ -16,7 +16,7 @@
 </template>
 
 <script>
-import Tables from '_c/tables'
+import Tables from '@c/tables'
 import { getTableData } from '@/api/data'
 export default {
 	name: 'tables_page',

@@ -18,7 +18,7 @@
 </template>
 
 <script>
-import TreeSelect from '_c/tree-select'
+import TreeSelect from '@c/tree-select'
 import { newTreeData } from '@/mock/data/tree-select'
 import { getTreeSelectData } from '@/api/data'
 export default {

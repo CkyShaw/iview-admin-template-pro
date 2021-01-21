@@ -31,7 +31,7 @@
 	</div>
 </template>
 <script>
-import DragList from '_c/drag-list'
+import DragList from '@c/drag-list'
 import { getDragList } from '@/api/data'
 export default {
 	name: 'drag_list_page',
