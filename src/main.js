@@ -161,7 +161,7 @@ installPlugin(Vue)
 import '@/libs/rem'
 
 /**
- * @description 字体图标
+ * @description 自定义字体图标
  */
 import '@/assets/icons/iconfont.css'
 
