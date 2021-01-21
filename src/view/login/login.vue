@@ -1,5 +1,5 @@
-<style lang="less">
-@import './login.less';
+<style lang="stylus">
+@import './login.styl';
 </style>
 
 <template>
