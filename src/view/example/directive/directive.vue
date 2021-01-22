@@ -113,7 +113,7 @@ export default {
 	margin-top: 20px;
 }
 .code-con {
-	width: 400px;
+	width: 500px;
 	background: #f9f9f9;
 	padding-top: 10px;
 }
