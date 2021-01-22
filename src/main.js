@@ -55,8 +55,8 @@ import {
 	Header,
 	DatePicker,
 	TimePicker,
-    Form,
-    FormItem
+	Form,
+	FormItem
 } from 'view-design'
 import '@/assets/style/iview/index.less'
 const iView = {
@@ -94,8 +94,8 @@ const iView = {
 	Header,
 	DatePicker,
 	TimePicker,
-    Form,
-    FormItem
+	Form,
+	FormItem
 }
 const iViewMap = {
 	...iView,
@@ -110,7 +110,7 @@ const iViewMap = {
 	iTable: iTable
 }
 import locale from 'view-design/src/locale/index'
-locale.i18n((key, value) => i18n.t(key, value));
+locale.i18n((key, value) => i18n.t(key, value))
 Vue.prototype.$Message = Message
 Vue.prototype.$Modal = Modal
 Object.keys(iViewMap).forEach(name => {
@@ -172,6 +172,6 @@ Vue.config.productionTip = false
 new Vue({
 	router,
 	store,
-    i18n,
+	i18n,
 	render: h => h(App)
 }).$mount('#app')
