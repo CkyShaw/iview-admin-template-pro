@@ -14,6 +14,7 @@ import moment from 'moment'
 import 'moment/locale/zh-cn'
 import 'moment/locale/zh-tw'
 import 'moment/locale/es-us'
+import Vue from 'vue'
 export default {
 	name: 'App',
 	data() {
@@ -38,8 +39,8 @@ export default {
 		...mapState({ local: state => state.app.local }),
 		locale: {
 			get() {
-				moment.locale(this.localeMap[this.local]['moment'])
-				return this.localeMap[this.local]['locale']
+				moment.locale(this.localeMap[this.local || Vue.config.lang]['moment'])
+				return this.localeMap[this.local || Vue.config.lang]['locale']
 			}
 		}
 	}
