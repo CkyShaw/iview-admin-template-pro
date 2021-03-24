@@ -17,10 +17,17 @@ import api from './api'
 Vue.prototype.$_api = api
 
 /**
+ * @description 工具库
+ */
+/*import bbo from 'bbo'
+Vue.prototype.$_b = bbo*/
+
+/**
  * @description 当前框架所需的iview基础组件
  */
 import {
 	Layout,
+	Content,
 	Sider,
 	MenuItem,
 	Submenu,
@@ -61,6 +68,7 @@ import {
 import '@/assets/style/iview/index.less'
 const iView = {
 	Layout,
+	Content,
 	Sider,
 	MenuItem,
 	Submenu,
