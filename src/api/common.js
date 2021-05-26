@@ -8,10 +8,10 @@ import axios from 'axios'
  * @param {String} filePath
  * @description 全局公共axios本地静态数据请求方法
  */
-const loadStaticDataByLocalFile = file => {
+const loadDataByFile = file => {
 	return axios(`assets/data/${file}`)
 }
 
 export default {
-	loadStaticDataByLocalFile
+	loadDataByFile
 }

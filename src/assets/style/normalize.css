@@ -6,10 +6,6 @@ html {
 	-webkit-text-size-adjust: 100%;
 }
 
-body {
-	margin: 0;
-}
-
 article,
 aside,
 footer,
@@ -52,30 +48,14 @@ hr {
 }
 
 pre {
-	font-family: monospace, monospace;
+	font-family: monospace;
 	font-size: 1em;
-}
-
-a {
-	background-color: transparent;
-	-webkit-text-decoration-skip: objects;
-}
-
-a:active,
-a:hover {
-	outline-width: 0;
 }
 
 abbr[title] {
 	border-bottom: none;
-	text-decoration: underline;
 	-webkit-text-decoration: underline dotted;
 	text-decoration: underline dotted;
-}
-
-b,
-strong {
-	font-weight: inherit;
 }
 
 b,
@@ -86,7 +66,7 @@ strong {
 code,
 kbd,
 samp {
-	font-family: monospace, monospace;
+	font-family: monospace;
 	font-size: 1em;
 }
 
@@ -156,28 +136,6 @@ input {
 button,
 select {
 	text-transform: none;
-}
-
-[type='reset'],
-[type='submit'],
-button,
-html [type='button'] {
-	-webkit-appearance: button;
-}
-
-[type='button']::-moz-focus-inner,
-[type='reset']::-moz-focus-inner,
-[type='submit']::-moz-focus-inner,
-button::-moz-focus-inner {
-	border-style: none;
-	padding: 0;
-}
-
-[type='button']:-moz-focusring,
-[type='reset']:-moz-focusring,
-[type='submit']:-moz-focusring,
-button:-moz-focusring {
-	outline: 1px dotted ButtonText;
 }
 
 fieldset {
@@ -260,12 +218,13 @@ template {
 	-webkit-tap-highlight-color: transparent;
 }
 
-:after,
-:before {
+::after,
+::before {
 	-webkit-box-sizing: border-box;
 	box-sizing: border-box;
 }
-// "Helvetica Neue", Helvetica, "PingFang SC", "Hiragino Sans GB",
+
+/* "Helvetica Neue", Helvetica, "PingFang SC", "Hiragino Sans GB", */
 body {
 	font-family: 'Microsoft YaHei', '微软雅黑', Arial, sans-serif, '宋体' !important;
 	font-size: 16px;
@@ -325,12 +284,35 @@ textarea {
 	line-height: inherit;
 }
 
+[type='reset'],
+[type='submit'],
+button,
+html [type='button'] {
+	-webkit-appearance: button;
+}
+
+[type='button']::-moz-focus-inner,
+[type='reset']::-moz-focus-inner,
+[type='submit']::-moz-focus-inner,
+button::-moz-focus-inner {
+	border-style: none;
+	padding: 0;
+}
+
+[type='button']:-moz-focusring,
+[type='reset']:-moz-focusring,
+[type='submit']:-moz-focusring,
+button:-moz-focusring {
+	outline: 1px dotted ButtonText;
+}
+
 input::-ms-clear,
 input::-ms-reveal {
 	display: none;
 }
 
 a {
+	-webkit-text-decoration-skip: objects;
 	color: #2d8cf0;
 	background: 0 0;
 	text-decoration: none;
@@ -340,18 +322,18 @@ a {
 	transition: color 0.2s ease;
 }
 
+a:active,
+a:hover {
+	outline: 0;
+	text-decoration: none;
+}
+
 a:hover {
 	color: #57a3f3;
 }
 
 a:active {
 	color: #2b85e4;
-}
-
-a:active,
-a:hover {
-	outline: 0;
-	text-decoration: none;
 }
 
 a[disabled] {
