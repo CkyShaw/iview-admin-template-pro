@@ -13,7 +13,7 @@ export const setToken = token => {
 export const getToken = () => {
 	const token = Cookies.get(TOKEN_KEY)
 	if (token) return token
-	else return false
+	return false
 }
 
 export const hasChild = item => {
@@ -23,8 +23,9 @@ export const hasChild = item => {
 const showThisMenuEle = (item, access) => {
 	if (item.meta && item.meta.access && item.meta.access.length) {
 		if (hasOneOf(item.meta.access, access)) return true
-		else return false
-	} else return true
+		return false
+	}
+	return true
 }
 /**
  * @param {Array} list 通过路由列表得到菜单列表
@@ -70,7 +71,7 @@ export const getBreadCrumbList = (route, homeRoute) => {
 			let obj = {
 				icon: (item.meta && item.meta.icon) || '',
 				name: item.name,
-				meta: meta
+				meta
 			}
 			return obj
 		})
@@ -150,7 +151,7 @@ export const getNewTagList = (list, newRoute) => {
 	const { name, path, meta } = newRoute
 	let newList = [...list]
 	if (newList.findIndex(item => item.name === name) >= 0) return newList
-	else newList.push({ name, path, meta })
+	newList.push({ name, path, meta })
 	return newList
 }
 
@@ -160,7 +161,7 @@ export const getNewTagList = (list, newRoute) => {
  */
 const hasAccess = (access, route) => {
 	if (route.meta && route.meta.access) return hasOneOf(access, route.meta.access)
-	else return true
+	return true
 }
 
 /**
@@ -288,9 +289,8 @@ export const findNodeUpper = (ele, tag) => {
 	if (ele.parentNode) {
 		if (ele.parentNode.tagName === tag.toUpperCase()) {
 			return ele.parentNode
-		} else {
-			return findNodeUpper(ele.parentNode, tag)
 		}
+		return findNodeUpper(ele.parentNode, tag)
 	}
 }
 
@@ -300,9 +300,8 @@ export const findNodeUpperByClasses = (ele, classes) => {
 		let classList = parentNode.classList
 		if (classList && classes.every(className => classList.contains(className))) {
 			return parentNode
-		} else {
-			return findNodeUpperByClasses(parentNode, classes)
 		}
+		return findNodeUpperByClasses(parentNode, classes)
 	}
 }
 
@@ -314,7 +313,7 @@ export const findNodeDownward = (ele, tag) => {
 		while (++i < len) {
 			let child = ele.childNodes[i]
 			if (child.tagName === tagName) return child
-			else return findNodeDownward(child, tag)
+			return findNodeDownward(child, tag)
 		}
 	}
 }

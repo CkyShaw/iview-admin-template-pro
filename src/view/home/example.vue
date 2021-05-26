@@ -12,11 +12,6 @@ export default {
 			dom: null
 		}
 	},
-	methods: {
-		resize() {
-			this.dom.resize()
-		}
-	},
 	mounted() {
 		const option = {
 			tooltip: {
@@ -111,7 +106,7 @@ export default {
 				}
 			]
 		}
-		this.$nextTick(() => {
+		this.$nextTick().then(() => {
 			this.dom = echarts.init(this.$refs.dom)
 			this.dom.setOption(option)
 			on(window, 'resize', this.resize)
@@ -119,6 +114,11 @@ export default {
 	},
 	beforeDestroy() {
 		off(window, 'resize', this.resize)
+	},
+	methods: {
+		resize() {
+			this.dom.resize()
+		}
 	}
 }
 </script>

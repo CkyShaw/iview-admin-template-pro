@@ -1,6 +1,7 @@
 <style lang="stylus">
 @import './common.styl';
 </style>
+
 <template>
 	<div>
 		<Card title="导出EXCEL">
@@ -13,6 +14,7 @@
 		</Row>
 	</div>
 </template>
+
 <script>
 import excel from '@/libs/excel'
 export default {
@@ -53,6 +55,8 @@ export default {
 			]
 		}
 	},
+	created() {},
+	mounted() {},
 	methods: {
 		exportExcel() {
 			if (this.tableData.length) {
@@ -70,8 +74,6 @@ export default {
 				this.$Message.info('表格数据不能为空！')
 			}
 		}
-	},
-	created() {},
-	mounted() {}
+	}
 }
 </script>

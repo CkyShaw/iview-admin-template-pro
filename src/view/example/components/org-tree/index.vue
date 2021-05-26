@@ -52,6 +52,9 @@ export default {
 			return this.zoom / 100
 		}
 	},
+	mounted() {
+		this.getDepartmentData()
+	},
 	methods: {
 		setDepartmentData(data) {
 			data.isRoot = true
@@ -69,9 +72,6 @@ export default {
 				this.data = data
 			})
 		}
-	},
-	mounted() {
-		this.getDepartmentData()
 	}
 }
 </script>

@@ -19,13 +19,8 @@ export default {
 			dom: null
 		}
 	},
-	methods: {
-		resize() {
-			this.dom.resize()
-		}
-	},
 	mounted() {
-		this.$nextTick(() => {
+		this.$nextTick().then(() => {
 			let legend = this.value.map(_ => _.name)
 			let option = {
 				title: {
@@ -65,6 +60,11 @@ export default {
 	},
 	beforeDestroy() {
 		off(window, 'resize', this.resize)
+	},
+	methods: {
+		resize() {
+			this.dom.resize()
+		}
 	}
 }
 </script>

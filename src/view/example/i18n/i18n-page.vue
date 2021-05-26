@@ -11,7 +11,7 @@
 							placeholder="Select time"
 							style="display: block; margin-top: 10px"
 						></TimePicker>
-						<Button type="primary" @click="modalVisible = true" style="margin-top: 10px">{{
+						<Button type="primary" style="margin-top: 10px" @click="modalVisible = true">{{
 							$t('buttonText')
 						}}</Button>
 						<Modal v-model="modalVisible" :title="$t('modalTitle')">
@@ -24,7 +24,7 @@
 				</Card>
 			</i-col>
 			<i-col span="10">
-				<div class="click-outside" v-click-outside="onClickOutside">click outside</div>
+				<div v-click-outside="onClickOutside" class="click-outside">click outside</div>
 			</i-col>
 		</Row>
 		<Row>

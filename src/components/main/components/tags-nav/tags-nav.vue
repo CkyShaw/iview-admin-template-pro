@@ -1,7 +1,7 @@
 <template>
 	<div class="tags-nav">
 		<div class="close-con">
-			<Dropdown transfer @on-click="handleTagsOption" style="margin-top: 7px">
+			<Dropdown transfer style="margin-top: 7px" @on-click="handleTagsOption">
 				<Button size="small" type="text">
 					<Icon :size="18" type="ios-close-circle-outline" />
 				</Button>
@@ -11,8 +11,8 @@
 				</DropdownMenu>
 			</Dropdown>
 		</div>
-		<ul v-show="visible" :style="{ left: contextMenuLeft + 'px', top: contextMenuTop + 'px' }" class="contextmenu">
-			<li v-for="(item, key) of menuList" @click="handleTagsOption(key)" :key="key">{{ item }}</li>
+		<ul v-show="visible" :style="{ left: `${contextMenuLeft}px`, top: `${contextMenuTop}px` }" class="contextmenu">
+			<li v-for="(item, key) of menuList" :key="key" @click="handleTagsOption(key)">{{ item }}</li>
 		</ul>
 		<div class="btn-con left-btn">
 			<Button type="text" @click="handleScroll(240)">
@@ -24,20 +24,20 @@
 				<Icon :size="18" type="ios-arrow-forward" />
 			</Button>
 		</div>
-		<div class="scroll-outer" ref="scrollOuter" @DOMMouseScroll="handlescroll" @mousewheel="handlescroll">
-			<div ref="scrollBody" class="scroll-body" :style="{ left: tagBodyLeft + 'px' }">
+		<div ref="scrollOuter" class="scroll-outer" @DOMMouseScroll="handlescroll" @mousewheel="handlescroll">
+			<div ref="scrollBody" class="scroll-body" :style="{ left: `${tagBodyLeft}px` }">
 				<transition-group name="taglist-moving-animation">
 					<Tag
-						type="dot"
 						v-for="(item, index) in list"
 						ref="tagsPageOpened"
 						:key="`tag-nav-${index}`"
+						type="dot"
 						:name="item.name"
 						:data-route-item="item"
-						@on-close="handleClose(item)"
-						@click.native="handleClick(item)"
 						:closable="item.name !== $_config.homeName"
 						:color="isCurrentTag(item) ? 'primary' : 'default'"
+						@on-close="handleClose(item)"
+						@click.native="handleClick(item)"
 						@contextmenu.prevent.native="contextMenu(item, $event)"
 						>{{ showTitleInside(item) }}</Tag
 					>
@@ -80,6 +80,23 @@ export default {
 			const { name, params, query } = this.value
 			return { name, params, query }
 		}
+	},
+	watch: {
+		$route(to) {
+			this.getTagElementByRoute(to)
+		},
+		visible(value) {
+			if (value) {
+				document.body.addEventListener('click', this.closeMenu)
+			} else {
+				document.body.removeEventListener('click', this.closeMenu)
+			}
+		}
+	},
+	mounted() {
+		setTimeout(() => {
+			this.getTagElementByRoute(this.$route)
+		}, 200)
 	},
 	methods: {
 		handlescroll(e) {
@@ -167,7 +184,7 @@ export default {
 			}
 		},
 		getTagElementByRoute(route) {
-			this.$nextTick(() => {
+			this.$nextTick().then(() => {
 				this.refsTag = this.$refs.tagsPageOpened
 				this.refsTag.forEach((item, index) => {
 					if (routeEqual(route, item.$attrs['data-route-item'])) {
@@ -189,23 +206,6 @@ export default {
 		closeMenu() {
 			this.visible = false
 		}
-	},
-	watch: {
-		$route(to) {
-			this.getTagElementByRoute(to)
-		},
-		visible(value) {
-			if (value) {
-				document.body.addEventListener('click', this.closeMenu)
-			} else {
-				document.body.removeEventListener('click', this.closeMenu)
-			}
-		}
-	},
-	mounted() {
-		setTimeout(() => {
-			this.getTagElementByRoute(this.$route)
-		}, 200)
 	}
 }
 </script>

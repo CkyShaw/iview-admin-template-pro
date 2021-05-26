@@ -69,6 +69,7 @@ export default {
 		border-radius: 50%;
 		background: #000000;
 		position: absolute;
+
 		@extend .center-middle;
 		box-shadow: 0 0 6px 0 rgba(28, 36, 56, 0.4);
 		i.trigger-icon {

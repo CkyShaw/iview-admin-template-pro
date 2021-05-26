@@ -3,6 +3,7 @@
 		<textarea ref="codemirror" class="textarea-el"></textarea>
 	</div>
 </template>
+
 <script>
 import CodeMirror from 'codemirror'
 import 'codemirror/lib/codemirror.css'
@@ -29,13 +30,6 @@ export default {
 			editor: null
 		}
 	},
-	watch: {
-		pasteData(val) {
-			if (val === '') {
-				this.editor.setValue('')
-			}
-		}
-	},
 	computed: {
 		rowNum() {
 			return this.pasteDataArr.length
@@ -43,6 +37,26 @@ export default {
 		colNum() {
 			return this.pasteDataArr[0] ? this.pasteDataArr[0].length : 0
 		}
+	},
+	watch: {
+		pasteData(val) {
+			if (val === '') {
+				this.editor.setValue('')
+			}
+		}
+	},
+	mounted() {
+		createPlaceholder(CodeMirror)
+		this.editor = CodeMirror.fromTextArea(this.$refs.codemirror, {
+			lineNumbers: true,
+			tabSize: 1,
+			lineWrapping: true,
+			placeholder: this.placeholder
+		})
+		this.editor.on('change', editor => {
+			this.handleContentChanged(editor.getValue())
+		})
+		this.editor.addLineClass(0, 'text', 'first-row')
 	},
 	methods: {
 		handleKeyup(e) {
@@ -98,22 +112,10 @@ export default {
 				this.editor.removeLineClass(index, 'text', 'incorrect-row')
 			})
 		}
-	},
-	mounted() {
-		createPlaceholder(CodeMirror)
-		this.editor = CodeMirror.fromTextArea(this.$refs.codemirror, {
-			lineNumbers: true,
-			tabSize: 1,
-			lineWrapping: true,
-			placeholder: this.placeholder
-		})
-		this.editor.on('change', editor => {
-			this.handleContentChanged(editor.getValue())
-		})
-		this.editor.addLineClass(0, 'text', 'first-row')
 	}
 }
 </script>
+
 <style lang="stylus">
 @import './paste-editor.styl';
 </style>

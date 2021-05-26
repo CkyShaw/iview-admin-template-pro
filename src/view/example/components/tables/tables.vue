@@ -3,10 +3,10 @@
 		<Card>
 			<tables
 				ref="tables"
+				v-model="tableData"
 				editable
 				searchable
 				search-place="top"
-				v-model="tableData"
 				:columns="columns"
 				@on-delete="handleDelete"
 			/>
@@ -63,6 +63,11 @@ export default {
 			tableData: []
 		}
 	},
+	mounted() {
+		getTableData().then(res => {
+			this.tableData = res.data
+		})
+	},
 	methods: {
 		handleDelete(params) {
 			console.log(params)
@@ -72,11 +77,6 @@ export default {
 				filename: `table-${new Date().valueOf()}.csv`
 			})
 		}
-	},
-	mounted() {
-		getTableData().then(res => {
-			this.tableData = res.data
-		})
 	}
 }
 </script>

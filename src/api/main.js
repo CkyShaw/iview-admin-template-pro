@@ -15,7 +15,7 @@ export default {
 	getDataByGetService(params) {
 		return axios.request({
 			url: 'service/get',
-			params: params,
+			params,
 			method: 'get'
 		})
 	}

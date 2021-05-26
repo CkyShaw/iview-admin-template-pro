@@ -7,6 +7,7 @@
 		</slot>
 	</div>
 </template>
+
 <script>
 import { scrollTop } from '@/libs/util'
 import { on, off } from '@/libs/tools'
@@ -41,18 +42,6 @@ export default {
 			backTop: false
 		}
 	},
-	mounted() {
-		// window.addEventListener('scroll', this.handleScroll, false)
-		// window.addEventListener('resize', this.handleScroll, false)
-		on(this.containerEle, 'scroll', this.handleScroll)
-		on(this.containerEle, 'resize', this.handleScroll)
-	},
-	beforeDestroy() {
-		// window.removeEventListener('scroll', this.handleScroll, false)
-		// window.removeEventListener('resize', this.handleScroll, false)
-		off(this.containerEle, 'scroll', this.handleScroll)
-		off(this.containerEle, 'resize', this.handleScroll)
-	},
 	computed: {
 		classes() {
 			return [
@@ -74,6 +63,18 @@ export default {
 		containerEle() {
 			return this.container === window ? window : document.querySelector(this.container)
 		}
+	},
+	mounted() {
+		// window.addEventListener('scroll', this.handleScroll, false)
+		// window.addEventListener('resize', this.handleScroll, false)
+		on(this.containerEle, 'scroll', this.handleScroll)
+		on(this.containerEle, 'resize', this.handleScroll)
+	},
+	beforeDestroy() {
+		// window.removeEventListener('scroll', this.handleScroll, false)
+		// window.removeEventListener('resize', this.handleScroll, false)
+		off(this.containerEle, 'scroll', this.handleScroll)
+		off(this.containerEle, 'resize', this.handleScroll)
 	},
 	methods: {
 		handleScroll() {

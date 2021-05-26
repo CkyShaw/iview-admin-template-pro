@@ -18,13 +18,14 @@
 				</Menu>
 			</div>
 			<div class="message-page-con message-list-con">
-				<Spin fix v-if="listLoading" size="large"></Spin>
+				<Spin v-if="listLoading" fix size="large"></Spin>
 				<Menu width="auto" active-name="" :class="titleClass" @on-select="handleView">
-					<MenuItem v-for="item in messageList" :name="item.msg_id" :key="`msg_${item.msg_id}`">
+					<MenuItem v-for="item in messageList" :key="`msg_${item.msg_id}`" :name="item.msg_id">
 						<div>
 							<p class="msg-title">{{ item.title }}</p>
 							<Badge status="default" :text="item.create_time" />
 							<Button
+								v-show="currentMessageType !== 'unread'"
 								style="float: right; margin-right: 20px"
 								:style="{ display: item.loading ? 'inline-block !important' : '' }"
 								:loading="item.loading"
@@ -32,7 +33,6 @@
 								:icon="currentMessageType === 'readed' ? 'md-trash' : 'md-redo'"
 								:title="currentMessageType === 'readed' ? '删除' : '还原'"
 								type="text"
-								v-show="currentMessageType !== 'unread'"
 								@click.native.stop="removeMsg(item)"
 							></Button>
 						</div>
@@ -40,11 +40,12 @@
 				</Menu>
 			</div>
 			<div class="message-page-con message-view-con">
-				<Spin fix v-if="contentLoading" size="large"></Spin>
+				<Spin v-if="contentLoading" fix size="large"></Spin>
 				<div class="message-view-header">
 					<h2 class="message-view-title">{{ showingMsgItem.title }}</h2>
 					<time class="message-view-time">{{ showingMsgItem.create_time }}</time>
 				</div>
+				<!-- eslint-disable-next-line vue/require-name-property vue/no-v-html -->
 				<div v-html="messageContent"></div>
 			</div>
 		</div>
@@ -85,6 +86,13 @@ export default {
 		}),
 		...mapGetters(['messageUnreadCount', 'messageReadedCount', 'messageTrashCount'])
 	},
+	mounted() {
+		this.listLoading = true
+		// 请求获取消息列表
+		this.getMessageList()
+			.then(() => this.stopLoading('listLoading'))
+			.catch(() => this.stopLoading('listLoading'))
+	},
 	methods: {
 		...mapMutations([
 			//
@@ -116,13 +124,6 @@ export default {
 			if (this.currentMessageType === 'readed') this.removeReaded({ msg_id })
 			else this.restoreTrash({ msg_id })
 		}
-	},
-	mounted() {
-		this.listLoading = true
-		// 请求获取消息列表
-		this.getMessageList()
-			.then(() => this.stopLoading('listLoading'))
-			.catch(() => this.stopLoading('listLoading'))
 	}
 }
 </script>

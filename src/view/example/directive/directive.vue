@@ -24,14 +24,14 @@ options = {
 					</Row>
 				</Card>
 			</i-col>
-			<Modal v-draggable="options" v-model="modalVisible"> 拖动这里即可拖动整个弹窗 </Modal>
+			<Modal v-model="modalVisible" v-draggable="options"> 拖动这里即可拖动整个弹窗 </Modal>
 		</Row>
 		<Row style="margin-top: 10px">
 			<i-col>
 				<Card>
 					<Row>
 						<i-col span="8">
-							<Input style="width: 60%" v-model="inputValue">
+							<Input v-model="inputValue" style="width: 60%">
 								<Button slot="append" v-clipboard="clipOptions">copy</Button>
 							</Input>
 						</i-col>
@@ -60,7 +60,7 @@ clipOptions: {
 					</Row>
 				</Card>
 			</i-col>
-			<Modal v-draggable="options" v-model="modalVisible"> 拖动这里即可拖动整个弹窗 </Modal>
+			<Modal v-model="modalVisible" v-draggable="options"> 拖动这里即可拖动整个弹窗 </Modal>
 		</Row>
 	</div>
 </template>

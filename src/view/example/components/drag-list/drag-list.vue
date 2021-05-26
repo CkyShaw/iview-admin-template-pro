@@ -6,13 +6,13 @@
 				<drag-list
 					:list1.sync="list1"
 					:list2.sync="list2"
-					:dropConClass="dropConClass"
+					:drop-con-class="dropConClass"
 					@on-change="handleChange"
 				>
 					<h3 slot="left-title">待办事项</h3>
-					<Card class="drag-item" slot="left" slot-scope="left">{{ left.itemLeft.name }}</Card>
+					<Card slot="left" slot-scope="left" class="drag-item">{{ left.itemLeft.name }}</Card>
 					<h3 slot="right-title">完成事项</h3>
-					<Card class="drag-item" slot="right" slot-scope="right">{{ right.itemRight.name }}</Card>
+					<Card slot="right" slot-scope="right" class="drag-item">{{ right.itemRight.name }}</Card>
 				</drag-list>
 			</div>
 			<div class="handle-log-box">
@@ -30,6 +30,7 @@
 		</Card>
 	</div>
 </template>
+
 <script>
 import DragList from '@c/drag-list'
 import { getDragList } from '@/api/data'
@@ -49,19 +50,20 @@ export default {
 			handleList: []
 		}
 	},
-	methods: {
-		handleChange({ src, target, oldIndex, newIndex }) {
-			this.handleList.push(`${src} => ${target}, ${oldIndex} => ${newIndex}`)
-		}
-	},
 	mounted() {
 		getDragList().then(res => {
 			this.list1 = res.data
 			this.list2 = [res.data[0]]
 		})
+	},
+	methods: {
+		handleChange({ src, target, oldIndex, newIndex }) {
+			this.handleList.push(`${src} => ${target}, ${oldIndex} => ${newIndex}`)
+		}
 	}
 }
 </script>
+
 <style lang="stylus">
 .drag-box-card {
 	display: inline-block;
@@ -80,9 +82,6 @@ export default {
 	}
 	.left-drop-box {
 		margin-right: 10px;
-	}
-	.right-drop-box {
-		//
 	}
 }
 .handle-log-box {

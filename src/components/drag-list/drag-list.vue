@@ -10,7 +10,7 @@
 				@input="handleListChange($event, 'left')"
 				@end="handleEnd($event, 'left')"
 			>
-				<div class="drag-list-item" v-for="(itemLeft, index) in list1" :key="`drag_li1_${index}`">
+				<div v-for="(itemLeft, index) in list1" :key="`drag_li1_${index}`" class="drag-list-item">
 					<slot name="left" :itemLeft="itemLeft">{{ itemLeft }}</slot>
 				</div>
 			</draggable>
@@ -25,13 +25,14 @@
 				@input="handleListChange($event, 'right')"
 				@end="handleEnd($event, 'right')"
 			>
-				<div class="drag-list-item" v-for="(itemRight, index) in list2" :key="`drag_li2_${index}`">
+				<div v-for="(itemRight, index) in list2" :key="`drag_li2_${index}`" class="drag-list-item">
 					<slot name="right" :itemRight="itemRight">{{ itemRight }}</slot>
 				</div>
 			</draggable>
 		</div>
 	</div>
 </template>
+
 <script>
 import draggable from 'vuedraggable'
 export default {
@@ -86,8 +87,8 @@ export default {
 				}
 			}
 			this.$emit('on-change', {
-				src: src,
-				target: target,
+				src,
+				target,
 				oldIndex: event.oldIndex,
 				newIndex: event.newIndex
 			})
@@ -95,6 +96,7 @@ export default {
 	}
 }
 </script>
+
 <style lang="stylus">
 .drag-list-wrapper {
 	height: 100%;

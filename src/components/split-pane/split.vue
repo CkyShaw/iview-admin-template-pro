@@ -90,6 +90,22 @@ export default {
 			return this.getComputedThresholdValue('max')
 		}
 	},
+	watch: {
+		value() {
+			this.offset =
+				((this.valueIsPx ? this.px2percent(this.value, this.$refs.outerWrapper[this.offsetSize]) : this.value) *
+					10000) /
+				100
+		}
+	},
+	mounted() {
+		this.$nextTick().then(() => {
+			this.offset =
+				((this.valueIsPx ? this.px2percent(this.value, this.$refs.outerWrapper[this.offsetSize]) : this.value) *
+					10000) /
+				100
+		})
+	},
 	methods: {
 		px2percent(numerator, denominator) {
 			return parseFloat(numerator) / parseFloat(denominator)
@@ -97,15 +113,15 @@ export default {
 		getComputedThresholdValue(type) {
 			let size = this.$refs.outerWrapper[this.offsetSize]
 			if (this.valueIsPx) return typeof this[type] === 'string' ? this[type] : size * this[type]
-			else return typeof this[type] === 'string' ? this.px2percent(this[type], size) : this[type]
+			return typeof this[type] === 'string' ? this.px2percent(this[type], size) : this[type]
 		},
 		getMin(value1, value2) {
 			if (this.valueIsPx) return `${Math.min(parseFloat(value1), parseFloat(value2))}px`
-			else return Math.min(value1, value2)
+			return Math.min(value1, value2)
 		},
 		getMax(value1, value2) {
 			if (this.valueIsPx) return `${Math.max(parseFloat(value1), parseFloat(value2))}px`
-			else return Math.max(value1, value2)
+			return Math.max(value1, value2)
 		},
 		getAnotherOffset(value) {
 			let res = 0
@@ -145,22 +161,6 @@ export default {
 			on(document, 'mouseup', this.handleUp)
 			this.$emit('on-move-start')
 		}
-	},
-	watch: {
-		value() {
-			this.offset =
-				((this.valueIsPx ? this.px2percent(this.value, this.$refs.outerWrapper[this.offsetSize]) : this.value) *
-					10000) /
-				100
-		}
-	},
-	mounted() {
-		this.$nextTick(() => {
-			this.offset =
-				((this.valueIsPx ? this.px2percent(this.value, this.$refs.outerWrapper[this.offsetSize]) : this.value) *
-					10000) /
-				100
-		})
 	}
 }
 </script>

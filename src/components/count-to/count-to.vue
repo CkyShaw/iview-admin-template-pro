@@ -2,7 +2,7 @@
 	<div class="count-to-wrapper">
 		<slot name="left" />
 		<p class="content-outer">
-			<span :class="['count-to-count-text', countClass]" :id="counterId">{{ init }}</span
+			<span :id="counterId" :class="['count-to-count-text', countClass]">{{ init }}</span
 			><i :class="['count-to-unit-text', unitClass]">{{ unitText }}</i>
 		</p>
 		<slot name="right" />
@@ -123,6 +123,26 @@ export default {
 			return `count_to_${this._uid}`
 		}
 	},
+	watch: {
+		end(newVal) {
+			let endVal = this.getValue(newVal)
+			this.counter.update(endVal)
+		}
+	},
+	mounted() {
+		this.$nextTick().then(() => {
+			let endVal = this.getValue(this.end)
+			this.counter = new CountUp(this.counterId, this.startVal, endVal, this.decimals, this.duration, {
+				useEasing: !this.uneasing,
+				useGrouping: this.useGroup,
+				separator: this.separator,
+				decimal: this.decimal
+			})
+			setTimeout(() => {
+				if (!this.counter.error) this.counter.start()
+			}, this.delay)
+		})
+	},
 	methods: {
 		getHandleVal(val, len) {
 			return {
@@ -156,26 +176,6 @@ export default {
 				res = val
 			}
 			return res
-		}
-	},
-	mounted() {
-		this.$nextTick(() => {
-			let endVal = this.getValue(this.end)
-			this.counter = new CountUp(this.counterId, this.startVal, endVal, this.decimals, this.duration, {
-				useEasing: !this.uneasing,
-				useGrouping: this.useGroup,
-				separator: this.separator,
-				decimal: this.decimal
-			})
-			setTimeout(() => {
-				if (!this.counter.error) this.counter.start()
-			}, this.delay)
-		})
-	},
-	watch: {
-		end(newVal) {
-			let endVal = this.getValue(newVal)
-			this.counter.update(endVal)
 		}
 	}
 }

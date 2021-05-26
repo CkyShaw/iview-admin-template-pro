@@ -45,11 +45,6 @@ export default {
 			return `editor${this._uid}`
 		}
 	},
-	methods: {
-		setHtml(val) {
-			this.editor.txt.html(val)
-		}
-	},
 	mounted() {
 		this.editor = new Editor(`#${this.editorId}`)
 		this.editor.config.onchange = html => {
@@ -64,6 +59,11 @@ export default {
 		// 如果本地有存储加载本地存储内容
 		let html = this.value || localStorage.editorCache
 		if (html) this.editor.txt.html(html)
+	},
+	methods: {
+		setHtml(val) {
+			this.editor.txt.html(val)
+		}
 	}
 }
 </script>

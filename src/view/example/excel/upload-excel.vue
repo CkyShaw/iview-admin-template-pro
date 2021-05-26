@@ -1,6 +1,7 @@
 <style lang="stylus">
 @import './common.styl';
 </style>
+
 <template>
 	<div>
 		<Card title="导入EXCEL">
@@ -12,14 +13,14 @@
 				</Upload>
 			</Row>
 			<Row>
-				<div class="ivu-upload-list-file" v-if="file !== null">
+				<div v-if="file !== null" class="ivu-upload-list-file">
 					<Icon type="ios-stats"></Icon>
 					{{ file.name }}
 					<Icon
 						v-show="showRemoveFile"
 						type="ios-close"
 						class="ivu-upload-list-remove"
-						@click.native="handleRemove()"
+						@click.native="handleRemove"
 					></Icon>
 				</div>
 			</Row>
@@ -39,6 +40,7 @@
 		</Row>
 	</div>
 </template>
+
 <script>
 import excel from '@/libs/excel'
 export default {
@@ -55,6 +57,8 @@ export default {
 			tableLoading: false
 		}
 	},
+	created() {},
+	mounted() {},
 	methods: {
 		initUpload() {
 			this.file = null
@@ -78,7 +82,7 @@ export default {
 			} else {
 				this.$Notice.warning({
 					title: '文件类型错误',
-					desc: '文件：' + file.name + '不是EXCEL文件，请选择后缀为.xlsx或者.xls的EXCEL文件。'
+					desc: `文件：${file.name}不是EXCEL文件，请选择后缀为.xlsx或者.xls的EXCEL文件。`
 				})
 			}
 			return false
@@ -112,8 +116,6 @@ export default {
 				this.showRemoveFile = true
 			}
 		}
-	},
-	created() {},
-	mounted() {}
+	}
 }
 </script>

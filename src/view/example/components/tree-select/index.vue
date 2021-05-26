@@ -6,11 +6,11 @@
 			check-strictly
 			:expand-all="true"
 			:load-data="loadData"
+			:data="treeData"
 			@on-change="handleTreeSelectChange"
 			@on-toggle-expand="handleTreeSelectExpand"
 			@on-check-change="handleTreeSelectCheckChange"
 			@on-select-change="handleTreeSelectClick"
-			:data="treeData"
 		></tree-select>
 		<Button @click="changeTreeSelectData">更新选中数据</Button>
 		<Button @click="changeTreeData">更新树数据</Button>

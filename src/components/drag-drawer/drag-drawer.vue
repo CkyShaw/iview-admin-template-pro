@@ -2,10 +2,10 @@
 	<Drawer
 		ref="drawerWrapper"
 		:value="value"
-		@input="handleInput"
 		:width="width"
 		:class-name="outerClasses"
 		v-bind="$attrs"
+		@input="handleInput"
 		v-on="$listeners"
 	>
 		<!-- 所有插槽内容显示在这里 ↓ -->
@@ -15,18 +15,18 @@
 				<render-dom
 					v-for="(render, index) in slots"
 					:key="`b_drawer_${slotsName}_${index}`"
-					:render="() => render"
 					:slot="slotsName"
+					:render="() => render"
 				>
 				</render-dom>
 			</template>
 			<template v-else>
-				<div :class="`${prefix}-body-wrapper`" :key="`b_drawer_${slotsName}`">
+				<div :key="`b_drawer_${slotsName}`" :class="`${prefix}-body-wrapper`">
 					<render-dom
 						v-for="(render, index) in slots"
 						:key="`b_drawer_${slotsName}_${index}`"
-						:render="() => render"
 						:slot="slotsName"
+						:render="() => render"
 					>
 					</render-dom>
 				</div>
@@ -62,6 +62,7 @@ export default {
 		DragDrawerTrigger
 	},
 	mixins: [Mixin],
+	inheritAttrs: false,
 	props: {
 		value: {
 			type: Boolean,
@@ -108,6 +109,15 @@ export default {
 			}
 		}
 	},
+	mounted() {
+		on(document, 'mousemove', this.handleMousemove)
+		on(document, 'mouseup', this.handleMouseup)
+		this.setWrapperWidth()
+	},
+	beforeDestroy() {
+		off(document, 'mousemove', this.handleMousemove)
+		off(document, 'mouseup', this.handleMouseup)
+	},
 	methods: {
 		handleInput(status) {
 			this.$emit('input', status)
@@ -142,15 +152,6 @@ export default {
 			this.wrapperWidth = width
 			this.wrapperLeft = left
 		}
-	},
-	mounted() {
-		on(document, 'mousemove', this.handleMousemove)
-		on(document, 'mouseup', this.handleMouseup)
-		this.setWrapperWidth()
-	},
-	beforeDestroy() {
-		off(document, 'mousemove', this.handleMousemove)
-		off(document, 'mouseup', this.handleMouseup)
 	}
 }
 </script>

@@ -19,13 +19,8 @@ export default {
 			dom: null
 		}
 	},
-	methods: {
-		resize() {
-			this.dom.resize()
-		}
-	},
 	mounted() {
-		this.$nextTick(() => {
+		this.$nextTick().then(() => {
 			let xAxisData = Object.keys(this.value)
 			let seriesData = Object.values(this.value)
 			let option = {
@@ -55,6 +50,11 @@ export default {
 	},
 	beforeDestroy() {
 		off(window, 'resize', this.resize)
+	},
+	methods: {
+		resize() {
+			this.dom.resize()
+		}
 	}
 }
 </script>

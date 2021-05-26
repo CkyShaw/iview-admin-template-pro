@@ -5,6 +5,7 @@
 		</a-config-provider>
 	</div>
 </template>
+
 <script>
 import { mapState } from 'vuex'
 import zh_CN from 'ant-design-vue/lib/locale-provider/zh_CN'
@@ -39,13 +40,14 @@ export default {
 		...mapState({ local: state => state.app.local }),
 		locale: {
 			get() {
-				moment.locale(this.localeMap[this.local || Vue.config.lang]['moment'])
-				return this.localeMap[this.local || Vue.config.lang]['locale']
+				moment.locale(this.localeMap[this.local || Vue.config.lang].moment)
+				return this.localeMap[this.local || Vue.config.lang].locale
 			}
 		}
 	}
 }
 </script>
+
 <style lang="stylus">
 .full {
 	width: 100%;

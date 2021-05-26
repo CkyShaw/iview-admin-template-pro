@@ -1,11 +1,11 @@
 <template>
 	<Tree
 		:data="data"
-		@on-check-change="handleCheckSelect"
-		v-on="parent.$listeners"
 		v-bind="parent.$attrs"
 		:load-data="loadDataCallback"
 		show-checkbox
+		@on-check-change="handleCheckSelect"
+		v-on="parent.$listeners"
 	></Tree>
 </template>
 
@@ -16,20 +16,20 @@ const arrayEqual = (arr1, arr2) => {
 	// 判断数组的长度
 	if (arr1.length !== arr2.length) {
 		return false
-	} else {
-		// 循环遍历数组的值进行比较
-		for (let i = 0; i < arr1.length; i++) {
-			if (arr1[i] !== arr2[i]) {
-				return false
-			}
-		}
-		return true
 	}
+	// 循环遍历数组的值进行比较
+	for (let i = 0; i < arr1.length; i++) {
+		if (arr1[i] !== arr2[i]) {
+			return false
+		}
+	}
+	return true
 }
 
 export default {
 	name: 'TreeSelectTree',
 	mixins: [Emitter],
+	inject: ['parent'],
 	props: {
 		data: {
 			type: Array,
@@ -47,7 +47,6 @@ export default {
 			checkedArray: []
 		}
 	},
-	inject: ['parent'],
 	computed: {
 		expandAll() {
 			return this.parent.$attrs['expand-all']
@@ -74,10 +73,16 @@ export default {
 				filtedNewVal.map(id => this.flatDic[id])
 			)
 			this.$emit('on-clear')
-			this.$nextTick(() => {
+			this.$nextTick().then(() => {
 				this.checkData(this.data, true)
 			})
 		}
+	},
+	mounted() {
+		this.checkData(this.data, false, true)
+		this.$nextTick().then(() => {
+			this.$emit('on-check', this.checkedArray)
+		})
 	},
 	methods: {
 		checkEmit(value, label) {
@@ -130,12 +135,6 @@ export default {
 				})(data)
 			})
 		}
-	},
-	mounted() {
-		this.checkData(this.data, false, true)
-		this.$nextTick(() => {
-			this.$emit('on-check', this.checkedArray)
-		})
 	}
 }
 </script>

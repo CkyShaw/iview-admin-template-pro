@@ -1,13 +1,14 @@
 <template>
 	<div class="custom-bread-crumb">
 		<Breadcrumb :style="{ fontSize: `${fontSize}px` }">
-			<BreadcrumbItem v-for="item in list" :to="item.to" :key="`bread-crumb-${item.name}`">
+			<BreadcrumbItem v-for="item in list" :key="`bread-crumb-${item.name}`" :to="item.to">
 				<common-icon style="margin-right: 4px" :type="item.icon || ''" />
 				{{ showTitle(item) }}
 			</BreadcrumbItem>
 		</Breadcrumb>
 	</div>
 </template>
+
 <script>
 import { showTitle } from '@/libs/util'
 import CommonIcon from '@c/common-icon'

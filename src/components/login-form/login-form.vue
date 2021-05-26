@@ -8,17 +8,18 @@
 			</Input>
 		</FormItem>
 		<FormItem prop="password">
-			<Input type="password" v-model="form.password" placeholder="请输入密码">
+			<Input v-model="form.password" type="password" placeholder="请输入密码">
 				<span slot="prepend">
 					<Icon :size="14" type="md-lock"></Icon>
 				</span>
 			</Input>
 		</FormItem>
 		<FormItem>
-			<Button @click="handleSubmit" type="primary" long>登录</Button>
+			<Button type="primary" long @click="handleSubmit">登录</Button>
 		</FormItem>
 	</Form>
 </template>
+
 <script>
 export default {
 	name: 'LoginForm',

@@ -39,8 +39,8 @@
 					<Row type="flex" justify="center" align="middle" class="countto-page-row">
 						<div class="count-to-con">
 							<count-to :end="2534" count-class="count-text" unit-class="unit-class">
-								<span class="slot-text" slot="left">Total:&nbsp;</span>
-								<span class="slot-text" slot="right">&nbsp;times</span>
+								<span slot="left" class="slot-text">Total:&nbsp;</span>
+								<span slot="right" class="slot-text">&nbsp;times</span>
 							</count-to>
 						</div>
 					</Row>
@@ -55,8 +55,8 @@
 					<Row type="flex" justify="center" align="middle" class="countto-page-row">
 						<div class="count-to-con">
 							<count-to :end="2534" count-class="count-text" unit-class="unit-class" :decimals="2">
-								<span class="slot-text" slot="left">Total:&nbsp;</span>
-								<span class="slot-text" slot="right">&nbsp;times</span>
+								<span slot="left" class="slot-text">Total:&nbsp;</span>
+								<span slot="right" class="slot-text">&nbsp;times</span>
 							</count-to>
 						</div>
 					</Row>
@@ -73,8 +73,8 @@
 					<Row type="flex" justify="center" align="middle" class="countto-page-row">
 						<div class="count-to-con">
 							<count-to :simplify="true" :end="2534" count-class="count-text" unit-class="unit-class">
-								<span class="slot-text" slot="left">Total:&nbsp;</span>
-								<span class="slot-text" slot="right">&nbsp;times</span>
+								<span slot="left" class="slot-text">Total:&nbsp;</span>
+								<span slot="right" class="slot-text">&nbsp;times</span>
 							</count-to>
 						</div>
 					</Row>
@@ -95,7 +95,7 @@
 								count-class="count-text"
 								unit-class="unit-class"
 							>
-								<span class="slot-text" slot="left">原始数据：253&nbsp;=>&nbsp;</span>
+								<span slot="left" class="slot-text">原始数据：253&nbsp;=>&nbsp;</span>
 							</count-to>
 							<count-to
 								:simplify="true"
@@ -104,7 +104,7 @@
 								count-class="count-text"
 								unit-class="unit-class"
 							>
-								<span class="slot-text" slot="left">原始数据：2534&nbsp;=>&nbsp;</span>
+								<span slot="left" class="slot-text">原始数据：2534&nbsp;=>&nbsp;</span>
 							</count-to>
 							<count-to
 								:simplify="true"
@@ -113,7 +113,7 @@
 								count-class="count-text"
 								unit-class="unit-class"
 							>
-								<span class="slot-text" slot="left">原始数据：257678&nbsp;=>&nbsp;</span>
+								<span slot="left" class="slot-text">原始数据：257678&nbsp;=>&nbsp;</span>
 							</count-to>
 						</div>
 					</Row>
@@ -128,8 +128,8 @@
 					<Row type="flex" justify="center" align="middle" class="countto-page-row">
 						<div class="count-to-con">
 							<count-to :end="asynEndVal" count-class="count-text" unit-class="unit-class">
-								<span class="slot-text" slot="left">Total:&nbsp;</span>
-								<span class="slot-text" slot="right">&nbsp;times</span>
+								<span slot="left" class="slot-text">Total:&nbsp;</span>
+								<span slot="right" class="slot-text">&nbsp;times</span>
 							</count-to>
 						</div>
 					</Row>
@@ -153,10 +153,10 @@
 								count-class="count-text"
 								unit-class="unit-class"
 							>
-								<span class="slot-text" slot="left"
+								<span slot="left" class="slot-text"
 									>原始数据:&nbsp;{{ integratedEndVal }}&nbsp;=>&nbsp;</span
 								>
-								<span class="slot-text" slot="right">&nbsp;times</span>
+								<span slot="right" class="slot-text">&nbsp;times</span>
 							</count-to>
 						</div>
 					</Row>
@@ -195,6 +195,9 @@ export default {
 			integratedEndVal: 3
 		}
 	},
+	mounted() {
+		this.init()
+	},
 	methods: {
 		init() {
 			setInterval(() => {
@@ -202,15 +205,12 @@ export default {
 				this.integratedEndVal += parseInt(Math.random() * 30)
 			}, 2000)
 		}
-	},
-	mounted() {
-		this.init()
 	}
 }
 </script>
 
 <style lang="stylus">
-baseColor = #dc9387
+baseColor = #dc9387;
 p {
 	margin-bottom: initial;
 }

@@ -1,26 +1,26 @@
 <template>
 	<Layout style="height: 100%" class="main">
 		<Sider
+			v-model="collapsed"
 			hide-trigger
 			collapsible
 			:width="256"
 			:collapsed-width="64"
-			v-model="collapsed"
 			class="left-sider"
 			:style="{ overflow: 'hidden' }"
 		>
 			<side-menu
-				accordion
 				ref="sideMenu"
+				accordion
 				:active-name="$route.name"
 				:collapsed="collapsed"
-				@on-select="turnToPage"
 				:menu-list="menuList"
+				@on-select="turnToPage"
 			>
 				<!-- 需要放在菜单上面的内容，如Logo，写在side-menu标签内部，如下 -->
 				<div class="logo-con">
-					<img v-show="!collapsed" :src="maxLogo" key="max-logo" />
-					<img v-show="collapsed" :src="minLogo" key="min-logo" />
+					<img v-show="!collapsed" key="max-logo" :src="maxLogo" />
+					<img v-show="collapsed" key="min-logo" :src="minLogo" />
 				</div>
 			</side-menu>
 		</Sider>
@@ -30,9 +30,9 @@
 					<user :message-unread-count="unreadCount" :user-avatar="userAvatar" />
 					<language
 						v-if="$_config.useI18n"
-						@on-lang-change="setLocal"
 						style="margin-right: 10px"
 						:lang="local"
+						@on-lang-change="setLocal"
 					/>
 					<error-store
 						v-if="$_config.plugin['error-store'] && $_config.plugin['error-store'].showInHeader"
@@ -45,19 +45,20 @@
 			<Content class="main-content-con">
 				<Layout class="main-layout-con">
 					<div class="tag-nav-wrapper">
-						<tags-nav :value="$route" @input="handleClick" :list="tagNavList" @on-close="handleCloseTag" />
+						<tags-nav :value="$route" :list="tagNavList" @input="handleClick" @on-close="handleCloseTag" />
 					</div>
 					<Content class="content-wrapper">
 						<keep-alive :include="cacheList">
 							<router-view />
 						</keep-alive>
-						<ABackTop :height="100" :bottom="80" :right="50" container=".content-wrapper"></ABackTop>
+						<a-back-top :height="100" :bottom="80" :right="50" container=".content-wrapper"></a-back-top>
 					</Content>
 				</Layout>
 			</Content>
 		</Layout>
 	</Layout>
 </template>
+
 <script>
 import SideMenu from './components/side-menu'
 import HeaderBar from './components/header-bar'
@@ -74,6 +75,7 @@ import minLogo from '@/assets/images/logo-min.jpg'
 import maxLogo from '@/assets/images/logo.jpg'
 import './main.styl'
 export default {
+	// eslint-disable-next-line vue/no-reserved-component-names
 	name: 'Main',
 	components: {
 		SideMenu,
@@ -126,6 +128,40 @@ export default {
 			return this.$store.state.user.unreadCount
 		}
 	},
+	watch: {
+		$route(newRoute) {
+			const { name, query, params, meta } = newRoute
+			this.addTag({
+				route: { name, query, params, meta },
+				type: 'push'
+			})
+			this.setBreadCrumb(newRoute)
+			this.setTagNavList(getNewTagList(this.tagNavList, newRoute))
+			this.$refs.sideMenu.updateOpenName(newRoute.name)
+		}
+	},
+	mounted() {
+		/**
+		 * @description 初始化设置面包屑导航和标签导航
+		 */
+		this.setTagNavList()
+		this.setHomeRoute(routers)
+		const { name, params, query, meta } = this.$route
+		this.addTag({
+			route: { name, params, query, meta }
+		})
+		this.setBreadCrumb(this.$route)
+		// 设置初始语言
+		this.setLocal(this.$i18n.locale)
+		// 如果当前打开页面不在标签栏中，跳到homeName页
+		if (!this.tagNavList.find(item => item.name === this.$route.name)) {
+			this.$router.push({
+				name: this.$_config.homeName
+			})
+		}
+		// 获取未读消息条数
+		this.getUnreadMessageCount()
+	},
 	methods: {
 		...mapMutations(['setBreadCrumb', 'setTagNavList', 'addTag', 'setLocal', 'setHomeRoute', 'closeTag']),
 		...mapActions(['handleLogin', 'getUnreadMessageCount']),
@@ -165,40 +201,6 @@ export default {
 		handleClick(item) {
 			this.turnToPage(item)
 		}
-	},
-	watch: {
-		$route(newRoute) {
-			const { name, query, params, meta } = newRoute
-			this.addTag({
-				route: { name, query, params, meta },
-				type: 'push'
-			})
-			this.setBreadCrumb(newRoute)
-			this.setTagNavList(getNewTagList(this.tagNavList, newRoute))
-			this.$refs.sideMenu.updateOpenName(newRoute.name)
-		}
-	},
-	mounted() {
-		/**
-		 * @description 初始化设置面包屑导航和标签导航
-		 */
-		this.setTagNavList()
-		this.setHomeRoute(routers)
-		const { name, params, query, meta } = this.$route
-		this.addTag({
-			route: { name, params, query, meta }
-		})
-		this.setBreadCrumb(this.$route)
-		// 设置初始语言
-		this.setLocal(this.$i18n.locale)
-		// 如果当前打开页面不在标签栏中，跳到homeName页
-		if (!this.tagNavList.find(item => item.name === this.$route.name)) {
-			this.$router.push({
-				name: this.$_config.homeName
-			})
-		}
-		// 获取未读消息条数
-		this.getUnreadMessageCount()
 	}
 }
 </script>

@@ -18,6 +18,7 @@
 <script>
 import LoginForm from '@c/login-form'
 import { mapActions } from 'vuex'
+// eslint-disable-next-line vue/require-name-property
 export default {
 	components: {
 		LoginForm

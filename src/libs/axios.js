@@ -21,6 +21,7 @@ class HttpRequest {
 		this.baseUrl = baseUrl
 		this.queue = {}
 	}
+
 	getInsideConfig() {
 		const config = {
 			baseURL: this.baseUrl,
@@ -30,12 +31,14 @@ class HttpRequest {
 		}
 		return config
 	}
+
 	destroy(url) {
 		delete this.queue[url]
 		if (!Object.keys(this.queue).length) {
 			Spin.hide()
 		}
 	}
+
 	interceptors(instance, url) {
 		// 请求拦截
 		instance.interceptors.request.use(
@@ -77,6 +80,7 @@ class HttpRequest {
 			}
 		)
 	}
+
 	request(options) {
 		const instance = axios.create()
 		options = Object.assign(this.getInsideConfig(), options)

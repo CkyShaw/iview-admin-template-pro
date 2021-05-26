@@ -15,10 +15,10 @@
 				是否可拖动
 				<i-switch v-model="draggable"></i-switch>
 			</b>
-			<Button @click="showContainerBDrawer = !showContainerBDrawer" type="primary" style="margin-left: 10px"
+			<Button type="primary" style="margin-left: 10px" @click="showContainerBDrawer = !showContainerBDrawer"
 				>{{ showContainerBDrawer ? '关闭' : '打开' }}容器内抽屉</Button
 			>
-			<Button @click="showWindowBDrawer = true" type="primary" style="margin-left: 10px">打开全屏抽屉</Button>
+			<Button type="primary" style="margin-left: 10px" @click="showWindowBDrawer = true">打开全屏抽屉</Button>
 		</div>
 		<div class="drag-drawer-inner-box">
 			<drag-drawer
@@ -29,8 +29,8 @@
 				:transfer="false"
 				:placement="placementComputed"
 				:draggable="draggable"
-				@on-resize="handleResize"
 				:scrollable="true"
+				@on-resize="handleResize"
 			>
 				<div slot="header">
 					<Icon type="md-aperture" :size="18"></Icon>

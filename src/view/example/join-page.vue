@@ -53,6 +53,7 @@ export default {
 	}
 }
 </script>
+
 <style>
 .join-page {
 	text-align: center;

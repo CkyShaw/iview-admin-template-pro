@@ -11,8 +11,8 @@
 				:data="data"
 				:node-render="nodeRender"
 				:expand-all="true"
-				@on-node-click="handleNodeClick"
 				collapsable
+				@on-node-click="handleNodeClick"
 			></v-org-tree>
 		</div>
 	</div>
@@ -70,6 +70,12 @@ export default {
 				marginTop: `${this.orgTreeOffsetTop}px`
 			}
 		}
+	},
+	mounted() {
+		on(document, 'contextmenu', this.handleDocumentContextmenu)
+	},
+	beforeDestroy() {
+		off(document, 'contextmenu', this.handleDocumentContextmenu)
 	},
 	methods: {
 		handleNodeClick(e, data, expand) {
@@ -147,12 +153,6 @@ export default {
 		handleContextMenuClick(data, key) {
 			this.$emit('on-menu-click', { data, key })
 		}
-	},
-	mounted() {
-		on(document, 'contextmenu', this.handleDocumentContextmenu)
-	},
-	beforeDestroy() {
-		off(document, 'contextmenu', this.handleDocumentContextmenu)
 	}
 }
 </script>

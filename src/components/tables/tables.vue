@@ -9,13 +9,13 @@
 				</template>
 			</Select>
 			<Input
-				@on-change="handleClear"
+				v-model="searchValue"
 				clearable
 				placeholder="输入关键字搜索"
 				class="search-input"
-				v-model="searchValue"
+				@on-change="handleClear"
 			/>
-			<Button @click="handleSearch" class="search-btn" type="primary"
+			<Button class="search-btn" type="primary" @click="handleSearch"
 				><Icon type="search" />&nbsp;&nbsp;搜索</Button
 			>
 		</div>
@@ -46,9 +46,9 @@
 			@on-row-dblclick="onRowDblclick"
 			@on-expand="onExpand"
 		>
-			<slot name="header" slot="header"></slot>
-			<slot name="footer" slot="footer"></slot>
-			<slot name="loading" slot="loading"></slot>
+			<slot slot="header" name="header"></slot>
+			<slot slot="footer" name="footer"></slot>
+			<slot slot="loading" name="loading"></slot>
 		</Table>
 		<div v-if="searchable && searchPlace === 'bottom'" class="search-con search-con-top">
 			<Select v-model="searchKey" class="search-col">
@@ -58,7 +58,7 @@
 					}}</Option>
 				</template>
 			</Select>
-			<Input placeholder="输入关键字搜索" class="search-input" v-model="searchValue" />
+			<Input v-model="searchValue" placeholder="输入关键字搜索" class="search-input" />
 			<Button class="search-btn" type="primary"><Icon type="search" />&nbsp;&nbsp;搜索</Button>
 		</div>
 		<a id="hrefToExportTable" style="display: none; width: 0px; height: 0px"></a>
@@ -167,12 +167,27 @@ export default {
 			searchKey: ''
 		}
 	},
+	watch: {
+		columns(columns) {
+			this.handleColumns(columns)
+			this.setDefaultSearchKey()
+		},
+		value(val) {
+			this.handleTableData()
+			if (this.searchable) this.handleSearch()
+		}
+	},
+	mounted() {
+		this.handleColumns(this.columns)
+		this.setDefaultSearchKey()
+		this.handleTableData()
+	},
 	methods: {
 		suportEdit(item, index) {
 			item.render = (h, params) => {
 				return h(TablesEdit, {
 					props: {
-						params: params,
+						params,
 						value: this.insideTableData[params.index][params.column.key],
 						edittingCellId: this.edittingCellId,
 						editable: this.editable
@@ -190,6 +205,7 @@ export default {
 							this.$emit('on-cancel-edit', params)
 						},
 						'on-save-edit': params => {
+							// eslint-disable-next-line vue/no-mutating-props
 							this.value[params.row.initRowIndex][params.column.key] = this.edittingText
 							this.$emit('input', this.value)
 							this.$emit('on-save-edit', Object.assign(params, { value: this.edittingText }))
@@ -281,21 +297,6 @@ export default {
 		onExpand(row, status) {
 			this.$emit('on-expand', row, status)
 		}
-	},
-	watch: {
-		columns(columns) {
-			this.handleColumns(columns)
-			this.setDefaultSearchKey()
-		},
-		value(val) {
-			this.handleTableData()
-			if (this.searchable) this.handleSearch()
-		}
-	},
-	mounted() {
-		this.handleColumns(this.columns)
-		this.setDefaultSearchKey()
-		this.handleTableData()
 	}
 }
 </script>

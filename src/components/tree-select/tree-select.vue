@@ -1,10 +1,10 @@
 <template>
-	<Select ref="select" class="tree-select" v-bind="$attrs" @on-change="handleChange" multiple>
+	<Select ref="select" class="tree-select" v-bind="$attrs" multiple @on-change="handleChange">
 		<tree-select-tree-item
-			:selectedArray="value"
+			:selected-array="value"
 			:data="data"
-			@on-clear="handleClear"
 			:load-data="loadData"
+			@on-clear="handleClear"
 			@on-check="handleTreeCheck"
 		></tree-select-tree-item>
 	</Select>
@@ -15,10 +15,16 @@ import Emitter from 'view-design/src/mixins/emitter'
 import TreeSelectTreeItem from './tree-select-tree.vue'
 export default {
 	name: 'TreeSelect',
-	mixins: [Emitter],
 	components: {
 		TreeSelectTreeItem
 	},
+	mixins: [Emitter],
+	provide() {
+		return {
+			parent: this
+		}
+	},
+	inheritAttrs: false,
 	props: {
 		value: {
 			type: Array,
@@ -34,11 +40,6 @@ export default {
 		return {
 			isChangedByTree: true,
 			isInit: true
-		}
-	},
-	provide() {
-		return {
-			parent: this
 		}
 	},
 	methods: {

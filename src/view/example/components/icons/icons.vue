@@ -2,7 +2,7 @@
 	<Row>
 		<i-col span="16">
 			<Row v-for="i in customIconList.length / 3" :key="`custom-icon-row-${i}`">
-				<i-col span="8" v-for="item in customIconList.slice((i - 1) * 3, i * 3)" :key="`custom-icon-${item}`">
+				<i-col v-for="item in customIconList.slice((i - 1) * 3, i * 3)" :key="`custom-icon-${item}`" span="8">
 					<Card style="margin: 0 5px 5px; text-align: center">
 						<icons :size="30" :type="item" />
 						<p class="icon-code">&lt;Icons :size="30" type="{{ item }}"&gt;</p>

@@ -15,6 +15,15 @@ export default {
 			timer: null
 		}
 	},
+	mounted() {
+		this.timer = setInterval(() => {
+			if (this.second === 0) this.backPrev()
+			else this.second--
+		}, 1000)
+	},
+	beforeDestroy() {
+		clearInterval(this.timer)
+	},
 	methods: {
 		backHome() {
 			this.$router.replace({
@@ -24,15 +33,6 @@ export default {
 		backPrev() {
 			this.$router.go(-1)
 		}
-	},
-	mounted() {
-		this.timer = setInterval(() => {
-			if (this.second === 0) this.backPrev()
-			else this.second--
-		}, 1000)
-	},
-	beforeDestroy() {
-		clearInterval(this.timer)
 	}
 }
 </script>

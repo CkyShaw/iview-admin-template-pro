@@ -1,10 +1,10 @@
 <template>
 	<div class="cropper-wrapper">
 		<div class="img-box">
-			<img class="cropper-image" :id="imgId" alt="" />
+			<img :id="imgId" class="cropper-image" alt="" />
 		</div>
 		<div class="right-con">
-			<div v-if="preview" class="preview-box" :id="previewId"></div>
+			<div v-if="preview" :id="previewId" class="preview-box"></div>
 			<div class="button-box">
 				<slot>
 					<Upload action="image/upload" :before-upload="beforeUpload">
@@ -94,6 +94,15 @@ export default {
 			this.replace(src)
 		}
 	},
+	mounted() {
+		this.$nextTick().then(() => {
+			let dom = document.getElementById(this.imgId)
+			this.cropper = new Cropper(dom, {
+				preview: `#${this.previewId}`,
+				checkCrossOrigin: true
+			})
+		})
+	},
 	methods: {
 		beforeUpload(file) {
 			const reader = new FileReader()
@@ -127,15 +136,6 @@ export default {
 				this.$emit('on-crop', blob)
 			})
 		}
-	},
-	mounted() {
-		this.$nextTick(() => {
-			let dom = document.getElementById(this.imgId)
-			this.cropper = new Cropper(dom, {
-				preview: `#${this.previewId}`,
-				checkCrossOrigin: true
-			})
-		})
 	}
 }
 </script>
