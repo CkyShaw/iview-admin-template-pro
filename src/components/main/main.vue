@@ -159,7 +159,7 @@ export default {
 				name: this.$_config.homeName
 			})
 		}
-		// 获取未读消息条数
+		// 获取未读消息数
 		this.getUnreadMessageCount()
 	},
 	methods: {
