@@ -33,12 +33,12 @@
 		"v-org-tree": "^1.0.12",
 		"view-design": "^4.5.0",
 		"vue": "^2.6.12",
-		"vue-i18n": "^8.24.2",
+		"vue-i18n": "^8.24.4",
 		"vue-router": "^3.5.1",
 		"vuedraggable": "^2.24.3",
 		"vuex": "^3.6.2",
 		"wangeditor": "^4.7.1",
-		"xlsx": "^0.16.9"
+		"xlsx": "^0.17.0"
 	},
 	"devDependencies": {
 		"@babel/eslint-parser": "^7.14.3",
@@ -52,7 +52,7 @@
 		"babel-eslint": "^10.1.0",
 		"babel-plugin-component": "^1.1.1",
 		"babel-plugin-import": "^1.13.3",
-		"compression-webpack-plugin": "^7.1.2",
+		"compression-webpack-plugin": "^6.1.1",
 		"eslint": "^7.27.0",
 		"eslint-config-prettier": "^8.3.0",
 		"eslint-plugin-prettier": "^3.4.0",

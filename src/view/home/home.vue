@@ -28,8 +28,8 @@
 			</i-col>
 		</Row>
 		<Row>
-			<Card shadow>
-				<example style="height: 310px" />
+			<Card shadow style="height: 100%; width: 100%">
+				<example style="height: 310px; width: 100%" />
 			</Card>
 		</Row>
 	</div>
@@ -86,5 +86,9 @@ export default {
 <style lang="stylus">
 .count-style {
 	font-size: 50px;
+}
+.ivu-card-body {
+	width: 100%;
+	height: 100%;
 }
 </style>
