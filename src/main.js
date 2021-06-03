@@ -17,6 +17,12 @@ import api from './api'
 Vue.prototype.$_api = api
 
 /**
+ * @description qif iconfont
+ * @home http://172.26.1.231:12000/iconfont/index.html
+ */
+import '@qif/iconfont'
+
+/**
  * @description 工具库
  */
 /*import bbo from 'bbo'

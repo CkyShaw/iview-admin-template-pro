@@ -13,17 +13,18 @@
 		"prettier": "prettier --write \"src/**/*.{js,jsx,ts,json,vue,css,less,scss,md,html}\""
 	},
 	"dependencies": {
+		"@qif/iconfont": "^1.0.0",
 		"ant-design-vue": "^1.7.5",
 		"axios": "^0.21.1",
 		"bbo": "^1.1.26",
 		"clipboard": "^2.0.8",
 		"codemirror": "^5.61.1",
-		"core-js": "^3.13.0",
+		"core-js": "^3.13.1",
 		"countup": "^1.8.2",
 		"cropperjs": "^1.5.11",
 		"dayjs": "^1.10.5",
 		"echarts": "^5.1.1",
-		"element-ui": "^2.15.1",
+		"element-ui": "^2.15.2",
 		"html2canvas": "^1.0.0-rc.7",
 		"js-cookie": "^2.2.1",
 		"simplemde": "^1.11.2",
@@ -32,7 +33,7 @@
 		"tree-table-vue": "^1.1.0",
 		"v-org-tree": "^1.0.12",
 		"view-design": "^4.5.0",
-		"vue": "^2.6.12",
+		"vue": "^2.6.13",
 		"vue-i18n": "^8.24.4",
 		"vue-router": "^3.5.1",
 		"vuedraggable": "^2.24.3",
@@ -41,7 +42,7 @@
 		"xlsx": "^0.17.0"
 	},
 	"devDependencies": {
-		"@babel/eslint-parser": "^7.14.3",
+		"@babel/eslint-parser": "^7.14.4",
 		"@qif/eslint-config": "^1.0.1",
 		"@vue/cli-plugin-babel": "~4.5.13",
 		"@vue/cli-plugin-eslint": "~4.5.13",
@@ -56,7 +57,7 @@
 		"eslint": "^7.27.0",
 		"eslint-config-prettier": "^8.3.0",
 		"eslint-plugin-prettier": "^3.4.0",
-		"eslint-plugin-vue": "^7.9.0",
+		"eslint-plugin-vue": "^7.10.0",
 		"eslint-webpack-plugin": "^2.5.4",
 		"gulp": "^4.0.2",
 		"jszip": "^3.6.0",
@@ -77,7 +78,7 @@
 		"stylus-bem-mixins": "^1.0.2",
 		"stylus-loader": "^3.0.2",
 		"vue-cli-plugin-webpack-bundle-analyzer": "^4.0.0",
-		"vue-template-compiler": "^2.6.12"
+		"vue-template-compiler": "^2.6.13"
 	},
 	"browserslist": [
 		"> 1%",
