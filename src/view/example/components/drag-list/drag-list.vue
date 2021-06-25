@@ -76,7 +76,7 @@ export default {
 		padding: 10px 15px;
 	}
 	.drop-box {
-		border: 1px solid #eeeeee;
+		border: 1px solid #eee;
 		height: 455px;
 		border-radius: 5px;
 	}
@@ -87,7 +87,7 @@ export default {
 .handle-log-box {
 	display: inline-block;
 	margin-left: 20px;
-	border: 1px solid #eeeeee;
+	border: 1px solid #eee;
 	vertical-align: top;
 	width: 200px;
 	height: 500px;
@@ -100,14 +100,14 @@ export default {
 		p {
 			padding: 14px 0;
 			margin: 0 14px;
-			border-bottom: 1px dashed #eeeeee;
+			border-bottom: 1px dashed #eee;
 		}
 	}
 }
 .res-show-box {
 	display: inline-block;
 	margin-left: 20px;
-	border: 1px solid #eeeeee;
+	border: 1px solid #eee;
 	vertical-align: top;
 	width: 350px;
 	height: 570px;

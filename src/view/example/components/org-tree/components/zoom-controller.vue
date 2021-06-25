@@ -55,12 +55,12 @@ trans(duration) {
 		line-height: 10px;
 		border-radius: 50%;
 		background: rgba(157, 162, 172, 1);
-		box-shadow: 0px 2px 8px 0px rgba(218, 220, 223, 0.7);
+		box-shadow: 0 2px 8px 0 rgba(218, 220, 223, 0.7);
 		border: none;
 		cursor: pointer;
 		outline: none;
 		&:active {
-			box-shadow: 0px 0px 2px 2px rgba(218, 220, 223, 0.2) inset;
+			box-shadow: 0 0 2px 2px rgba(218, 220, 223, 0.2) inset;
 		}
 		trans(0.2s);
 		&:hover {

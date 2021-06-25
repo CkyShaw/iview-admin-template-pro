@@ -70,12 +70,14 @@ export default {
 }
 .info-card-wrapper {
 	@extend .size;
+
 	overflow: hidden;
 	.ivu-card-body {
 		@extend .size;
 	}
 	.content-con {
 		@extend .size;
+
 		position: relative;
 		.left-area {
 			@extend .common;

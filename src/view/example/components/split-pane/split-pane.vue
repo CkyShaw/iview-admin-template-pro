@@ -67,10 +67,11 @@ export default {
 		width: 20px;
 		height: 20px;
 		border-radius: 50%;
-		background: #000000;
+		background: #000;
 		position: absolute;
 
 		@extend .center-middle;
+
 		box-shadow: 0 0 6px 0 rgba(28, 36, 56, 0.4);
 		i.trigger-icon {
 			@extend .center-middle;

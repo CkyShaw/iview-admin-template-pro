@@ -61,7 +61,7 @@
 			<Input v-model="searchValue" placeholder="输入关键字搜索" class="search-input" />
 			<Button class="search-btn" type="primary"><Icon type="search" />&nbsp;&nbsp;搜索</Button>
 		</div>
-		<a id="hrefToExportTable" style="display: none; width: 0px; height: 0px"></a>
+		<a id="hrefToExportTable" style="display: none; width: 0; height: 0"></a>
 	</div>
 </template>
 

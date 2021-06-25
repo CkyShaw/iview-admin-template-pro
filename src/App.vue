@@ -56,6 +56,7 @@ export default {
 html,
 body {
 	@extend .full;
+
 	overflow: hidden;
 	margin: 0;
 	padding: 0;

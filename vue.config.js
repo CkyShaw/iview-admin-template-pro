@@ -107,16 +107,16 @@ module.exports = {
 					new StylelintPlugin({
 						configFile: './stylelint.config.js',
 						customSyntax: 'stylelint-plugin-stylus/custom-syntax',
-						files: ['**/*.styl', '**/*.vue'],
-						cache: true,
-						fix: true
-					}),
-					new StylelintPlugin({
-						configFile: './stylelint.config.normal.js',
-						files: ['**/*.css', '**/*.less'],
+						files: ['**/*.css', '**/*.less', '**/*.styl', '**/*.vue'],
 						cache: true,
 						fix: true
 					})
+					// new StylelintPlugin({
+					// 	configFile: './stylelint.config.normal.js',
+					// 	files: ['**/*.css', '**/*.less'],
+					// 	cache: true,
+					// 	fix: true
+					// })
 				]
 			}
 		}

@@ -224,13 +224,13 @@ p {
 }
 .count-text {
 	font-size: 50px;
-	color: baseColor;
+	color: basecolor;
 }
 .slot-text {
 	font-size: 22px;
 }
 .unit-class {
 	font-size: 30px;
-	color: baseColor;
+	color: basecolor;
 }
 </style>

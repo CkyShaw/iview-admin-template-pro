@@ -1,5 +1,5 @@
 module.exports = {
-	extends: ['stylelint-plugin-stylus/standard', 'stylelint-config-prettier'],
+	extends: ['stylelint-config-standard', 'stylelint-plugin-stylus/standard', 'stylelint-config-prettier'],
 	rules: {
 		'at-rule-name-space-after': null,
 		'stylus/no-eol-whitespace': null,
@@ -11,6 +11,10 @@ module.exports = {
 		'stylus/pythonic': 'never',
 		'stylus/selector-list-comma': 'always',
 		'stylus/semicolon': 'always',
-		'unit-case': null
+		'unit-case': null,
+		'block-no-empty': null,
+		'no-invalid-position-at-import-rule': null,
+		'no-descending-specificity': null,
+		'no-empty-source': null
 	}
 }
