@@ -24,6 +24,7 @@ import '@qif/iconfont'
 
 /**
  * @description 工具库
+ * @home https://tnfe.github.io/bbo/#logs
  */
 /*import bbo from 'bbo'
 Vue.prototype.$_b = bbo*/
