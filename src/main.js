@@ -18,7 +18,7 @@ Vue.prototype.$_api = api
 
 /**
  * @description qif iconfont
- * @home http://172.26.1.231:12000/iconfont/index.html
+ * @home http://172.26.1.201:9982/iconfont/index.html
  */
 import '@qif/iconfont'
 
