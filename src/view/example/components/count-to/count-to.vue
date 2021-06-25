@@ -210,7 +210,7 @@ export default {
 </script>
 
 <style lang="stylus">
-baseColor = #dc9387;
+basecolor = #dc9387;
 p {
 	margin-bottom: initial;
 }
