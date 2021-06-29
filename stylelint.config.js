@@ -12,6 +12,7 @@ module.exports = {
 		'stylus/selector-list-comma': 'always',
 		'stylus/semicolon': 'always',
 		'unit-case': null,
+		indentation: 'tab',
 		'block-no-empty': null,
 		'no-invalid-position-at-import-rule': null,
 		'no-descending-specificity': null,
